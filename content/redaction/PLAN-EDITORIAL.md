@@ -1,6 +1,6 @@
 # Plan éditorial du blog Comeback
 
-File des sujets à publier, dans l'ordre. Le rédacteur prend le premier sujet « À écrire », publie l'article selon `GUIDE-REDACTION.md`, puis remplace son statut par « Publié le YYYY-MM-DD ».
+File des sujets à publier, dans l'ordre. Le rédacteur prend le premier sujet « À écrire », publie l'article dans `content/blog/` selon `content/redaction/GUIDE-REDACTION.md`, puis remplace son statut par « Publié le YYYY-MM-DD ».
 
 Quand il reste moins de 4 sujets « À écrire », ajouter 6 nouveaux sujets en fin de tableau, en alternant les deux familles :
 - problèmes concrets de commerçants (chiffre d'affaires, fréquentation, fichier client, avis, relance)
