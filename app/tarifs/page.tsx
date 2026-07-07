@@ -15,9 +15,9 @@ import { plans } from "@/content/pricing";
 import type { FaqItem } from "@/content/faq";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Tarifs : carte de fidélité digitale dès 29 €/mois, 30 jours gratuits",
+  title: "Tarifs : carte de fidélité digitale dès 19 €/mois, 30 jours gratuits",
   description:
-    "Deux plans simples et un tarif réseau sur devis. 30 jours d'essai gratuit sans carte bancaire, sans engagement, clients illimités. Rentabilisé dès 2 clients fidélisés par mois.",
+    "Trois plans clairs : Starter à 19 €, Pro à 49 €, Business à 99 € par mois HT. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidélisés par mois.",
   path: "/tarifs",
 });
 
@@ -31,38 +31,36 @@ type CompareGroup = { title: string; rows: CompareRow[] };
 
 const compareGroups: CompareGroup[] = [
   {
-    title: "Carte et clients",
+    title: "Clients et cartes",
     rows: [
+      { label: "Clients enregistrés", cells: ["150", "Illimités", "Illimités"] },
+      { label: "Cartes de fidélité", cells: ["1", "3", "Illimitées"] },
       { label: "Carte Apple Wallet et Google Wallet", cells: [true, true, true] },
-      { label: "Clients et tampons illimités", cells: [true, true, true] },
-      { label: "Personnalisation logo et couleurs", cells: [true, true, true] },
       { label: "QR code comptoir prêt à imprimer", cells: [true, true, true] },
     ],
   },
   {
-    title: "Relances et marketing",
+    title: "Notifications",
     rows: [
-      { label: "Notification automatique de récompense", cells: [true, true, true] },
-      { label: "Relance des clients inactifs", cells: [false, true, true] },
-      { label: "Promos flash en 2 clics", cells: [false, true, true] },
-      { label: "Offre anniversaire automatique", cells: [false, true, true] },
+      { label: "Notifications par mois", cells: ["10 000", "50 000", "Illimitées"] },
+      { label: "Ciblage des envois", cells: ["Tous les clients", "Par rang, inactifs", "Par rang, inactifs"] },
+      { label: "Notifications automatiques récurrentes", cells: [false, true, true] },
     ],
   },
   {
-    title: "Données et statistiques",
+    title: "Fidélisation et données",
     rows: [
-      { label: "Dashboard visites, clients, CA généré", cells: [true, true, true] },
-      { label: "Export du fichier client (Excel)", cells: [false, true, true] },
-      { label: "Programme commun multi-établissements", cells: [false, false, true] },
-      { label: "Statistiques par point de vente", cells: [false, false, true] },
+      { label: "Parrainage avec bonus", cells: [false, true, true] },
+      { label: "Export CSV du fichier client", cells: [false, true, true] },
+      { label: "Historique des statistiques", cells: ["7 derniers jours", "Complet", "Complet (2 ans)"] },
     ],
   },
   {
     title: "Accompagnement",
     rows: [
-      { label: "Support par email", cells: ["Sous 24 h", true, true] },
-      { label: "Support prioritaire 7j/7", cells: [false, true, true] },
-      { label: "Accompagnement dédié au déploiement", cells: [false, false, true] },
+      { label: "Support par email", cells: [true, true, true] },
+      { label: "Support prioritaire", cells: [false, true, true] },
+      { label: "Support dédié, réponse sous 4 h", cells: [false, false, true] },
     ],
   },
 ];
@@ -80,17 +78,17 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Y a-t-il des frais d'installation ou des coûts cachés ?",
     answer:
-      "Aucun. Le prix affiché est le prix payé : pas de frais de mise en service, pas de matériel à acheter, pas de coût par client inscrit ni par notification envoyée. Le QR code comptoir vous est fourni en PDF prêt à imprimer.",
+      "Aucun. Le prix affiché est le prix payé : pas de frais de mise en service, pas de matériel à acheter, pas de coût unitaire par notification (chaque plan inclut son volume mensuel). Le QR code comptoir vous est fourni en PDF prêt à imprimer.",
   },
   {
     question: "Puis-je changer de plan ou résilier à tout moment ?",
     answer:
-      "Oui. L'abonnement est mensuel et sans engagement : vous passez d'Essentiel à Pro (ou l'inverse) en 2 clics depuis votre espace, et la différence est calculée au prorata. La résiliation est immédiate, sans préavis ni justification.",
+      "Oui. L'abonnement est mensuel et sans engagement : vous passez de Starter à Pro ou de Pro à Business (et inversement) en 2 clics depuis votre espace, et la différence est calculée au prorata. La résiliation est immédiate, sans préavis ni justification.",
   },
   {
-    question: "Le nombre de clients ou de tampons est-il limité ?",
+    question: "Le nombre de clients ou de notifications est-il limité ?",
     answer:
-      "Non, sur aucun plan. Que vous ayez 50 ou 5 000 clients fidèles, le prix ne bouge pas. Nous ne facturons jamais au volume : votre programme a vocation à grossir, pas votre facture.",
+      "Le plan Starter inclut 150 clients, 10 000 notifications par mois et 1 carte de fidélité : de quoi valider la mécanique. Les plans Pro et Business sont en clients illimités, avec 50 000 notifications mensuelles pour Pro et un volume illimité pour Business. Si vous atteignez une limite, vous passez au plan supérieur en 2 clics, sans rien perdre.",
   },
   {
     question: "Les prix affichés sont-ils HT ou TTC ?",
@@ -100,7 +98,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Comment être sûr que ce sera rentable pour mon commerce ?",
     answer:
-      "Faites le calcul avec vos propres chiffres : au plan Essentiel, il suffit d'environ 2 visites supplémentaires par mois pour couvrir l'abonnement, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
+      "Faites le calcul avec vos propres chiffres : au plan Starter, une seule visite supplémentaire par mois couvre l'abonnement, et au plan Pro il en faut environ 2, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
   },
 ];
 
@@ -181,7 +179,7 @@ export default function PricingPage() {
       >
         <Badge>Sans carte bancaire</Badge>
         <Badge>Sans engagement</Badge>
-        <Badge>Clients illimités</Badge>
+        <Badge>Dès 19 € par mois</Badge>
       </PageHero>
 
       {/* Cartes de plans */}
@@ -194,12 +192,14 @@ export default function PricingPage() {
             {plans.map((plan, i) => (
               <Reveal key={plan.name} delayMs={i * 100} className="h-full">
                 <div
-                  className={`relative flex h-full flex-col rounded-3xl bg-white p-8 shadow-card transition-transform duration-300 hover:-translate-y-1 hover:shadow-card-lg ${
-                    plan.recommended ? "ring-2 ring-leaf-600" : "ring-1 ring-ink/5"
+                  className={`relative flex h-full flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 ${
+                    plan.recommended
+                      ? "z-10 bg-gradient-to-b from-leaf-50/70 to-white shadow-card-lg ring-2 ring-leaf-600 lg:scale-[1.05]"
+                      : "bg-white shadow-card ring-1 ring-ink/5 hover:shadow-card-lg"
                   }`}
                 >
                   {plan.recommended && (
-                    <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-leaf-700 px-4 py-1 text-sm font-semibold text-white">
+                    <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-leaf-700 px-4 py-1 text-sm font-semibold text-white shadow-md">
                       Recommandé
                     </span>
                   )}
@@ -224,6 +224,14 @@ export default function PricingPage() {
                       <li key={f} className="flex items-start gap-2.5 text-[0.95rem] text-ink-soft">
                         <svg viewBox="0 0 16 16" className="mt-1 h-4 w-4 shrink-0 text-leaf-600" aria-hidden="true">
                           <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                        </svg>
+                        {f}
+                      </li>
+                    ))}
+                    {plan.missing?.map((f) => (
+                      <li key={f} className="flex items-start gap-2.5 text-[0.95rem] text-ink/35">
+                        <svg viewBox="0 0 16 16" className="mt-1 h-4 w-4 shrink-0 text-ink/20" aria-hidden="true">
+                          <path d="M4 8h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
                         </svg>
                         {f}
                       </li>
@@ -262,7 +270,7 @@ export default function PricingPage() {
           <div className="overflow-x-auto rounded-3xl bg-white shadow-card ring-1 ring-ink/5">
             <table className="w-full min-w-[640px] border-collapse text-left">
               <caption className="sr-only">
-                Comparatif détaillé des fonctionnalités incluses dans les plans Essentiel, Pro et Réseau
+                Comparatif détaillé des fonctionnalités incluses dans les plans Starter, Pro et Business
               </caption>
               <thead>
                 <tr className="border-b border-ink/10">
@@ -336,7 +344,7 @@ export default function PricingPage() {
                 14 600 € / an
               </p>
               <p className="mt-2 text-sm text-leaf-200">
-                de CA récupérable estimé, contre 348 € d&apos;abonnement annuel au plan Essentiel.
+                de CA récupérable estimé, contre 228 € d&apos;abonnement annuel au plan Starter.
               </p>
             </div>
           </div>

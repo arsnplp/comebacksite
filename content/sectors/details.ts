@@ -110,7 +110,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         question: "J'ai deux établissements, puis-je faire un programme commun ?",
         answer:
-          "Oui, avec le plan Réseau : une seule carte valable dans vos établissements, et des statistiques séparées par adresse pour piloter chaque salle. C'est la formule des groupes et des franchises.",
+          "Oui, avec le plan Business : les cartes y sont illimitées, vous créez donc un programme commun valable dans vos établissements. C'est la formule des groupes et des franchises.",
       },
     ],
   },
@@ -633,7 +633,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         question: "J'ai deux camions : puis-je faire une seule carte ?",
         answer:
-          "Oui, avec le plan Réseau : une carte commune valable aux deux camions, et des statistiques séparées pour savoir ce que chaque emplacement rapporte.",
+          "Oui, avec le plan Business : une carte commune valable aux deux camions, et un suivi complet de vos clients pour savoir qui revient et à quelle fréquence.",
       },
       {
         question: "Mes clients changent selon les emplacements : le programme reste-t-il pertinent ?",
@@ -703,7 +703,7 @@ export const sectorDetails: SectorDetail[] = [
         title: "Un déploiement pensé pour le terrain",
         paragraphs: [
           "Les projets de fidélité en réseau échouent rarement sur la technique : ils échouent sur l'adoption terrain. C'est pourquoi Comeback ne demande ni matériel, ni intégration caisse, ni formation longue : un QR code sur le comptoir et un téléphone suffisent. Un établissement qui rejoint le programme est opérationnel le jour même.",
-          "L'accompagnement dédié du plan Réseau couvre le cadrage de la mécanique, le déploiement progressif et l'animation dans la durée : les établissements pilotes d'abord, la généralisation ensuite, avec des points d'étape sur les chiffres réels.",
+          "Le support dédié du plan Business couvre le cadrage de la mécanique, le déploiement progressif et l'animation dans la durée : les établissements pilotes d'abord, la généralisation ensuite, avec des points d'étape sur les chiffres réels.",
         ],
       },
     ],
@@ -721,7 +721,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         question: "Comment se passe la facturation pour un réseau ?",
         answer:
-          "Le plan Réseau est sur devis, avec un tarif dégressif par établissement. La facturation peut être centralisée au niveau de l'enseigne ou répartie par site, selon votre organisation.",
+          "Le plan Business est à 99 € HT par mois, avec clients, cartes et notifications illimités : un seul abonnement couvre tout le réseau. Pour une organisation particulière (facturation répartie par site, très grand réseau), contactez-nous.",
       },
       {
         question: "Combien de temps faut-il pour équiper un réseau complet ?",

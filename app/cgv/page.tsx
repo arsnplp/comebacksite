@@ -37,7 +37,7 @@ const sections: LegalSection[] = [
     title: "4. Tarifs et facturation",
     body: [
       "Les tarifs en vigueur sont ceux affichés sur la page Tarifs au jour de la souscription, exprimés hors taxes. L'abonnement est mensuel, payable d'avance par prélèvement ou carte bancaire. Toute évolution tarifaire sera notifiée au moins 30 jours avant son application, le Client restant libre de résilier avant cette date.",
-      "Le plan Réseau (multi-établissements) fait l'objet d'un devis et de conditions particulières.",
+      "Chaque plan (Starter, Pro, Business) inclut les volumes indiqués sur la page Tarifs : nombre de clients enregistrés, de cartes de fidélité et de notifications mensuelles. Aucun dépassement n'est facturé automatiquement : en cas d'atteinte d'une limite, le Client est invité à passer au plan supérieur.",
     ],
   },
   {

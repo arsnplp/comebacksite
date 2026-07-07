@@ -21,8 +21,8 @@ export function FullCalculator() {
   const lostPerYear = roundToHundred(estimateLostRevenue(clientsPerWeek, basket));
   const lostPerMonth = Math.round(lostPerYear / 12);
 
-  const essential = plans.find((p) => p.name === "Essentiel");
-  const yearlyPlanCost = (essential?.price ?? 29) * 12;
+  const starter = plans.find((p) => p.name === "Starter");
+  const yearlyPlanCost = (starter?.price ?? 19) * 12;
   const roiMultiple = Math.max(1, Math.round(lostPerYear / yearlyPlanCost));
 
   const onUse = <T,>(setter: (v: T) => void) => (v: T) => {
@@ -83,7 +83,7 @@ export function FullCalculator() {
               </dd>
             </div>
             <div className="flex items-baseline justify-between gap-4">
-              <dt className="text-ink-soft">Abonnement Essentiel par an</dt>
+              <dt className="text-ink-soft">Abonnement Starter par an</dt>
               <dd className="font-display text-lg font-bold text-ink tabular-nums">
                 {formatEuros(yearlyPlanCost)}
               </dd>
