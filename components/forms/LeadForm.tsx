@@ -149,7 +149,7 @@ export function LeadForm({ kind, submitLabel }: LeadFormProps) {
 
       {status === "error" && (
         <p className="rounded-2xl bg-ember-600/10 px-4 py-3 text-sm font-medium text-ember-700" role="alert">
-          L&apos;envoi a échoué. Réessayez dans un instant, ou écrivez-nous directement à contact@getcomeback.fr.
+          L&apos;envoi a échoué. Réessayez dans un instant, ou écrivez-nous directement à arsene.lecoq@getcomeback.fr.
         </p>
       )}
 

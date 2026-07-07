@@ -17,7 +17,7 @@ const sections: LegalSection[] = [
   {
     title: "1. Qui est responsable du traitement ?",
     body: [
-      "Le responsable du traitement des données collectées sur le site getcomeback.fr est [RAISON SOCIALE], [ADRESSE COMPLÈTE], joignable à l'adresse contact@getcomeback.fr.",
+      "Le responsable du traitement des données collectées sur le site getcomeback.fr est [RAISON SOCIALE], [ADRESSE COMPLÈTE], joignable à l'adresse arsene.lecoq@getcomeback.fr.",
       "Cette politique couvre le site vitrine getcomeback.fr. Les données traitées dans l'application Comeback pour le compte des commerçants (données de leurs clients fidélisés) font l'objet d'un accord de traitement des données dédié, conclu avec chaque commerçant.",
     ],
   },
@@ -71,7 +71,7 @@ const sections: LegalSection[] = [
           "Droit de définir des directives sur le sort de vos données après votre décès.",
         ],
       },
-      "Pour exercer ces droits, écrivez-nous à contact@getcomeback.fr en précisant votre demande : nous répondons sous un mois au plus. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL (cnil.fr).",
+      "Pour exercer ces droits, écrivez-nous à arsene.lecoq@getcomeback.fr en précisant votre demande : nous répondons sous un mois au plus. Si vous estimez que vos droits ne sont pas respectés, vous pouvez saisir la CNIL (cnil.fr).",
     ],
   },
   {

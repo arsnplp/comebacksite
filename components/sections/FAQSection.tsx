@@ -11,7 +11,7 @@ export function FAQSection() {
         <SectionHeader
           eyebrow="Questions fréquentes"
           title="Tout ce que vous vous demandez avant d'essayer"
-          lead="Et si la réponse n'y est pas : contact@getcomeback.fr, un humain vous répond."
+          lead="Et si la réponse n'y est pas : arsene.lecoq@getcomeback.fr, un humain vous répond."
         />
         <Accordion items={homeFaq} />
       </Container>

@@ -18,7 +18,7 @@ const sections: LegalSection[] = [
     body: [
       "Le site getcomeback.fr est édité par [RAISON SOCIALE], [FORME JURIDIQUE] au capital de [CAPITAL] euros, immatriculée au RCS de [VILLE] sous le numéro [NUMÉRO RCS / SIREN], dont le siège social est situé [ADRESSE COMPLÈTE].",
       "Numéro de TVA intracommunautaire : [NUMÉRO TVA]. Directeur de la publication : [NOM DU DIRECTEUR DE LA PUBLICATION].",
-      "Contact : contact@getcomeback.fr.",
+      "Contact : arsene.lecoq@getcomeback.fr.",
     ],
   },
   {

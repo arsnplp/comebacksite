@@ -15,8 +15,7 @@ export const metadata: Metadata = pageMetadata({
   path: "/contact",
 });
 
-/* [PLACEHOLDER] — adresse email à confirmer avant mise en ligne */
-const CONTACT_EMAIL = "contact@getcomeback.fr";
+const CONTACT_EMAIL = "arsene.lecoq@getcomeback.fr";
 
 const contactJsonLd = {
   "@context": "https://schema.org",
