@@ -20,7 +20,7 @@ Chaque sujet vise UN mot-clé principal distinct de tous les autres (et distinct
 
 | Slug | Mot-clé principal | Angle | Statut |
 | --- | --- | --- | --- |
-| comment-augmenter-chiffre-affaires-commerce | augmenter le chiffre d'affaires de son commerce | Les 3 leviers (fréquence, panier, nouveaux clients) et pourquoi la fréquence est le plus rentable | À écrire |
+| comment-augmenter-chiffre-affaires-commerce | augmenter le chiffre d'affaires de son commerce | Les 3 leviers (fréquence, panier, nouveaux clients) et pourquoi la fréquence est le plus rentable | Publié le 2026-07-09 |
 | fideliser-clients-coiffeur | fidéliser les clients de son salon de coiffure | Allonger la durée de vie client, réduire les trous du mardi, relancer avant que le client aille voir ailleurs | Publié le 2026-07-08 |
 | stabiliser-chiffre-affaires-commerce | stabiliser le chiffre d'affaires de son commerce | Lisser les mois creux avec une base de clients récurrents plutôt que subir la saisonnalité | À écrire |
 | fideliser-clients-boulangerie | fidéliser les clients de sa boulangerie | Transformer le passage quotidien en habitude mesurable, carte tampons digitale au comptoir | À écrire |
