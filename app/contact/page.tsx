@@ -42,7 +42,7 @@ const otherChannels: { icon: IconName; title: string; text: string; href: string
     icon: "zap",
     title: "Vous voulez juste essayer ?",
     text: "L'essai gratuit se lance sans rendez-vous et sans carte bancaire, en 10 minutes.",
-    href: "/essai-gratuit",
+    href: "https://app.getcomeback.fr/login",
     linkLabel: "Commencer l'essai gratuit",
   },
   {

@@ -38,7 +38,7 @@ export default function TestimonialsPage() {
         highlight="Leurs clients reviennent"
         lead="Des commerçants indépendants, dans toute la France, qui mesurent enfin ce que la fidélité leur rapporte. Voici ce qu'ils constatent, avec leurs chiffres."
       >
-        <CTALink href="/essai-gratuit" position="temoignages-hero" size="xl">
+        <CTALink href="https://app.getcomeback.fr/login" position="temoignages-hero" size="xl">
           Essayer gratuitement 30 jours
         </CTALink>
       </PageHero>

@@ -72,7 +72,7 @@ export default function DemoPage() {
 
             <p className="mt-10 rounded-2xl bg-leaf-50 p-5 text-ink-soft ring-1 ring-leaf-200">
               Pressé ? Pas besoin de démo pour commencer :{" "}
-              <Link href="/essai-gratuit" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+              <Link href="https://app.getcomeback.fr/login" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
                 l&apos;essai gratuit de 30 jours
               </Link>{" "}
               se lance seul, en 10 minutes.

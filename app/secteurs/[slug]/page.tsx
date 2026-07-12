@@ -66,7 +66,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
         highlight={sector.h1Highlight}
         lead={sector.intro}
       >
-        <CTALink href="/essai-gratuit" position={`secteur-${sector.slug}-hero`} size="xl">
+        <CTALink href="https://app.getcomeback.fr/login" position={`secteur-${sector.slug}-hero`} size="xl">
           Essayer gratuitement 30 jours
         </CTALink>
         <CTALink href="/demo" position={`secteur-${sector.slug}-hero-demo`} variant="ghost" size="xl">

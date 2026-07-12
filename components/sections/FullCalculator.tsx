@@ -96,7 +96,7 @@ export function FullCalculator() {
             </div>
           </dl>
           <div className="mt-8 text-center">
-            <CTALink href="/essai-gratuit" position="calculator-page" size="xl">
+            <CTALink href="https://app.getcomeback.fr/login" position="calculator-page" size="xl">
               Récupérer ce CA, 30 jours gratuits
             </CTALink>
             <p className="mt-3 text-sm text-ink-soft">Sans carte bancaire, résultats mesurés dans votre dashboard.</p>

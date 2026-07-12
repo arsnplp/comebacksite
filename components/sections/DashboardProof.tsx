@@ -48,7 +48,7 @@ export function DashboardProof() {
               <Badge>CA généré, en euros</Badge>
             </div>
             <div className="mt-8">
-              <CTALink href="/essai-gratuit" position="dashboard">
+              <CTALink href="https://app.getcomeback.fr/login" position="dashboard">
                 Voir mes chiffres pendant 30 jours
               </CTALink>
             </div>

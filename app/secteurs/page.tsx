@@ -28,7 +28,7 @@ export default function SectorsHubPage() {
         highlight="Votre carte non plus"
         lead="Un café ne fidélise pas comme un institut de beauté : ni le même rythme, ni le même palier, ni la même récompense. Retrouvez la mécanique qui a fait ses preuves dans votre métier."
       >
-        <CTALink href="/essai-gratuit" position="secteurs-hero" size="xl">
+        <CTALink href="https://app.getcomeback.fr/login" position="secteurs-hero" size="xl">
           Essayer gratuitement 30 jours
         </CTALink>
       </PageHero>

@@ -248,7 +248,7 @@ export default function FeaturesPage() {
         highlight="faire revenir vos clients"
         lead="Une carte dans leur Wallet, des relances qui partent toutes seules, un dashboard qui compte en euros. Voici ce que Comeback fait pour votre commerce, concrètement."
       >
-        <CTALink href="/essai-gratuit" position="features-hero" size="xl">
+        <CTALink href="https://app.getcomeback.fr/login" position="features-hero" size="xl">
           Essayer gratuitement 30 jours
         </CTALink>
         <CTALink href="/demo" position="features-hero-demo" variant="ghost" size="xl">

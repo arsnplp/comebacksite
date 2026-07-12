@@ -20,7 +20,7 @@ export function FinalCTA() {
         </p>
 
         <div className="mt-10">
-          <CTALink href="/essai-gratuit" position="final" size="xl" className="px-12">
+          <CTALink href="https://app.getcomeback.fr/login" position="final" size="xl" className="px-12">
             Essayer gratuitement 30 jours
           </CTALink>
         </div>

@@ -69,7 +69,7 @@ export function PricingPreview() {
 
               <div className="mt-8">
                 <CTALink
-                  href={plan.price !== null ? "/essai-gratuit" : "/demo"}
+                  href={plan.price !== null ? "https://app.getcomeback.fr/login" : "/demo"}
                   position={`pricing-${plan.name.toLowerCase()}`}
                   variant={plan.recommended ? "primary" : "ghost"}
                   className="w-full"

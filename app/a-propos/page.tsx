@@ -134,7 +134,7 @@ export default function AboutPage() {
             français, par des gens qui connaissent le produit.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <CTALink href="/essai-gratuit" position="about" size="lg">
+            <CTALink href="https://app.getcomeback.fr/login" position="about" size="lg">
               Essayer gratuitement 30 jours
             </CTALink>
             <Link

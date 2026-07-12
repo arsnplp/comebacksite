@@ -50,7 +50,7 @@ export function Hero() {
               className="anim-rise mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
               style={{ "--rise-delay": "270ms" } as CSSProperties}
             >
-              <CTALink href="/essai-gratuit" position="hero" size="xl">
+              <CTALink href="https://app.getcomeback.fr/login" position="hero" size="xl">
                 Essayer gratuitement 30 jours
               </CTALink>
               <CTALink href="/demo" position="hero-demo" variant="ghost" size="xl" withArrow={false}>

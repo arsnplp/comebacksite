@@ -67,7 +67,7 @@ export function MiniCalculator() {
             <AnimatedNumber value={lost} kind="euros" />
           </p>
           <p className="text-base font-medium text-ink-soft">de CA par an</p>
-          <CTALink href="/essai-gratuit" position="calculator" className="mt-7">
+          <CTALink href="https://app.getcomeback.fr/login" position="calculator" className="mt-7">
             Récupérer ce CA
           </CTALink>
         </div>
