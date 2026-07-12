@@ -15,7 +15,7 @@ export function Footer() {
         { href: "/tarifs", label: "Tarifs" },
         { href: "/temoignages", label: "Témoignages" },
         { href: "/demo", label: "Réserver une démo" },
-        { href: "/essai-gratuit", label: "Essai gratuit 30 jours" },
+        { href: "https://app.getcomeback.fr/login", label: "Essai gratuit 30 jours" },
       ],
     },
     {
@@ -39,6 +39,7 @@ export function Footer() {
       title: "Entreprise",
       links: [
         { href: "/a-propos", label: "À propos" },
+        { href: "/affiliation", label: "Affiliation" },
         { href: "/contact", label: "Contact" },
         { href: "/mentions-legales", label: "Mentions légales" },
         { href: "/politique-confidentialite", label: "Confidentialité (RGPD)" },

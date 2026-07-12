@@ -10,6 +10,7 @@ const navLinks = [
   { href: "/fonctionnalites", label: "Fonctionnalités" },
   { href: "/tarifs", label: "Tarifs" },
   { href: "/temoignages", label: "Témoignages" },
+  { href: "/affiliation", label: "Affiliation" },
   { href: "/blog", label: "Blog" },
 ];
 
@@ -130,7 +131,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <CTALink href="/essai-gratuit" position="header" size="md">
+          <CTALink href="https://app.getcomeback.fr/login" position="header" size="md">
             Essai gratuit 30 jours
           </CTALink>
         </div>
@@ -189,7 +190,7 @@ export function Header() {
             ))}
           </ul>
           <div className="mt-6 px-4">
-            <CTALink href="/essai-gratuit" position="mobile-menu" className="w-full">
+            <CTALink href="https://app.getcomeback.fr/login" position="mobile-menu" className="w-full">
               Essayer gratuitement 30 jours
             </CTALink>
             <p className="mt-3 text-center text-sm text-ink-soft">Sans carte bancaire · Sans engagement</p>

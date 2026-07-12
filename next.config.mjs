@@ -10,6 +10,21 @@ const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
   },
+  async redirects() {
+    return [
+      // Liens courts des partenaires : l'attribution est gérée côté app
+      {
+        source: "/ref/:code",
+        destination: "https://app.getcomeback.fr/ref/:code",
+        permanent: true,
+      },
+      {
+        source: "/partenaires",
+        destination: "/affiliation",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

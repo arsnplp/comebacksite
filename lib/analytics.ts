@@ -8,6 +8,7 @@
 type EventName =
   | "cta_click" // props: { position: "header" | "hero" | "calculator" | ... }
   | "calculator_used"
+  | "affiliate_simulator_used"
   | "lead_submitted"
   | "scroll_75";
 

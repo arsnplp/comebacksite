@@ -116,7 +116,23 @@
   }
 }
 
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
+  /* Flottement doux en boucle (notifications du héros affiliation) */
+  .anim-float {
+    animation: float-soft 5.5s ease-in-out infinite;
+    animation-delay: var(--float-delay, 0ms);
+  }
+
   /* Entrée en cascade au chargement : --rise-delay pilote le décalage */
   .anim-rise {
     animation: rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
