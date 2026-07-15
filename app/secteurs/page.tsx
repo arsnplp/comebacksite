@@ -84,6 +84,46 @@ export default function SectorsHubPage() {
         </Container>
       </section>
 
+
+      {/* Pourquoi adapter la fidélité au métier (SEO) */}
+      <section className="pb-20 sm:pb-28" aria-labelledby="pourquoi-metier-title">
+        <Container className="max-w-3xl">
+          <h2 id="pourquoi-metier-title" className="font-display text-3xl font-bold tracking-tight">
+            Pourquoi votre carte de fidélité doit coller à votre métier
+          </h2>
+          <p className="mt-5 text-ink-soft leading-relaxed">
+            Un client de boulangerie passe tous les matins ; une cliente d&apos;institut revient toutes
+            les cinq semaines. Autrement dit, la même mécanique de fidélité ne peut pas convenir aux
+            deux : le palier serait atteint en une semaine dans un cas, jamais dans l&apos;autre.
+            C&apos;est pourquoi chaque page ci-dessus détaille la récompense, le rythme et les relances
+            qui fonctionnent réellement dans votre secteur, avec des exemples chiffrés.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Commencez donc par votre métier : vous y trouverez les trois problèmes du quotidien que la
+            fidélité résout, la mécanique de récompense conseillée, un témoignage et une FAQ dédiée.
+            Ensuite, si vous hésitez encore sur la rentabilité, faites le calcul avec vos propres
+            chiffres grâce au <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">calculateur de chiffre d&apos;affaires récupérable</Link>.
+            Enfin, comparez les formats : notre <Link href="/carte-fidelite-papier-ou-digitale" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">comparatif carte papier ou digitale</Link>{" "}
+            explique, critère par critère, ce que le passage au Wallet change pour un commerce de proximité.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Du fournil à la salle de restaurant, les attentes diffèrent, et les chiffres aussi. En
+            boulangerie, la carte à tampons digitale récompense un passage quasi quotidien ; en salon
+            de coiffure ou en institut de beauté, la relance automatique raccourcit l&apos;intervalle
+            entre deux rendez-vous ; dans un café ou un bar, le classique « 10e café offert » passe du
+            carton au téléphone ; en boutique, le programme de fidélité construit un fichier client
+            que les grandes enseignes vous envient ; quant aux food trucks et aux franchises, la
+            notification d&apos;emplacement et la carte commune multi-établissements répondent à des
+            besoins qu&apos;aucune carte papier ne sait couvrir.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Votre activité ne figure pas dans la liste ? Écrivez-nous via la{" "}
+            <Link href="/contact" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">page contact</Link> : si vos clients peuvent revenir, une carte
+            de fidélité digitale s&apos;adapte à votre cas, et nous vous montrerons comment en démo.
+          </p>
+        </Container>
+      </section>
+
       <FinalCTA />
     </>
   );

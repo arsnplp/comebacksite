@@ -134,6 +134,46 @@ export default function TestimonialsPage() {
         </Container>
       </section>
 
+
+      {/* Ce que ces parcours ont en commun (SEO) */}
+      <section className="pb-20 sm:pb-28" aria-labelledby="points-communs-title">
+        <Container className="max-w-3xl">
+          <h2 id="points-communs-title" className="font-display text-3xl font-bold tracking-tight">
+            Ce que ces commerçants ont fait, dans le même ordre
+          </h2>
+          <p className="mt-5 text-ink-soft leading-relaxed">
+            Derrière chacun de ces témoignages, le parcours est étonnamment semblable. D&apos;abord, un
+            constat : des clients satisfaits, mais qui espacent leurs visites sans raison apparente.
+            Ensuite, une mise en place courte : la carte est créée en une dizaine de minutes, le QR code
+            posé sur le comptoir le jour même. Enfin, la mesure : au bout de quelques semaines, le
+            dashboard affiche en euros ce que le programme rapporte, et c&apos;est ce chiffre, pas une
+            impression, qui décide de la suite.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Notez également ce que ces commerçants n&apos;ont pas fait : aucune application à faire
+            télécharger, aucune formation d&apos;équipe, aucun changement de caisse. La carte vit dans
+            Apple Wallet ou Google Wallet, le tampon se valide en deux secondes, même en plein rush.
+            Pour le détail des mécaniques par métier, parcourez les{" "}
+            <Link href="/secteurs" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">pages secteurs</Link> ; pour la liste complète des
+            fonctions, direction la page <Link href="/fonctionnalites" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">fonctionnalités</Link>.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Un mot, enfin, sur la façon de lire ces chiffres. Les métriques affichées (visites
+            supplémentaires, clients inscrits, chiffre d&apos;affaires généré) sortent du dashboard de
+            chaque commerçant, pas d&apos;un sondage : elles correspondent à des scans réels au
+            comptoir. Elles varient évidemment selon le métier, l&apos;emplacement et la mécanique de
+            récompense choisie ; c&apos;est précisément pour cela que chaque page secteur documente des
+            ordres de grandeur propres à votre activité plutôt qu&apos;une moyenne globale qui ne
+            correspondrait à personne.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Envie de la même trajectoire ? Estimez d&apos;abord votre potentiel avec le{" "}
+            <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">calculateur</Link>, puis lancez votre essai gratuit de
+            3 mois : votre premier tampon peut être donné ce soir.
+          </p>
+        </Container>
+      </section>
+
       <FinalCTA />
     </>
   );

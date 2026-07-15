@@ -33,15 +33,18 @@ readingMinutes: 7
 - AUCUN emoji, nulle part.
 - AUCUN tiret cadratin « — » ni demi-cadratin « – » : remplacer par une virgule, deux-points ou un point.
 - Ton concret et direct, sans jargon marketing creux. Des exemples chiffrés réalistes (paniers moyens, fréquences de visite) plutôt que des généralités.
+- Connecteurs logiques : viser environ 30 % des phrases reliées par un connecteur, en VARIANT (d'abord, ensuite, enfin, en effet, par exemple, autrement dit, en revanche, c'est pourquoi, résultat, de plus, concrètement). Jamais deux fois le même connecteur dans un paragraphe.
+- Impératif : chaque article contient plusieurs phrases à l'impératif qui s'adressent au commerçant (« Calculez... », « Posez... », « Comparez... », « Commencez par... »), en particulier dans les passages de conseil et la conclusion.
 - Pas de promesses absolues ni de chiffres inventés présentés comme des études. Les ordres de grandeur sont introduits par « en général », « souvent », « à titre d'exemple ».
 
 ## Structure de l'article
 
-- 1 200 à 1 800 mots.
+- 800 à 1 200 mots : la densité prime sur la longueur.
 - Introduction de 3 à 5 phrases : le problème du commerçant, formulé avec empathie, puis la promesse de l'article.
 - 4 à 7 sections `##` avec des intertitres descriptifs (qui contiennent des variantes du mot-clé quand c'est naturel). Sous-sections `###` si utile.
 - Au moins une liste à puces ou une liste numérotée.
 - Une section finale `##` de conclusion courte qui résume et ouvre vers Comeback SANS être un argumentaire commercial : une ou deux phrases de transition suffisent (un bloc de CTA est déjà ajouté automatiquement sous l'article).
+- L'intertitre de conclusion est UNIQUE et contient le mot-clé ou une variante (ex. « Fidéliser en boulangerie : ce qu'il faut retenir »). JAMAIS de titre générique type « En résumé », « Conclusion », « Pour finir » : des intertitres identiques d'un article à l'autre brouillent l'indexation.
 
 ## SEO
 

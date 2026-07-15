@@ -87,7 +87,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
         <Container>
           <SectionHeader
             eyebrow="Votre quotidien"
-            title="Trois problèmes que vous connaissez par cœur"
+            title={`${sector.label} : trois problèmes que vous connaissez par cœur`}
             highlight="par cœur"
           />
           <div className="grid gap-6 md:grid-cols-3">
@@ -134,7 +134,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
         <Container>
           <SectionHeader
             eyebrow="Comment ça se lance"
-            title="Opérationnel en 10 minutes, sans rien changer à votre organisation"
+            title={`Votre carte de fidélité ${sector.label.toLowerCase()} opérationnelle en 10 minutes`}
             highlight="10 minutes"
           />
           <ol className="grid gap-6 md:grid-cols-3">
@@ -163,7 +163,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
       {testimonial && (
         <section className="pb-20 sm:pb-28" aria-labelledby="testimonial-title">
           <h2 id="testimonial-title" className="sr-only">
-            Témoignage
+            {`Témoignage : ${sector.label}`}
           </h2>
           <Container className="max-w-4xl">
             <figure className="relative overflow-hidden rounded-3xl bg-leaf-950 p-8 text-white sm:p-12">
@@ -231,11 +231,11 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
       </section>
 
       {/* Autres secteurs */}
-      <section className="bg-cream-2 py-16 sm:py-20" aria-labelledby="other-sectors-title">
+      <section className="bg-cream-2 py-16 sm:py-20" aria-label="Comeback dans les autres métiers">
         <Container>
-          <h2 id="other-sectors-title" className="mb-8 text-center font-display text-2xl font-bold tracking-tight">
+          <p className="mb-8 text-center font-display text-2xl font-bold tracking-tight">
             Comeback dans les autres métiers
-          </h2>
+          </p>
           <ul className="flex flex-wrap justify-center gap-3">
             {otherSectors.map((s) => (
               <li key={s.slug}>

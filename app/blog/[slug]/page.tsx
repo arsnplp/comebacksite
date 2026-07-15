@@ -90,11 +90,11 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
 
       {/* Autres articles */}
       {others.length > 0 && (
-        <section className="bg-cream-2 py-16 sm:py-20" aria-labelledby="more-posts-title">
+        <section className="bg-cream-2 py-16 sm:py-20" aria-label="À lire ensuite">
           <Container className="max-w-3xl">
-            <h2 id="more-posts-title" className="mb-6 font-display text-2xl font-bold tracking-tight">
+            <p className="mb-6 font-display text-2xl font-bold tracking-tight">
               À lire ensuite
-            </h2>
+            </p>
             <ul className="space-y-4">
               {others.map((p) => (
                 <li key={p.slug}>

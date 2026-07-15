@@ -12,9 +12,9 @@ export function FinalCTA() {
         <Reveal>
         <StampStrip total={10} filled={9} className="justify-center text-leaf-200" />
 
-        <h2 className="mx-auto mt-8 max-w-3xl font-display text-4xl font-bold tracking-tight text-balance sm:text-5xl">
+        <p className="mx-auto mt-8 max-w-3xl font-display text-4xl font-bold tracking-tight text-balance sm:text-5xl">
           Vos concurrents fidélisent déjà. Et vous&nbsp;?
-        </h2>
+        </p>
         <p className="mx-auto mt-5 max-w-xl text-lg text-leaf-100">
           3 mois gratuits · Sans CB · Installé en 10 minutes
         </p>

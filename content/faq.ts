@@ -48,4 +48,14 @@ export const homeFaq: FaqItem[] = [
     answer:
       "Oui, en 2 clics depuis votre espace, sans préavis ni frais cachés. L'abonnement est sans engagement : vous restez parce que ça vous rapporte, pas parce qu'un contrat vous retient.",
   },
+  {
+    question: "Combien coûte une carte de fidélité digitale ?",
+    answer:
+      "Chez Comeback, à partir de 19 € HT par mois avec le plan Starter, puis 49 € pour le plan Pro (clients illimités et relances automatiques) et 99 € pour le plan Business. Aucun frais d'installation, aucun matériel à acheter. Commencez par l'essai gratuit de 3 mois : testez d'abord avec vos vrais clients, décidez ensuite, chiffres en main.",
+  },
+  {
+    question: "Quelle différence avec une carte de fidélité papier ?",
+    answer:
+      "Trois différences changent tout. D'abord, la carte digitale ne se perd jamais : elle vit dans le téléphone de votre client, avec ses tampons à jour. Ensuite, elle construit votre fichier client : chaque scan enregistre une visite, alors qu'un carton tamponné ne vous apprend rien. Enfin, elle permet de relancer : notification de récompense, offre anniversaire, message aux clients inactifs. Le papier fidélise ceux qui pensent à sortir leur carte ; le digital fait revenir les autres.",
+  },
 ];

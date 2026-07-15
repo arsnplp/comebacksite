@@ -70,9 +70,9 @@ export function Footer() {
           <nav aria-label="Liens du pied de page" className="grid grid-cols-2 gap-8 sm:grid-cols-4">
             {columns.map((col) => (
               <div key={col.title}>
-                <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-gold-400">
+                <p className="mb-4 text-sm font-semibold uppercase tracking-wider text-gold-400">
                   {col.title}
-                </h2>
+                </p>
                 <ul className="space-y-2.5">
                   {col.links.map((l) => (
                     <li key={l.href}>

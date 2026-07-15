@@ -138,6 +138,43 @@ export default function CalculatorPage() {
         </Container>
       </section>
 
+
+      {/* Que faire du resultat (SEO) */}
+      <section className="pb-20 sm:pb-28" aria-labelledby="apres-calcul-title">
+        <Container className="max-w-3xl">
+          <h2 id="apres-calcul-title" className="font-display text-3xl font-bold tracking-tight">
+            Vous avez votre chiffre : voici quoi en faire
+          </h2>
+          <p className="mt-5 text-ink-soft leading-relaxed">
+            Premier réflexe : comparez ce montant au coût d&apos;un programme de fidélité. Le plan
+            Starter démarre à 19 euros par mois ; si votre estimation dépasse quelques centaines
+            d&apos;euros par an, la question n&apos;est donc plus « est-ce rentable ? » mais « pourquoi
+            attendre ? ». Consultez les <Link href="/tarifs" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">tarifs détaillés</Link> pour
+            choisir le plan qui correspond à votre volume de clients.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Deuxième réflexe : transformez l&apos;estimation en mesure réelle. Ce calculateur donne un
+            ordre de grandeur volontairement prudent ; en revanche, votre dashboard Comeback mesure,
+            lui, des visites réelles, un panier réel et un chiffre d&apos;affaires réel. Lancez
+            l&apos;essai gratuit de 3 mois, posez le QR code sur votre comptoir, puis laissez les
+            chiffres parler : c&apos;est la seule preuve qui compte.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Gardez aussi en tête ce que cette estimation ne dit pas : elle ne prédit ni la météo, ni
+            les travaux dans votre rue, ni le talent de votre équipe. Elle chiffre une seule chose, le
+            manque à gagner des clients déjà conquis qui ne reviennent pas assez souvent. Autrement
+            dit, c&apos;est le scénario le plus facile à corriger, puisque la partie difficile
+            (convaincre ces clients une première fois) est déjà faite.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Enfin, adaptez la mécanique à votre métier, car un restaurant ne fidélise pas comme un
+            salon de coiffure : rythme de visites, palier de récompense et moments de relance changent
+            du tout au tout. Les <Link href="/secteurs" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">pages secteurs</Link> vous donnent la
+            recette qui a fait ses preuves dans votre activité.
+          </p>
+        </Container>
+      </section>
+
       <FinalCTA />
     </>
   );

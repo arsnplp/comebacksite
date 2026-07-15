@@ -76,7 +76,14 @@ export function pageMetadata({ title, description, path, ogImage, absoluteTitle 
       siteName: site.name,
       locale: site.locale,
       type: "website",
-      ...(ogImage ? { images: [{ url: ogImage, width: 1200, height: 630 }] } : {}),
+      images: [
+        {
+          url: ogImage ?? "/opengraph-image.png",
+          width: 1200,
+          height: 630,
+          alt: "Comeback : la carte de fidélité digitale qui fait revenir vos clients",
+        },
+      ],
     },
     twitter: {
       card: "summary_large_image",

@@ -147,6 +147,46 @@ export default function AboutPage() {
         </Container>
       </section>
 
+
+      {/* Notre approche (SEO) */}
+      <section className="pb-20 sm:pb-28" aria-labelledby="approche-title">
+        <Container className="max-w-3xl">
+          <h2 id="approche-title" className="font-display text-3xl font-bold tracking-tight">
+            Notre conviction : la fidélité se prouve en euros
+          </h2>
+          <p className="mt-5 text-ink-soft leading-relaxed">
+            Beaucoup d&apos;outils promettent de « créer de l&apos;engagement ». Nous préférons une
+            promesse vérifiable : des clients qui reviennent plus souvent, et un dashboard qui le
+            démontre en euros. C&apos;est pourquoi chaque décision produit passe le même filtre :
+            est-ce que cela fait revenir un client, ou est-ce que cela fait seulement joli ? Si la
+            réponse est la seconde, la fonctionnalité ne sort pas.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Cette exigence explique nos choix. Pas d&apos;application à télécharger, d&apos;abord,
+            parce que chaque étape d&apos;installation fait perdre des inscrits : la carte vit dans
+            Apple Wallet et Google Wallet, déjà présents sur le téléphone. Un tampon en deux secondes,
+            ensuite, parce qu&apos;un outil qui ralentit l&apos;encaissement finit toujours au tiroir.
+            Des <Link href="/tarifs" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">prix fixes et publics</Link>, enfin, parce qu&apos;un
+            commerçant doit pouvoir calculer sa rentabilité avant de s&apos;engager.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Un dernier engagement, et pas le moindre : vos données et celles de vos clients restent
+            hébergées en Europe, conformes au RGPD, exportables à tout moment et jamais revendues.
+            Votre fichier client est un actif de votre fonds de commerce ; notre rôle consiste à le
+            faire grossir, certainement pas à le monétiser dans votre dos. De plus, le support est
+            assuré par l&apos;équipe qui construit le produit : quand vous écrivez, vous parlez à
+            quelqu&apos;un qui peut réellement corriger le problème.
+          </p>
+          <p className="mt-4 text-ink-soft leading-relaxed">
+            Vous voulez juger sur pièces ? Parcourez les{" "}
+            <Link href="/temoignages" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">témoignages de commerçants</Link>, testez le{" "}
+            <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">calculateur</Link> avec vos chiffres, puis faites-vous
+            votre propre avis pendant les 3 mois d&apos;essai gratuit : aucune carte bancaire ne vous
+            sera demandée.
+          </p>
+        </Container>
+      </section>
+
       <FinalCTA />
     </>
   );
