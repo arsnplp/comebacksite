@@ -23,6 +23,27 @@ const nextConfig = {
         destination: "/affiliation",
         permanent: true,
       },
+      // URLs renommées le 15 juillet 2026 (mots-clés dans l'URL)
+      {
+        source: "/secteurs/:slug",
+        destination: "/carte-fidelite/:slug",
+        permanent: true,
+      },
+      {
+        source: "/ressources/guide-fidelisation",
+        destination: "/guide-fidelisation",
+        permanent: true,
+      },
+      {
+        source: "/ressources/glossaire",
+        destination: "/glossaire-fidelisation",
+        permanent: true,
+      },
+      {
+        source: "/comparatifs/carte-papier-vs-digitale",
+        destination: "/carte-fidelite-papier-ou-digitale",
+        permanent: true,
+      },
     ];
   },
 };

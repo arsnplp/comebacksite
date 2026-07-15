@@ -2,7 +2,7 @@ import type { IconName } from "@/components/ui/Icon";
 import type { FaqItem } from "@/content/faq";
 
 /**
- * Contenu complet des pages sectorielles /secteurs/[slug].
+ * Contenu complet des pages sectorielles /carte-fidelite/[slug].
  * Chaque entrée alimente : metadata, H1, sections et FAQ (avec JSON-LD).
  * Les slugs doivent rester alignés avec content/sectors/index.ts.
  */

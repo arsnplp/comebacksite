@@ -21,7 +21,7 @@ export function Footer() {
     {
       title: "Secteurs",
       links: sectors.map((s) => ({
-        href: `/secteurs/${s.slug}`,
+        href: `/carte-fidelite/${s.slug}`,
         label: `Fidélité ${s.label.toLowerCase()}`,
       })),
     },
@@ -29,10 +29,10 @@ export function Footer() {
       title: "Ressources",
       links: [
         { href: "/blog", label: "Blog" },
-        { href: "/ressources/guide-fidelisation", label: "Guide de la fidélisation" },
-        { href: "/ressources/glossaire", label: "Glossaire" },
+        { href: "/guide-fidelisation", label: "Guide de la fidélisation" },
+        { href: "/glossaire-fidelisation", label: "Glossaire" },
         { href: "/calculateur", label: "Calculateur de CA perdu" },
-        { href: "/comparatifs/carte-papier-vs-digitale", label: "Carte papier vs digitale" },
+        { href: "/carte-fidelite-papier-ou-digitale", label: "Carte papier vs digitale" },
       ],
     },
     {

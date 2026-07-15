@@ -14,7 +14,7 @@ export const metadata: Metadata = pageMetadata({
   title: "Carte de fidélité papier ou digitale : le comparatif honnête",
   description:
     "Coût, taux d'adoption, fraude, relances, données client : comparatif complet entre la carte de fidélité papier, la carte digitale Wallet et l'application dédiée. Avec le verdict par cas.",
-  path: "/comparatifs/carte-papier-vs-digitale",
+  path: "/carte-fidelite-papier-ou-digitale",
 });
 
 /** true = point fort · false = point faible · string = nuance */
@@ -85,8 +85,8 @@ export default function ComparisonPage() {
 
       <PageHero
         crumbs={[
-          { label: "Ressources", href: "/ressources/guide-fidelisation" },
-          { label: "Carte papier vs digitale", href: "/comparatifs/carte-papier-vs-digitale" },
+          { label: "Ressources", href: "/guide-fidelisation" },
+          { label: "Carte papier vs digitale", href: "/carte-fidelite-papier-ou-digitale" },
         ]}
         eyebrow="Comparatif"
         title="Carte de fidélité papier ou digitale : le match, critère par critère"
@@ -195,7 +195,7 @@ export default function ComparisonPage() {
                 calculateur de CA récupérable
               </Link>{" "}
               donne un ordre de grandeur en 10 secondes, et le{" "}
-              <Link href="/ressources/guide-fidelisation" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+              <Link href="/guide-fidelisation" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
                 guide de la fidélisation
               </Link>{" "}
               détaille comment bien lancer son programme.

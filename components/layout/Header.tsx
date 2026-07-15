@@ -102,7 +102,7 @@ export function Header() {
                   {sectors.map((s) => (
                     <li key={s.slug}>
                       <Link
-                        href={`/secteurs/${s.slug}`}
+                        href={`/carte-fidelite/${s.slug}`}
                         className="block rounded-xl px-4 py-2.5 text-sm font-medium text-ink transition-colors hover:bg-leaf-50"
                         onClick={() => setSectorsOpen(false)}
                       >
@@ -181,7 +181,7 @@ export function Header() {
             {sectors.map((s) => (
               <li key={s.slug}>
                 <Link
-                  href={`/secteurs/${s.slug}`}
+                  href={`/carte-fidelite/${s.slug}`}
                   className="block rounded-xl px-4 py-2.5 text-[0.95rem] font-medium text-ink-soft"
                   onClick={() => setMobileOpen(false)}
                 >

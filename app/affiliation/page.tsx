@@ -42,12 +42,12 @@ const notifications = [
 /* ------------------------------------------------------------------ */
 
 const personas = [
-  { label: "Une esthéticienne", href: "/secteurs/institut-beaute" },
-  { label: "Un coiffeur", href: "/secteurs/coiffeur" },
-  { label: "Un food truck", href: "/secteurs/food-truck" },
-  { label: "Un restaurant", href: "/secteurs/restaurant" },
-  { label: "Une boulangerie", href: "/secteurs/boulangerie" },
-  { label: "Un café", href: "/secteurs/cafe-bar" },
+  { label: "Une esthéticienne", href: "/carte-fidelite/institut-beaute" },
+  { label: "Un coiffeur", href: "/carte-fidelite/coiffeur" },
+  { label: "Un food truck", href: "/carte-fidelite/food-truck" },
+  { label: "Un restaurant", href: "/carte-fidelite/restaurant" },
+  { label: "Une boulangerie", href: "/carte-fidelite/boulangerie" },
+  { label: "Un café", href: "/carte-fidelite/cafe-bar" },
 ];
 
 /* ------------------------------------------------------------------ */

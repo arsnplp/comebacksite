@@ -10,7 +10,7 @@ export const metadata: Metadata = pageMetadata({
   title: "Glossaire de la fidélisation : les termes expliqués simplement",
   description:
     "Carte Wallet, taux de rétention, churn, LTV, promo flash, RGPD : les termes de la fidélisation client expliqués simplement, pour les commerçants qui veulent comprendre sans jargon.",
-  path: "/ressources/glossaire",
+  path: "/glossaire-fidelisation",
 });
 
 type Term = {
@@ -66,7 +66,7 @@ const terms: Term[] = [
     term: "Programme à tampons",
     definition:
       "La mécanique la plus simple de la fidélisation : un passage égale un tampon, et un nombre défini de tampons débloque une récompense (10 cafés = 1 offert). Sa lisibilité immédiate en fait la mécanique de référence du commerce de proximité.",
-    link: { href: "/ressources/guide-fidelisation", label: "Choisir sa mécanique dans le guide" },
+    link: { href: "/guide-fidelisation", label: "Choisir sa mécanique dans le guide" },
   },
   {
     term: "Promo flash",
@@ -116,7 +116,7 @@ const glossaryJsonLd = {
   "@context": "https://schema.org",
   "@type": "DefinedTermSet",
   name: "Glossaire de la fidélisation client",
-  url: `${site.url}/ressources/glossaire`,
+  url: `${site.url}/glossaire-fidelisation`,
   hasDefinedTerm: terms.map((t) => ({
     "@type": "DefinedTerm",
     name: t.term,
@@ -131,8 +131,8 @@ export default function GlossaryPage() {
 
       <PageHero
         crumbs={[
-          { label: "Ressources", href: "/ressources/guide-fidelisation" },
-          { label: "Glossaire", href: "/ressources/glossaire" },
+          { label: "Ressources", href: "/guide-fidelisation" },
+          { label: "Glossaire", href: "/glossaire-fidelisation" },
         ]}
         eyebrow="Glossaire"
         title="Les mots de la fidélisation, expliqués sans jargon"
@@ -166,7 +166,7 @@ export default function GlossaryPage() {
               page contact
             </Link>
             , nous l&apos;ajouterons. Et pour voir ces notions en pratique, le{" "}
-            <Link href="/ressources/guide-fidelisation" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+            <Link href="/guide-fidelisation" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
               guide de la fidélisation
             </Link>{" "}
             les met toutes en situation.

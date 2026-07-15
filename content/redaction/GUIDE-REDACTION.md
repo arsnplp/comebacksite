@@ -48,11 +48,11 @@ readingMinutes: 7
 - Le mot-clé principal apparaît : dans le title, le slug, la description, le premier paragraphe, et au moins un intertitre `##`.
 - Utiliser des variantes sémantiques naturelles du mot-clé (pas de bourrage).
 - Maillage interne obligatoire, 4 à 6 liens répartis dans le corps du texte, en markdown relatif :
-  - au moins 1 page secteur pertinente : `/secteurs/restaurant`, `/secteurs/coiffeur`, `/secteurs/boulangerie`, `/secteurs/institut-beaute`, `/secteurs/cafe-bar`, `/secteurs/boutique`, `/secteurs/food-truck`, `/secteurs/franchise`
+  - au moins 1 page secteur pertinente : `/carte-fidelite/restaurant`, `/carte-fidelite/coiffeur`, `/carte-fidelite/boulangerie`, `/carte-fidelite/institut-beaute`, `/carte-fidelite/cafe-bar`, `/carte-fidelite/boutique`, `/carte-fidelite/food-truck`, `/carte-fidelite/franchise`
   - au moins 1 lien vers `/calculateur` ou `/tarifs` ou `/fonctionnalites`
   - au moins 1 autre article du blog : `/blog/<slug existant>` (lister les fichiers de `content/blog/` pour choisir le plus pertinent)
   - les ancres de liens sont descriptives (jamais « cliquez ici »)
-- Ne jamais réécrire un sujet déjà traité par une page du site (les pages secteurs, le comparatif `/comparatifs/carte-papier-vs-digitale`, le guide `/ressources/guide-fidelisation`) : l'article doit viser un mot-clé distinct et renvoyer vers ces pages.
+- Ne jamais réécrire un sujet déjà traité par une page du site (les pages secteurs, le comparatif `/carte-fidelite-papier-ou-digitale`, le guide `/guide-fidelisation`) : l'article doit viser un mot-clé distinct et renvoyer vers ces pages.
 
 ## Vérification avant publication
 

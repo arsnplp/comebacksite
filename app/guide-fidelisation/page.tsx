@@ -11,7 +11,7 @@ export const metadata: Metadata = pageMetadata({
   title: "Guide de la fidélisation client pour commerçants (édition 2026)",
   description:
     "Le guide complet pour fidéliser vos clients quand on est commerçant indépendant : mécaniques de programme, choix de la récompense, lancement, animation et indicateurs à suivre.",
-  path: "/ressources/guide-fidelisation",
+  path: "/guide-fidelisation",
 });
 
 type Chapter = {
@@ -162,7 +162,7 @@ const articleJsonLd = {
     "Le guide complet pour fidéliser ses clients quand on est commerçant indépendant : mécaniques, récompense, lancement, animation, mesure.",
   author: { "@type": "Organization", name: site.name, url: site.url },
   publisher: { "@type": "Organization", name: site.name, url: site.url },
-  mainEntityOfPage: `${site.url}/ressources/guide-fidelisation`,
+  mainEntityOfPage: `${site.url}/guide-fidelisation`,
   inLanguage: "fr-FR",
 };
 
@@ -173,8 +173,8 @@ export default function GuidePage() {
 
       <PageHero
         crumbs={[
-          { label: "Ressources", href: "/ressources/guide-fidelisation" },
-          { label: "Guide de la fidélisation", href: "/ressources/guide-fidelisation" },
+          { label: "Ressources", href: "/guide-fidelisation" },
+          { label: "Guide de la fidélisation", href: "/guide-fidelisation" },
         ]}
         eyebrow="Le guide"
         title="Fidéliser ses clients quand on est commerçant : le guide complet"
@@ -249,7 +249,7 @@ export default function GuidePage() {
                 avec le calculateur.
               </li>
               <li>
-                <Link href="/comparatifs/carte-papier-vs-digitale" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                <Link href="/carte-fidelite-papier-ou-digitale" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
                   Comparez carte papier et carte digitale
                 </Link>{" "}
                 critère par critère.
@@ -261,7 +261,7 @@ export default function GuidePage() {
                 dans les pages sectorielles.
               </li>
               <li>
-                <Link href="/ressources/glossaire" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                <Link href="/glossaire-fidelisation" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
                   Vérifiez un terme dans le glossaire
                 </Link>{" "}
                 de la fidélisation.

@@ -41,7 +41,7 @@ export default function SectorsHubPage() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {sectorDetails.map((sector, i) => (
               <Reveal key={sector.slug} delayMs={(i % 4) * 80} className="h-full">
-                <Link href={`/secteurs/${sector.slug}`} className="group block h-full rounded-3xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf-600">
+                <Link href={`/carte-fidelite/${sector.slug}`} className="group block h-full rounded-3xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-leaf-600">
                   <Card hover className="flex h-full flex-col p-7">
                     <IconTile name={sector.icon} className="mb-5" />
                     <h3 className="font-display text-lg font-bold">{sector.label}</h3>

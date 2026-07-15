@@ -89,7 +89,7 @@ export default function TestimonialsPage() {
                       </div>
                       {sector && (
                         <Link
-                          href={`/secteurs/${sector.slug}`}
+                          href={`/carte-fidelite/${sector.slug}`}
                           className="shrink-0 rounded-full bg-leaf-50 px-3 py-1 text-xs font-semibold text-leaf-800 ring-1 ring-leaf-200 transition-colors hover:bg-leaf-100"
                         >
                           {sector.label}
@@ -122,7 +122,7 @@ export default function TestimonialsPage() {
             {sectors.map((s) => (
               <li key={s.slug}>
                 <Link
-                  href={`/secteurs/${s.slug}`}
+                  href={`/carte-fidelite/${s.slug}`}
                   className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-medium text-ink shadow-card ring-1 ring-ink/5 transition-all hover:-translate-y-0.5 hover:shadow-card-lg"
                 >
                   {s.label}

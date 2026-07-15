@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   return pageMetadata({
     title: sector.metaTitle,
     description: sector.metaDescription,
-    path: `/secteurs/${sector.slug}`,
+    path: `/carte-fidelite/${sector.slug}`,
     absoluteTitle: true,
   });
 }
@@ -59,7 +59,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
       <PageHero
         crumbs={[
           { label: "Secteurs", href: "/secteurs" },
-          { label: sector.label, href: `/secteurs/${sector.slug}` },
+          { label: sector.label, href: `/carte-fidelite/${sector.slug}` },
         ]}
         eyebrow={sector.label}
         title={sector.h1}
@@ -206,11 +206,11 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
           ))}
           <p className="rounded-2xl bg-leaf-50 p-6 text-ink-soft ring-1 ring-leaf-200">
             Pour aller plus loin : consultez le{" "}
-            <Link href="/ressources/guide-fidelisation" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+            <Link href="/guide-fidelisation" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
               guide complet de la fidélisation
             </Link>
             , comparez{" "}
-            <Link href="/comparatifs/carte-papier-vs-digitale" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+            <Link href="/carte-fidelite-papier-ou-digitale" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
               carte papier et carte digitale
             </Link>{" "}
             ou estimez votre potentiel avec le{" "}
@@ -240,7 +240,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
             {otherSectors.map((s) => (
               <li key={s.slug}>
                 <Link
-                  href={`/secteurs/${s.slug}`}
+                  href={`/carte-fidelite/${s.slug}`}
                   className="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2.5 font-medium text-ink shadow-card ring-1 ring-ink/5 transition-all hover:-translate-y-0.5 hover:shadow-card-lg"
                 >
                   <Icon name={s.icon} className="h-4.5 w-4.5 text-leaf-700" />
