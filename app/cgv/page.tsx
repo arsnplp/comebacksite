@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Conditions générales de vente (CGV)",
   description:
-    "Conditions générales de vente du service Comeback : abonnement, essai gratuit de 30 jours, tarifs, résiliation et données. Abonnement mensuel sans engagement.",
+    "Conditions générales de vente du service Comeback : abonnement, essai gratuit de 3 mois, tarifs, résiliation et données. Abonnement mensuel sans engagement.",
   path: "/cgv",
 });
 
@@ -30,7 +30,7 @@ const sections: LegalSection[] = [
   {
     title: "3. Essai gratuit",
     body: [
-      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours, sans carte bancaire et sans engagement. À l'issue de l'essai, le compte est suspendu si aucun abonnement n'est souscrit ; le Client peut exporter ses données avant et après cette échéance, pendant une durée de [DURÉE] jours.",
+      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 3 mois, sans carte bancaire et sans engagement. À l'issue de l'essai, le compte est suspendu si aucun abonnement n'est souscrit ; le Client peut exporter ses données avant et après cette échéance, pendant une durée de [DURÉE] jours.",
     ],
   },
   {

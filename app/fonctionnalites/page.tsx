@@ -249,7 +249,7 @@ export default function FeaturesPage() {
         lead="Une carte dans leur Wallet, des relances qui partent toutes seules, un dashboard qui compte en euros. Voici ce que Comeback fait pour votre commerce, concrètement."
       >
         <CTALink href="https://app.getcomeback.fr/login" position="features-hero" size="xl">
-          Essayer gratuitement 30 jours
+          Essayer gratuitement 3 mois
         </CTALink>
         <CTALink href="/demo" position="features-hero-demo" variant="ghost" size="xl">
           Réserver une démo

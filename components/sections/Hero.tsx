@@ -51,7 +51,7 @@ export function Hero() {
               style={{ "--rise-delay": "270ms" } as CSSProperties}
             >
               <CTALink href="https://app.getcomeback.fr/login" position="hero" size="xl">
-                Essayer gratuitement 30 jours
+                Essayer gratuitement 3 mois
               </CTALink>
               <CTALink href="/demo" position="hero-demo" variant="ghost" size="xl" withArrow={false}>
                 <svg viewBox="0 0 20 20" className="h-5 w-5 text-leaf-700" aria-hidden="true">

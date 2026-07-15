@@ -45,7 +45,7 @@ export function StickyMobileCTA() {
       ) : (
         <>
           <CTALink href="https://app.getcomeback.fr/login" position="sticky-mobile" className="w-full" size="md">
-            Essayer gratuitement 30 jours
+            Essayer gratuitement 3 mois
           </CTALink>
           <p className="mt-1.5 text-center text-xs text-ink-soft">Sans CB · Sans engagement · 10 min chrono</p>
         </>

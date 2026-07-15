@@ -16,12 +16,12 @@ export function FinalCTA() {
           Vos concurrents fidélisent déjà. Et vous&nbsp;?
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-lg text-leaf-100">
-          30 jours gratuits · Sans CB · Installé en 10 minutes
+          3 mois gratuits · Sans CB · Installé en 10 minutes
         </p>
 
         <div className="mt-10">
           <CTALink href="https://app.getcomeback.fr/login" position="final" size="xl" className="px-12">
-            Essayer gratuitement 30 jours
+            Essayer gratuitement 3 mois
           </CTALink>
         </div>
         <p className="mt-5 text-sm text-leaf-200">
