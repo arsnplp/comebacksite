@@ -1,5 +1,5 @@
 /**
- * Plans tarifaires (grille confirmée juillet 2026).
+ * Plans tarifaires (grille mise à jour le 15 juillet 2026).
  *
  * Le claim « rentabilisé dès 2 clients fidélisés par mois » se base sur :
  * plan Pro 49 €/mois ÷ panier moyen ~25 € ≈ 2 visites supplémentaires
@@ -9,7 +9,7 @@ export type Plan = {
   name: string;
   price: number | null; // null = sur devis
   period: string;
-  /** Reformulation concrète du prix, ex. "moins d'1 € par jour" */
+  /** Ligne courte affichée sous le prix, ex. "Sans engagement" */
   equivalent: string;
   description: string;
   features: string[];
@@ -24,62 +24,59 @@ export const plans: Plan[] = [
     name: "Starter",
     price: 19,
     period: "/mois",
-    equivalent: "Moins d'1 € par jour",
-    description: "Pour démarrer votre programme de fidélité.",
+    equivalent: "Sans engagement",
+    description: "Idéal pour démarrer.",
     features: [
-      "150 clients enregistrés",
-      "10 000 notifications par mois",
+      "50 clients maximum",
+      "1 000 notifications par mois",
       "1 carte de fidélité",
       "Ciblage basique : tous les clients",
       "Statistiques sur les 7 derniers jours",
       "Support par email",
     ],
     missing: [
-      "Parrainage avec bonus",
       "Notifications automatiques",
       "Export CSV",
     ],
     recommended: false,
-    cta: "Commencer l'essai gratuit",
+    cta: "Choisir Starter",
   },
   {
     name: "Pro",
     price: 49,
     period: "/mois",
-    equivalent: "Rentabilisé dès 2 clients fidélisés par mois",
-    description: "Pour relancer, cibler et automatiser vos campagnes.",
+    equivalent: "Sans engagement",
+    description: "Le choix des commerçants actifs.",
     features: [
       "Clients illimités",
       "50 000 notifications par mois",
       "3 cartes de fidélité",
-      "Ciblage avancé : par rang, clients inactifs",
-      "Parrainage avec bonus",
+      "Ciblage avancé : par rang client, inactifs",
       "Notifications automatiques récurrentes",
-      "Export CSV de votre fichier client",
       "Statistiques sur tout l'historique",
+      "Export CSV de votre fichier client",
       "Support email prioritaire",
     ],
     recommended: true,
-    cta: "Commencer l'essai gratuit",
+    cta: "Choisir Pro",
   },
   {
     name: "Business",
     price: 99,
     period: "/mois",
-    equivalent: "Tout illimité, aucun plafond",
+    equivalent: "Sans engagement",
     description: "Pour les enseignes en croissance.",
     features: [
       "Clients illimités",
       "Notifications illimitées",
       "Cartes de fidélité illimitées",
-      "Ciblage avancé : par rang, clients inactifs",
-      "Parrainage avec bonus",
+      "Ciblage avancé : par rang client, inactifs",
       "Notifications automatiques récurrentes",
+      "Statistiques sur tout l'historique",
       "Export CSV de votre fichier client",
-      "Statistiques complètes sur 2 ans",
       "Support dédié, réponse sous 4 h",
     ],
     recommended: false,
-    cta: "Commencer l'essai gratuit",
+    cta: "Choisir Business",
   },
 ];

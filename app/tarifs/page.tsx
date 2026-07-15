@@ -33,7 +33,7 @@ const compareGroups: CompareGroup[] = [
   {
     title: "Clients et cartes",
     rows: [
-      { label: "Clients enregistrés", cells: ["150", "Illimités", "Illimités"] },
+      { label: "Clients enregistrés", cells: ["50", "Illimités", "Illimités"] },
       { label: "Cartes de fidélité", cells: ["1", "3", "Illimitées"] },
       { label: "Carte Apple Wallet et Google Wallet", cells: [true, true, true] },
       { label: "QR code comptoir prêt à imprimer", cells: [true, true, true] },
@@ -42,17 +42,16 @@ const compareGroups: CompareGroup[] = [
   {
     title: "Notifications",
     rows: [
-      { label: "Notifications par mois", cells: ["10 000", "50 000", "Illimitées"] },
+      { label: "Notifications par mois", cells: ["1 000", "50 000", "Illimitées"] },
       { label: "Ciblage des envois", cells: ["Tous les clients", "Par rang, inactifs", "Par rang, inactifs"] },
       { label: "Notifications automatiques récurrentes", cells: [false, true, true] },
     ],
   },
   {
-    title: "Fidélisation et données",
+    title: "Données et statistiques",
     rows: [
-      { label: "Parrainage avec bonus", cells: [false, true, true] },
       { label: "Export CSV du fichier client", cells: [false, true, true] },
-      { label: "Historique des statistiques", cells: ["7 derniers jours", "Complet", "Complet (2 ans)"] },
+      { label: "Historique des statistiques", cells: ["7 derniers jours", "Complet", "Complet"] },
     ],
   },
   {
@@ -88,7 +87,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Le nombre de clients ou de notifications est-il limité ?",
     answer:
-      "Le plan Starter inclut 150 clients, 10 000 notifications par mois et 1 carte de fidélité : de quoi valider la mécanique. Les plans Pro et Business sont en clients illimités, avec 50 000 notifications mensuelles pour Pro et un volume illimité pour Business. Si vous atteignez une limite, vous passez au plan supérieur en 2 clics, sans rien perdre.",
+      "Le plan Starter inclut 50 clients, 1 000 notifications par mois et 1 carte de fidélité : de quoi valider la mécanique. Les plans Pro et Business sont en clients illimités, avec 50 000 notifications mensuelles pour Pro et un volume illimité pour Business. Si vous atteignez une limite, vous passez au plan supérieur en 2 clics, sans rien perdre.",
   },
   {
     question: "Les prix affichés sont-ils HT ou TTC ?",

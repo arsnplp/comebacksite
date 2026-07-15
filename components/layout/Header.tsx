@@ -12,6 +12,7 @@ const navLinks = [
   { href: "/temoignages", label: "Témoignages" },
   { href: "/affiliation", label: "Affiliation" },
   { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 /** Header sticky : se compacte au scroll, dropdown Secteurs, menu mobile. */
