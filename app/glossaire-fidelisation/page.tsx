@@ -9,7 +9,7 @@ import { pageMetadata, site } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Glossaire de la fidélisation : les termes expliqués simplement",
   description:
-    "Carte Wallet, taux de rétention, churn, LTV, promo flash, RGPD : les termes de la fidélisation client expliqués simplement, pour les commerçants qui veulent comprendre sans jargon.",
+    "Carte Wallet, rétention, churn, LTV, promo flash : les termes de la fidélisation client expliqués simplement pour les commerçants.",
   path: "/glossaire-fidelisation",
 });
 

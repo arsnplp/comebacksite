@@ -13,7 +13,7 @@ import type { FaqItem } from "@/content/faq";
 export const metadata: Metadata = pageMetadata({
   title: "Carte de fidélité papier ou digitale : le comparatif honnête",
   description:
-    "Coût, taux d'adoption, fraude, relances, données client : comparatif complet entre la carte de fidélité papier, la carte digitale Wallet et l'application dédiée. Avec le verdict par cas.",
+    "Coût, adoption, fraude, relances, données client : le comparatif honnête entre carte de fidélité papier et carte digitale pour votre commerce.",
   path: "/carte-fidelite-papier-ou-digitale",
 });
 

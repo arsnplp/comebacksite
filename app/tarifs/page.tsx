@@ -17,7 +17,7 @@ import type { FaqItem } from "@/content/faq";
 export const metadata: Metadata = pageMetadata({
   title: "Tarifs : carte de fidélité digitale dès 19 €/mois, 3 mois gratuits",
   description:
-    "Trois plans clairs : Starter à 19 €, Pro à 49 €, Business à 99 € par mois HT. 3 mois d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidélisés par mois.",
+    "Starter à 19 €, Pro à 49 €, Business à 99 € HT par mois. 3 mois d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidèles.",
   path: "/tarifs",
 });
 

@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Politique de confidentialité (RGPD)",
   description:
-    "Comment Comeback collecte, utilise et protège vos données personnelles : finalités, durées de conservation, droits RGPD et contact. Données hébergées en Europe, jamais revendues.",
+    "Comment Comeback collecte, utilise et protège vos données personnelles : finalités, durées de conservation et droits RGPD.",
   path: "/politique-confidentialite",
 });
 

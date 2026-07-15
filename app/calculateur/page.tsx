@@ -15,7 +15,7 @@ import type { FaqItem } from "@/content/faq";
 export const metadata: Metadata = pageMetadata({
   title: "Calculateur : combien de CA votre commerce laisse-t-il filer ?",
   description:
-    "Estimez en 10 secondes le chiffre d'affaires annuel que votre commerce perd sans programme de fidélité. Méthodologie transparente, hypothèses prudentes, résultat en euros.",
+    "Estimez en 10 secondes le chiffre d'affaires que votre commerce perd sans programme de fidélité, puis récupérez-le avec une carte digitale.",
   path: "/calculateur",
 });
 

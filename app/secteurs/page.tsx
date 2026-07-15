@@ -14,7 +14,7 @@ import { sectorDetails } from "@/content/sectors/details";
 export const metadata: Metadata = pageMetadata({
   title: "Secteurs : la fidélité adaptée à votre métier",
   description:
-    "Restaurant, coiffeur, boulangerie, boutique, institut de beauté, café, food truck ou franchise : découvrez comment la carte de fidélité digitale Comeback s'adapte aux codes de votre métier.",
+    "Restaurant, coiffeur, boulangerie, boutique, institut, café, food truck, franchise : la carte de fidélité digitale adaptée à votre métier.",
   path: "/secteurs",
 });
 

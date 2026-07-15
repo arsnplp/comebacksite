@@ -1,0 +1,37 @@
+# Comeback
+
+> Comeback est un SaaS français de carte de fidélité digitale pour commerçants indépendants. Les clients ajoutent la carte à Apple Wallet ou Google Wallet en scannant un QR code au comptoir, cumulent des tampons et reçoivent des notifications de relance. Le commerçant suit visites, clients et chiffre d'affaires généré depuis un dashboard. Plans : Starter 19 €, Pro 49 €, Business 99 € HT/mois, avec 3 mois d'essai gratuit sans carte bancaire. Site en français, marché : France.
+
+## Pages principales
+
+- [Accueil](https://getcomeback.fr/): présentation de la carte de fidélité digitale Comeback
+- [Fonctionnalités](https://getcomeback.fr/fonctionnalites): carte Wallet, relances automatiques, promos flash, dashboard
+- [Tarifs](https://getcomeback.fr/tarifs): plans Starter 19 €, Pro 49 €, Business 99 € HT/mois, comparatif détaillé
+- [Calculateur](https://getcomeback.fr/calculateur): estimation du chiffre d'affaires récupérable par la fidélisation
+- [Témoignages](https://getcomeback.fr/temoignages): résultats de commerçants utilisateurs
+- [Affiliation](https://getcomeback.fr/affiliation): programme partenaire, 20 à 50 % de commission récurrente
+- [Contact](https://getcomeback.fr/contact): formulaire et email de contact
+
+## Par métier
+
+- [Restaurant](https://getcomeback.fr/carte-fidelite/restaurant)
+- [Salon de coiffure](https://getcomeback.fr/carte-fidelite/coiffeur)
+- [Boulangerie](https://getcomeback.fr/carte-fidelite/boulangerie)
+- [Boutique](https://getcomeback.fr/carte-fidelite/boutique)
+- [Institut de beauté](https://getcomeback.fr/carte-fidelite/institut-beaute)
+- [Café et bar](https://getcomeback.fr/carte-fidelite/cafe-bar)
+- [Food truck](https://getcomeback.fr/carte-fidelite/food-truck)
+- [Franchise et réseaux](https://getcomeback.fr/carte-fidelite/franchise)
+
+## Ressources
+
+- [Guide de la fidélisation](https://getcomeback.fr/guide-fidelisation): guide complet pour commerçants
+- [Comparatif papier vs digitale](https://getcomeback.fr/carte-fidelite-papier-ou-digitale): coût, adoption, fraude, données
+- [Glossaire](https://getcomeback.fr/glossaire-fidelisation): les termes de la fidélisation expliqués
+- [Blog](https://getcomeback.fr/blog): conseils de fidélisation par métier et par problème
+
+## Optional
+
+- [Mentions légales](https://getcomeback.fr/mentions-legales)
+- [CGV](https://getcomeback.fr/cgv)
+- [Politique de confidentialité](https://getcomeback.fr/politique-confidentialite)

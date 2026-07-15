@@ -20,7 +20,7 @@ import type { FaqItem } from "@/content/faq";
 export const metadata: Metadata = pageMetadata({
   title: "Fonctionnalités : carte Wallet, relances automatiques, dashboard CA",
   description:
-    "Carte de fidélité dans Apple Wallet et Google Wallet, relances automatiques des clients inactifs, promos flash et dashboard en euros. Sans appli, sans matériel, sans changer de caisse.",
+    "Carte dans Apple Wallet et Google Wallet, relances automatiques, promos flash, dashboard en euros : toutes les fonctionnalités de Comeback.",
   path: "/fonctionnalites",
 });
 

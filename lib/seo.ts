@@ -6,7 +6,7 @@ export const site = {
   url: "https://getcomeback.fr",
   title: "Carte de fidélité en ligne pour commerçants | Comeback",
   description:
-    "Créez votre carte de fidélité digitale en 10 minutes. Vos clients l'ajoutent à leur téléphone en 1 scan et reviennent 2× plus souvent. Essai gratuit 3 mois, sans CB.",
+    "Créez votre carte de fidélité digitale en 10 minutes. Vos clients l'ajoutent en 1 scan et reviennent 2 fois plus souvent. Essai gratuit 3 mois.",
   locale: "fr_FR",
   // [PLACEHOLDER] — comptes réseaux sociaux à créer / confirmer
   sameAs: [

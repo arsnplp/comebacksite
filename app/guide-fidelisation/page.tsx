@@ -10,7 +10,7 @@ import { pageMetadata, site } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Guide de la fidélisation client pour commerçants (édition 2026)",
   description:
-    "Le guide complet pour fidéliser vos clients quand on est commerçant indépendant : mécaniques de programme, choix de la récompense, lancement, animation et indicateurs à suivre.",
+    "Le guide complet de la fidélisation client pour commerçants indépendants : mécaniques, choix des récompenses, relances et mesure en euros.",
   path: "/guide-fidelisation",
 });
 

@@ -15,7 +15,7 @@ import { pageMetadata, site } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "À propos : pourquoi nous avons créé Comeback",
   description:
-    "Comeback est né d'un constat simple : les commerçants indépendants paient pour attirer des clients, puis les regardent partir. Notre mission : rendre la fidélisation aussi simple qu'un scan.",
+    "Pourquoi Comeback existe : aider les commerçants indépendants à faire revenir leurs clients, avec une carte de fidélité digitale simple et rentable.",
   path: "/a-propos",
 });
 

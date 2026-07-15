@@ -46,6 +46,17 @@ const organizationJsonLd = {
   name: site.name,
   url: site.url,
   logo: `${site.url}/icon.svg`,
+  image: `${site.url}/opengraph-image.png`,
+  description:
+    "SaaS français de carte de fidélité digitale pour commerçants indépendants : carte dans Apple Wallet et Google Wallet, relances automatiques, dashboard en euros.",
+  email: "arsene.lecoq@getcomeback.fr",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer service",
+    email: "arsene.lecoq@getcomeback.fr",
+    availableLanguage: "French",
+    areaServed: "FR",
+  },
   sameAs: site.sameAs,
 };
 

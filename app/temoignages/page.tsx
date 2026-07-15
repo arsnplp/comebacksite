@@ -16,7 +16,7 @@ import { sectors } from "@/content/sectors";
 export const metadata: Metadata = pageMetadata({
   title: "Témoignages : des commerçants qui font revenir leurs clients",
   description:
-    "Boulangeries, salons de coiffure, restaurants, cafés : découvrez comment des commerçants indépendants utilisent Comeback pour augmenter la fréquence de visite et leur chiffre d'affaires.",
+    "Boulangers, coiffeurs, restaurateurs : comment des commerçants indépendants font revenir leurs clients avec Comeback, chiffres à l'appui.",
   path: "/temoignages",
 });
 

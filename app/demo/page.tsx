@@ -11,7 +11,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Réserver une démo : Comeback en 20 minutes, avec vos questions",
   description:
-    "Réservez une démonstration de 20 minutes de la carte de fidélité digitale Comeback : le parcours client réel, le dashboard, et les réponses à vos questions. Sans engagement.",
+    "Réservez une démo de 20 minutes : le parcours client réel, vos questions et une estimation chiffrée pour votre commerce. Sans engagement.",
   path: "/demo",
 });
 

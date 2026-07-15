@@ -36,7 +36,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "utensils",
     metaTitle: "Carte de fidélité restaurant : faites revenir vos clients à table",
     metaDescription:
-      "Créez la carte de fidélité digitale de votre restaurant en 10 minutes. Vos clients l'ajoutent à leur téléphone en 1 scan, reviennent plus souvent et remplissent vos services creux. Essai gratuit 3 mois.",
+      "Créez la carte de fidélité digitale de votre restaurant en 10 minutes : vos clients reviennent plus souvent et remplissent vos services creux.",
     h1: "La carte de fidélité qui remplit votre restaurant, midi et soir",
     h1Highlight: "remplit votre restaurant",
     intro:
@@ -124,7 +124,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "scissors",
     metaTitle: "Carte de fidélité salon de coiffure : des rendez-vous plus rapprochés",
     metaDescription:
-      "La carte de fidélité digitale pour coiffeurs : vos clientes reviennent plus vite entre deux rendez-vous grâce aux relances automatiques. Installation en 10 minutes, essai gratuit 3 mois sans CB.",
+      "La carte de fidélité digitale pour salons de coiffure : des relances automatiques qui rapprochent les rendez-vous. Essai gratuit 3 mois.",
     h1: "La carte de fidélité qui raccourcit le temps entre deux rendez-vous",
     h1Highlight: "raccourcit le temps",
     intro:
@@ -212,7 +212,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "bread",
     metaTitle: "Carte de fidélité boulangerie : transformez les passants en habitués",
     metaDescription:
-      "Carte de fidélité digitale pour boulangerie-pâtisserie : vos clients la gardent dans leur téléphone et reviennent chaque matin. Tampon en 2 secondes, même en plein rush. Essai gratuit 3 mois.",
+      "Carte de fidélité digitale pour boulangerie : un tampon en 2 secondes même en plein rush, et des clients qui reviennent chaque matin.",
     h1: "La carte de fidélité qui transforme les passants en habitués du matin",
     h1Highlight: "habitués du matin",
     intro:
@@ -300,7 +300,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "bag",
     metaTitle: "Programme de fidélité boutique : augmentez la fréquence d'achat",
     metaDescription:
-      "Carte de fidélité digitale pour boutiques et commerces de détail : faites revenir vos clients sans casser vos prix, construisez votre fichier client et mesurez le CA généré. Essai gratuit 3 mois.",
+      "Carte de fidélité digitale pour boutique : faites revenir vos clients sans casser vos prix et construisez votre fichier client.",
     h1: "La carte de fidélité qui fait racheter chez vous, pas chez les autres",
     h1Highlight: "racheter chez vous",
     intro:
@@ -388,7 +388,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "spark",
     metaTitle: "Carte de fidélité institut de beauté : fidélisez entre deux soins",
     metaDescription:
-      "Carte de fidélité digitale pour instituts de beauté et spas : relances automatiques entre deux soins, offre anniversaire, cures valorisées. Vos clientes reviennent sans relance manuelle. Essai 3 mois.",
+      "Carte de fidélité digitale pour institut de beauté : relances automatiques entre deux soins et offre anniversaire. Essai gratuit 3 mois.",
     h1: "La carte de fidélité qui ramène vos clientes avant qu'elles n'aillent voir ailleurs",
     h1Highlight: "avant qu'elles n'aillent voir ailleurs",
     intro:
@@ -476,7 +476,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "coffee",
     metaTitle: "Carte de fidélité café et bar : le 10e café offert, sans carton",
     metaDescription:
-      "La carte de fidélité digitale pour cafés, coffee shops et bars : le 10e café offert dans Apple Wallet et Google Wallet, sans carte en carton perdue ni tampon fraudé. Essai gratuit 3 mois sans CB.",
+      "La carte de fidélité digitale pour cafés et bars : le 10e café offert dans Apple Wallet et Google Wallet, sans carton perdu ni tampon fraudé.",
     h1: "Le 10e café offert, enfin sans carte en carton",
     h1Highlight: "sans carte en carton",
     intro:
@@ -564,7 +564,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "truck",
     metaTitle: "Carte de fidélité food truck : vos clients vous suivent partout",
     metaDescription:
-      "Carte de fidélité digitale pour food trucks : vos clients savent où vous êtes, reviennent plus souvent et sont prévenus de vos emplacements en une notification. Essai gratuit 3 mois sans CB.",
+      "Carte de fidélité digitale pour food truck : vos clients savent où vous êtes et reviennent plus souvent, d'un emplacement à l'autre.",
     h1: "La carte de fidélité qui fait suivre votre food truck à la trace",
     h1Highlight: "à la trace",
     intro:
@@ -652,7 +652,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "building",
     metaTitle: "Programme de fidélité franchise : une carte commune, des stats par site",
     metaDescription:
-      "Programme de fidélité multi-établissements pour franchises et réseaux : une carte commune à l'enseigne, des statistiques par point de vente et un déploiement accompagné. Demandez une démo.",
+      "Programme de fidélité pour franchises et réseaux : une carte commune à l'enseigne et un déploiement accompagné, site par site.",
     h1: "Un programme de fidélité commun. Des chiffres par établissement.",
     h1Highlight: "par établissement",
     intro:
