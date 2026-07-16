@@ -22,7 +22,7 @@ Chaque sujet vise UN mot-clé principal distinct de tous les autres (et distinct
 | --- | --- | --- | --- |
 | comment-augmenter-chiffre-affaires-commerce | augmenter le chiffre d'affaires de son commerce | Les 3 leviers (fréquence, panier, nouveaux clients) et pourquoi la fréquence est le plus rentable | Publié le 2026-07-09 |
 | fideliser-clients-coiffeur | fidéliser les clients de son salon de coiffure | Allonger la durée de vie client, réduire les trous du mardi, relancer avant que le client aille voir ailleurs | Publié le 2026-07-08 |
-| stabiliser-chiffre-affaires-commerce | stabiliser le chiffre d'affaires de son commerce | Lisser les mois creux avec une base de clients récurrents plutôt que subir la saisonnalité | À écrire |
+| stabiliser-chiffre-affaires-commerce | stabiliser le chiffre d'affaires de son commerce | Lisser les mois creux avec une base de clients récurrents plutôt que subir la saisonnalité | Publié le 2026-07-16 |
 | fideliser-clients-boulangerie | fidéliser les clients de sa boulangerie | Transformer le passage quotidien en habitude mesurable, carte tampons digitale au comptoir | Publié le 2026-07-13 |
 | faire-revenir-clients-commerce | comment faire revenir ses clients | Pourquoi un client satisfait ne revient pas tout seul, mécaniques de retour concrètes | À écrire |
 | fideliser-clients-institut-beaute | fidéliser les clientes de son institut de beauté | Fréquence de soins, relance des inactives, offre anniversaire | À écrire |
