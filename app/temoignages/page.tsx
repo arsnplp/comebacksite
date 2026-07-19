@@ -39,7 +39,7 @@ export default function TestimonialsPage() {
         lead="Des commerçants indépendants, dans toute la France, qui mesurent enfin ce que la fidélité leur rapporte. Voici ce qu'ils constatent, avec leurs chiffres."
       >
         <CTALink href="https://app.getcomeback.fr/login" position="temoignages-hero" size="xl">
-          Essayer gratuitement 3 mois
+          Essayer gratuitement 30 jours
         </CTALink>
       </PageHero>
 
@@ -169,7 +169,7 @@ export default function TestimonialsPage() {
           <p className="mt-4 text-ink-soft leading-relaxed">
             Envie de la même trajectoire ? Estimez d&apos;abord votre potentiel avec le{" "}
             <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">calculateur</Link>, puis lancez votre essai gratuit de
-            3 mois : votre premier tampon peut être donné ce soir.
+            30 jours : votre premier tampon peut être donné ce soir.
           </p>
         </Container>
       </section>

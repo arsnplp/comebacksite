@@ -39,7 +39,7 @@ export function DashboardProof() {
               visites, <strong className="text-ink">votre</strong> CA.
             </p>
             <p className="mt-4 text-lg text-ink-soft">
-              Au bout de 3 mois, vous saurez exactement ce que Comeback vous rapporte. C&apos;est vous
+              Au bout de 30 jours, vous saurez exactement ce que Comeback vous rapporte. C&apos;est vous
               qui déciderez.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
@@ -49,7 +49,7 @@ export function DashboardProof() {
             </div>
             <div className="mt-8">
               <CTALink href="https://app.getcomeback.fr/login" position="dashboard">
-                Voir mes chiffres pendant 3 mois
+                Voir mes chiffres pendant 30 jours
               </CTALink>
             </div>
           </div>

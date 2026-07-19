@@ -15,7 +15,7 @@ export function Footer() {
         { href: "/tarifs", label: "Tarifs" },
         { href: "/temoignages", label: "Témoignages" },
         { href: "/demo", label: "Réserver une démo" },
-        { href: "https://app.getcomeback.fr/login", label: "Essai gratuit 3 mois" },
+        { href: "https://app.getcomeback.fr/login", label: "Essai gratuit 30 jours" },
       ],
     },
     {

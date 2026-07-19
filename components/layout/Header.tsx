@@ -133,7 +133,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <CTALink href="https://app.getcomeback.fr/login" position="header" size="md">
-            Essai gratuit 3 mois
+            Essai gratuit 30 jours
           </CTALink>
         </div>
 
@@ -192,7 +192,7 @@ export function Header() {
           </ul>
           <div className="mt-6 px-4">
             <CTALink href="https://app.getcomeback.fr/login" position="mobile-menu" className="w-full">
-              Essayer gratuitement 3 mois
+              Essayer gratuitement 30 jours
             </CTALink>
             <p className="mt-3 text-center text-sm text-ink-soft">Sans carte bancaire · Sans engagement</p>
           </div>

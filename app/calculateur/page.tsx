@@ -111,7 +111,7 @@ export default function CalculatorPage() {
           <p className="mt-8 flex items-start gap-3 rounded-2xl bg-white p-5 text-sm text-ink-soft ring-1 ring-ink/5">
             <Icon name="shield" className="mt-0.5 h-5 w-5 shrink-0 text-leaf-600" />
             <span>
-              Cette estimation ne remplace pas vos chiffres réels : pendant les 3 mois d&apos;essai, votre
+              Cette estimation ne remplace pas vos chiffres réels : pendant les 30 jours d&apos;essai, votre
               dashboard mesure le chiffre d&apos;affaires effectivement généré par la fidélité, avec vos vraies
               données de caisse. C&apos;est ce chiffre-là qui doit décider de la suite.
             </span>
@@ -156,7 +156,7 @@ export default function CalculatorPage() {
             Deuxième réflexe : transformez l&apos;estimation en mesure réelle. Ce calculateur donne un
             ordre de grandeur volontairement prudent ; en revanche, votre dashboard Comeback mesure,
             lui, des visites réelles, un panier réel et un chiffre d&apos;affaires réel. Lancez
-            l&apos;essai gratuit de 3 mois, posez le QR code sur votre comptoir, puis laissez les
+            l&apos;essai gratuit de 30 jours, posez le QR code sur votre comptoir, puis laissez les
             chiffres parler : c&apos;est la seule preuve qui compte.
           </p>
           <p className="mt-4 text-ink-soft leading-relaxed">

@@ -26,7 +26,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: "Que se passe-t-il à la fin de l'essai gratuit ?",
     answer:
-      "Vous décidez. Pendant 3 mois, votre dashboard vous montre en euros ce que la fidélité vous rapporte, avec vos vraies données. Si Comeback vous rapporte plus qu'il ne coûte, vous continuez. Sinon, vous arrêtez : nous ne demandons pas de carte bancaire, il n'y a donc rien à annuler.",
+      "Vous décidez. Pendant 30 jours, votre dashboard vous montre en euros ce que la fidélité vous rapporte, avec vos vraies données. Si Comeback vous rapporte plus qu'il ne coûte, vous continuez. Sinon, vous arrêtez : nous ne demandons pas de carte bancaire, il n'y a donc rien à annuler.",
   },
   {
     question: "Puis-je garder mes cartes papier en parallèle ?",
@@ -51,7 +51,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: "Combien coûte une carte de fidélité digitale ?",
     answer:
-      "Chez Comeback, à partir de 19 € HT par mois avec le plan Starter, puis 49 € pour le plan Pro (clients illimités et relances automatiques) et 99 € pour le plan Business. Aucun frais d'installation, aucun matériel à acheter. Commencez par l'essai gratuit de 3 mois : testez d'abord avec vos vrais clients, décidez ensuite, chiffres en main.",
+      "Chez Comeback, à partir de 19 € HT par mois avec le plan Starter, puis 49 € pour le plan Pro (100 clients et relances automatiques) et 99 € pour le plan Business (clients et notifications illimités). Aucun frais d'installation, aucun matériel à acheter. Commencez par l'essai gratuit de 30 jours : testez d'abord avec vos vrais clients, décidez ensuite, chiffres en main.",
   },
   {
     question: "Quelle différence avec une carte de fidélité papier ?",

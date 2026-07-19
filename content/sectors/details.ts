@@ -110,7 +110,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         question: "J'ai deux établissements, puis-je faire un programme commun ?",
         answer:
-          "Oui, avec le plan Business : les cartes y sont illimitées, vous créez donc un programme commun valable dans vos établissements. C'est la formule des groupes et des franchises.",
+          "Oui, avec le plan Business : une carte commune valable dans vos établissements, avec clients et notifications illimités. C'est la formule des groupes et des franchises.",
       },
     ],
   },
@@ -124,7 +124,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "scissors",
     metaTitle: "Carte de fidélité salon de coiffure : des rendez-vous plus rapprochés",
     metaDescription:
-      "La carte de fidélité digitale pour salons de coiffure : des relances automatiques qui rapprochent les rendez-vous. Essai gratuit 3 mois.",
+      "La carte de fidélité digitale pour salons de coiffure : des relances automatiques qui rapprochent les rendez-vous. Essai gratuit 30 jours.",
     h1: "La carte de fidélité qui raccourcit le temps entre deux rendez-vous",
     h1Highlight: "raccourcit le temps",
     intro:
@@ -388,7 +388,7 @@ export const sectorDetails: SectorDetail[] = [
     icon: "spark",
     metaTitle: "Carte de fidélité institut de beauté : fidélisez entre deux soins",
     metaDescription:
-      "Carte de fidélité digitale pour institut de beauté : relances automatiques entre deux soins et offre anniversaire. Essai gratuit 3 mois.",
+      "Carte de fidélité digitale pour institut de beauté : relances automatiques entre deux soins et offre anniversaire. Essai gratuit 30 jours.",
     h1: "La carte de fidélité qui ramène vos clientes avant qu'elles n'aillent voir ailleurs",
     h1Highlight: "avant qu'elles n'aillent voir ailleurs",
     intro:
@@ -721,7 +721,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         question: "Comment se passe la facturation pour un réseau ?",
         answer:
-          "Le plan Business est à 99 € HT par mois, avec clients, cartes et notifications illimités : un seul abonnement couvre tout le réseau. Pour une organisation particulière (facturation répartie par site, très grand réseau), contactez-nous.",
+          "Le plan Business est à 99 € HT par mois, avec clients et notifications illimités : un seul abonnement couvre tout le réseau. Pour une organisation particulière (facturation répartie par site, très grand réseau), contactez-nous.",
       },
       {
         question: "Combien de temps faut-il pour équiper un réseau complet ?",

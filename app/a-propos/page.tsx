@@ -135,7 +135,7 @@ export default function AboutPage() {
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <CTALink href="https://app.getcomeback.fr/login" position="about" size="lg">
-              Essayer gratuitement 3 mois
+              Essayer gratuitement 30 jours
             </CTALink>
             <Link
               href="/contact"
@@ -181,7 +181,7 @@ export default function AboutPage() {
             Vous voulez juger sur pièces ? Parcourez les{" "}
             <Link href="/temoignages" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">témoignages de commerçants</Link>, testez le{" "}
             <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">calculateur</Link> avec vos chiffres, puis faites-vous
-            votre propre avis pendant les 3 mois d&apos;essai gratuit : aucune carte bancaire ne vous
+            votre propre avis pendant les 30 jours d&apos;essai gratuit : aucune carte bancaire ne vous
             sera demandée.
           </p>
         </Container>

@@ -15,9 +15,9 @@ import { plans } from "@/content/pricing";
 import type { FaqItem } from "@/content/faq";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Tarifs : carte de fidélité digitale dès 19 €/mois, 3 mois gratuits",
+  title: "Tarifs : carte de fidélité digitale dès 19 €/mois, 30 jours gratuits",
   description:
-    "Starter à 19 €, Pro à 49 €, Business à 99 € HT par mois. 3 mois d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidèles.",
+    "Starter à 19 €, Pro à 49 €, Business à 99 € HT par mois. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidèles.",
   path: "/tarifs",
 });
 
@@ -33,8 +33,8 @@ const compareGroups: CompareGroup[] = [
   {
     title: "Clients et cartes",
     rows: [
-      { label: "Clients enregistrés", cells: ["50", "Illimités", "Illimités"] },
-      { label: "Cartes de fidélité", cells: ["1", "3", "Illimitées"] },
+      { label: "Clients enregistrés", cells: ["50", "100", "Illimités"] },
+      { label: "Cartes de fidélité", cells: ["1", "2", "2"] },
       { label: "Carte Apple Wallet et Google Wallet", cells: [true, true, true] },
       { label: "QR code comptoir prêt à imprimer", cells: [true, true, true] },
     ],
@@ -42,7 +42,7 @@ const compareGroups: CompareGroup[] = [
   {
     title: "Notifications",
     rows: [
-      { label: "Notifications par mois", cells: ["1 000", "50 000", "Illimitées"] },
+      { label: "Notifications par mois", cells: ["1 000", "10 000", "Illimitées"] },
       { label: "Ciblage des envois", cells: ["Tous les clients", "Par rang, inactifs", "Par rang, inactifs"] },
       { label: "Notifications automatiques récurrentes", cells: [false, true, true] },
     ],
@@ -70,9 +70,9 @@ const compareGroups: CompareGroup[] = [
 
 const pricingFaq: FaqItem[] = [
   {
-    question: "L'essai gratuit de 3 mois engage-t-il à quelque chose ?",
+    question: "L'essai gratuit de 30 jours engage-t-il à quelque chose ?",
     answer:
-      "Non. Nous ne demandons pas de carte bancaire à l'inscription : à la fin des 3 mois, rien n'est prélevé. Si Comeback vous rapporte, vous choisissez un plan. Sinon, votre compte s'arrête tout seul et vous récupérez votre fichier client.",
+      "Non. Nous ne demandons pas de carte bancaire à l'inscription : à la fin des 30 jours, rien n'est prélevé. Si Comeback vous rapporte, vous choisissez un plan. Sinon, votre compte s'arrête tout seul et vous récupérez votre fichier client.",
   },
   {
     question: "Y a-t-il des frais d'installation ou des coûts cachés ?",
@@ -87,7 +87,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Le nombre de clients ou de notifications est-il limité ?",
     answer:
-      "Le plan Starter inclut 50 clients, 1 000 notifications par mois et 1 carte de fidélité : de quoi valider la mécanique. Les plans Pro et Business sont en clients illimités, avec 50 000 notifications mensuelles pour Pro et un volume illimité pour Business. Si vous atteignez une limite, vous passez au plan supérieur en 2 clics, sans rien perdre.",
+      "Le plan Starter inclut 50 clients, 1 000 notifications par mois et 1 carte de fidélité : de quoi valider la mécanique. Le plan Pro passe à 100 clients, 10 000 notifications et 2 cartes. Le plan Business est illimité en clients comme en notifications, avec 2 cartes également. Si vous atteignez une limite, vous passez au plan supérieur en 2 clics, sans rien perdre.",
   },
   {
     question: "Les prix affichés sont-ils HT ou TTC ?",
@@ -97,7 +97,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Comment être sûr que ce sera rentable pour mon commerce ?",
     answer:
-      "Faites le calcul avec vos propres chiffres : au plan Starter, une seule visite supplémentaire par mois couvre l'abonnement, et au plan Pro il en faut environ 2, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 3 mois d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
+      "Faites le calcul avec vos propres chiffres : au plan Starter, une seule visite supplémentaire par mois couvre l'abonnement, et au plan Pro il en faut environ 2, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
   },
 ];
 
@@ -174,7 +174,7 @@ export default function PricingPage() {
         eyebrow="Tarifs"
         title="Un prix simple, rentabilisé dès 2 clients fidélisés par mois"
         highlight="2 clients fidélisés"
-        lead="3 mois d'essai gratuit sur tous les plans, sans carte bancaire. Vous ne payez que si la fidélité vous rapporte, et votre dashboard vous le prouve en euros."
+        lead="30 jours d'essai gratuit avec toutes les fonctionnalités Business, sans carte bancaire. Vous ne payez que si la fidélité vous rapporte, et votre dashboard vous le prouve en euros."
       >
         <Badge>Sans carte bancaire</Badge>
         <Badge>Sans engagement</Badge>
@@ -252,7 +252,7 @@ export default function PricingPage() {
             ))}
           </div>
           <p className="mt-8 text-center text-sm text-ink-soft">
-            Pas encore sûr du bon plan ? Commencez l&apos;essai gratuit : vous choisirez à la fin des 3 mois,
+            Pas encore sûr du bon plan ? Commencez l&apos;essai gratuit : vous choisirez à la fin des 30 jours,
             avec vos vrais chiffres sous les yeux.
           </p>
         </Container>

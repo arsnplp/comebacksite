@@ -61,7 +61,7 @@ const steps = [
   },
   {
     title: "Le commerce essaie, puis s'abonne",
-    text: "Il teste Comeback gratuitement 3 mois. S'il s'abonne (19, 49 ou 99 € par mois), il est rattaché à vous.",
+    text: "Il teste Comeback gratuitement 30 jours. S'il s'abonne (19, 49 ou 99 € par mois), il est rattaché à vous.",
   },
   {
     title: "Vous touchez 20 à 50 %, chaque mois",
@@ -142,7 +142,7 @@ const faq: FaqItem[] = [
   {
     question: "Combien ça coûte de devenir partenaire ?",
     answer:
-      "Rien. L'inscription est gratuite, sans engagement et sans quota : vous partagez votre lien quand vous voulez, à votre rythme. Vous n'avez rien à vendre vous-même, le commerce teste Comeback gratuitement pendant 3 mois et décide seul.",
+      "Rien. L'inscription est gratuite, sans engagement et sans quota : vous partagez votre lien quand vous voulez, à votre rythme. Vous n'avez rien à vendre vous-même, le commerce teste Comeback gratuitement pendant 30 jours et décide seul.",
   },
   {
     question: "Quand suis-je payé ?",

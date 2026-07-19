@@ -67,7 +67,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
         lead={sector.intro}
       >
         <CTALink href="https://app.getcomeback.fr/login" position={`secteur-${sector.slug}-hero`} size="xl">
-          Essayer gratuitement 3 mois
+          Essayer gratuitement 30 jours
         </CTALink>
         <CTALink href="/demo" position={`secteur-${sector.slug}-hero-demo`} variant="ghost" size="xl">
           Réserver une démo
@@ -78,7 +78,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
         <Container wide className="flex flex-wrap justify-center gap-2">
           <Badge>Sans application à télécharger</Badge>
           <Badge>Installé en 10 minutes</Badge>
-          <Badge>3 mois gratuits, sans CB</Badge>
+          <Badge>30 jours gratuits, sans CB</Badge>
         </Container>
       </div>
 

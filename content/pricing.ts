@@ -1,5 +1,5 @@
 /**
- * Plans tarifaires (grille mise à jour le 15 juillet 2026).
+ * Plans tarifaires (grille mise à jour le 20 juillet 2026).
  *
  * Le claim « rentabilisé dès 2 clients fidélisés par mois » se base sur :
  * plan Pro 49 €/mois ÷ panier moyen ~25 € ≈ 2 visites supplémentaires
@@ -48,9 +48,9 @@ export const plans: Plan[] = [
     equivalent: "Sans engagement",
     description: "Le choix des commerçants actifs.",
     features: [
-      "Clients illimités",
-      "50 000 notifications par mois",
-      "3 cartes de fidélité",
+      "100 clients maximum",
+      "10 000 notifications par mois",
+      "2 cartes de fidélité",
       "Ciblage avancé : par rang client, inactifs",
       "Notifications automatiques récurrentes",
       "Statistiques sur tout l'historique",
@@ -69,7 +69,7 @@ export const plans: Plan[] = [
     features: [
       "Clients illimités",
       "Notifications illimitées",
-      "Cartes de fidélité illimitées",
+      "2 cartes de fidélité",
       "Ciblage avancé : par rang client, inactifs",
       "Notifications automatiques récurrentes",
       "Statistiques sur tout l'historique",
