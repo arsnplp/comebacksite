@@ -239,7 +239,7 @@ export default function PricingPage() {
 
                   <div className="mt-8">
                     <CTALink
-                      href={plan.price !== null ? "https://app.getcomeback.fr/login" : "/demo"}
+                      href={plan.price !== null ? "https://app.getcomeback.fr/tarifs" : "/demo"}
                       position={`tarifs-${plan.name.toLowerCase()}`}
                       variant={plan.recommended ? "primary" : "ghost"}
                       className="w-full"
