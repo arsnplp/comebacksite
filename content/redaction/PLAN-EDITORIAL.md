@@ -24,7 +24,7 @@ Chaque sujet vise UN mot-clé principal distinct de tous les autres (et distinct
 | fideliser-clients-coiffeur | fidéliser les clients de son salon de coiffure | Allonger la durée de vie client, réduire les trous du mardi, relancer avant que le client aille voir ailleurs | Publié le 2026-07-08 |
 | stabiliser-chiffre-affaires-commerce | stabiliser le chiffre d'affaires de son commerce | Lisser les mois creux avec une base de clients récurrents plutôt que subir la saisonnalité | Publié le 2026-07-16 |
 | fideliser-clients-boulangerie | fidéliser les clients de sa boulangerie | Transformer le passage quotidien en habitude mesurable, carte tampons digitale au comptoir | Publié le 2026-07-13 |
-| faire-revenir-clients-commerce | comment faire revenir ses clients | Pourquoi un client satisfait ne revient pas tout seul, mécaniques de retour concrètes | À écrire |
+| faire-revenir-clients-commerce | comment faire revenir ses clients | Pourquoi un client satisfait ne revient pas tout seul, mécaniques de retour concrètes | Publié le 2026-07-23 |
 | fideliser-clients-institut-beaute | fidéliser les clientes de son institut de beauté | Fréquence de soins, relance des inactives, offre anniversaire | Publié le 2026-07-20 |
 | remplir-jours-creux-commerce | remplir les jours creux de son commerce | Promos flash ciblées sur les heures et jours faibles, exemples par métier | À écrire |
 | fideliser-clients-boutique | fidéliser les clients de sa boutique | Se différencier des grandes enseignes avec un fichier client et des relances personnelles | À écrire |
