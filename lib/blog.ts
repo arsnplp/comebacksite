@@ -5,7 +5,8 @@ import matter from "gray-matter";
 /**
  * Lecture des articles MDX de content/blog/.
  * Chaque fichier : frontmatter (title, description, date, category,
- * readingMinutes) + corps markdown. Le slug est le nom du fichier.
+ * readingMinutes, + faq/howTo optionnels) + corps markdown. Le slug est
+ * le nom du fichier.
  */
 
 const BLOG_DIR = path.join(process.cwd(), "content", "blog");
@@ -20,15 +21,40 @@ export type PostMeta = {
   readingMinutes: number;
 };
 
+export type PostFaqItem = { question: string; answer: string };
+export type PostHowTo = { name: string; steps: { name: string; text: string }[] };
+
 export type Post = {
   meta: PostMeta;
   content: string;
+  /** FAQ optionnelle : rendue en accordéon + schema FAQPage */
+  faq?: PostFaqItem[];
+  /** Procédure optionnelle : schema HowTo (le contenu visible reste dans le markdown) */
+  howTo?: PostHowTo;
 };
 
 function parseFile(fileName: string): Post {
   const slug = fileName.replace(/\.mdx?$/, "");
   const raw = fs.readFileSync(path.join(BLOG_DIR, fileName), "utf-8");
   const { data, content } = matter(raw);
+
+  const faq: PostFaqItem[] | undefined = Array.isArray(data.faq)
+    ? data.faq.map((f: { question: string; answer: string }) => ({
+        question: String(f.question),
+        answer: String(f.answer),
+      }))
+    : undefined;
+
+  const howTo: PostHowTo | undefined = data.howTo
+    ? {
+        name: String(data.howTo.name),
+        steps: (data.howTo.steps ?? []).map((s: { name: string; text: string }) => ({
+          name: String(s.name),
+          text: String(s.text),
+        })),
+      }
+    : undefined;
+
   return {
     meta: {
       slug,
@@ -39,6 +65,8 @@ function parseFile(fileName: string): Post {
       readingMinutes: Number(data.readingMinutes ?? 5),
     },
     content,
+    faq,
+    howTo,
   };
 }
 

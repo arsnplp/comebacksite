@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Container } from "@/components/ui/Container";
 import { Icon } from "@/components/ui/Icon";
+import { SectionHeader } from "@/components/ui/SectionHeader";
+import { Accordion } from "@/components/ui/Accordion";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -49,9 +51,36 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
     mainEntityOfPage: `${site.url}/blog/${post.meta.slug}`,
   };
 
+  const faqJsonLd = post.faq
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question,
+          acceptedAnswer: { "@type": "Answer", text: item.answer },
+        })),
+      }
+    : null;
+
+  const howToJsonLd = post.howTo
+    ? {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: post.howTo.name,
+        step: post.howTo.steps.map((s) => ({
+          "@type": "HowToStep",
+          name: s.name,
+          text: s.text,
+        })),
+      }
+    : null;
+
   return (
     <>
       <JsonLd data={articleJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
+      {howToJsonLd && <JsonLd data={howToJsonLd} />}
 
       <article>
         <header className="relative overflow-hidden">
@@ -87,6 +116,16 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
           </div>
         </Container>
       </article>
+
+      {/* FAQ (si l'article en définit une) */}
+      {post.faq && post.faq.length > 0 && (
+        <section className="bg-cream-2 py-16 sm:py-20" aria-labelledby="faq-article-title">
+          <Container className="max-w-3xl">
+            <SectionHeader eyebrow="Questions fréquentes" title="Ce que les commerçants nous demandent" align="left" />
+            <Accordion items={post.faq} />
+          </Container>
+        </section>
+      )}
 
       {/* Autres articles */}
       {others.length > 0 && (

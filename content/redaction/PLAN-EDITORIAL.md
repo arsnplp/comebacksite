@@ -8,6 +8,8 @@ Quand il reste moins de 4 sujets « À écrire », ajouter 6 nouveaux sujets en 
 
 Chaque sujet vise UN mot-clé principal distinct de tous les autres (et distinct des pages du site).
 
+Note : 10 articles supplémentaires ont été publiés hors de cette file, dans le cadre d'une campagne de contenu ponctuelle (Axe B, voir `PLAN_EDITORIAL_AXE_B.md`) : `comment-creer-carte-fidelite-digitale`, `carte-fidelite-digitale-sans-application`, `combien-coute-carte-fidelite-digitale`, `carte-fidelite-rgpd`, `idees-recompenses-programme-fidelite`, `mesurer-roi-programme-fidelite`, `erreurs-fidelisation-commercants`, `fideliser-sans-reduction`, `pourquoi-clients-ne-reviennent-pas`, `carte-fidelite-multi-etablissements`. L'étape 3 (anti-doublon, lecture de `content/blog/`) les détecte déjà automatiquement ; le sujet `programme-fidelite-franchise` a été retiré de la file ci-dessous car il faisait doublon avec `carte-fidelite-multi-etablissements`.
+
 ## Déjà publié
 
 | Slug | Mot-clé principal | Statut |
@@ -33,7 +35,6 @@ Chaque sujet vise UN mot-clé principal distinct de tous les autres (et distinct
 | relancer-clients-inactifs-commerce | relancer les clients inactifs | Détecter l'inactivité, quoi envoyer, quand, avec quels résultats attendre | À écrire |
 | fideliser-clients-food-truck | fidéliser les clients de son food truck | Fidéliser sans adresse fixe, emplacements multiples, notification de l'emplacement du jour | À écrire |
 | augmenter-panier-moyen-commerce | augmenter le panier moyen de son commerce | Paliers de récompense, vente additionnelle, seuils psychologiques | À écrire |
-| programme-fidelite-franchise | programme de fidélité pour franchise et réseau | Carte commune multi-établissements, gouvernance des envois, pilotage par site | À écrire |
 | obtenir-avis-google-commerce | obtenir plus d'avis Google pour son commerce | Demander au bon moment (après la récompense), lien direct, répondre aux avis | À écrire |
 | notification-push-vs-sms-commercant | notification push ou SMS pour son commerce | Coût par message, délivrabilité, consentement : le comparatif honnête | À écrire |
 | parrainage-clients-commerce | mettre en place un parrainage client | Le bouche-à-oreille organisé : mécanique, bonus, exemples de ratios | À écrire |

@@ -10,9 +10,10 @@ import { Badge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
 import { Reveal } from "@/components/ui/Reveal";
 import { Icon, IconTile } from "@/components/ui/Icon";
+import { LinkedParagraph } from "@/components/ui/LinkedParagraph";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { pageMetadata } from "@/lib/seo";
+import { pageMetadata, site } from "@/lib/seo";
 import { sectorDetails, getSectorDetail } from "@/content/sectors/details";
 import { testimonials } from "@/content/testimonials";
 
@@ -52,9 +53,21 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
     })),
   };
 
+  const serviceJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: `Carte de fidélité digitale pour ${sector.label.toLowerCase()}`,
+    name: sector.metaTitle,
+    description: sector.metaDescription,
+    provider: { "@type": "Organization", name: site.name, url: site.url },
+    areaServed: { "@type": "Country", name: "France" },
+    url: `${site.url}/carte-fidelite/${sector.slug}`,
+  };
+
   return (
     <>
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={serviceJsonLd} />
 
       <PageHero
         crumbs={[
@@ -198,9 +211,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
                 {block.title}
               </h2>
               {block.paragraphs.map((p, i) => (
-                <p key={i} className="mt-5 text-lg leading-relaxed text-ink-soft">
-                  {p}
-                </p>
+                <LinkedParagraph key={i} text={p} className="mt-5 text-lg leading-relaxed text-ink-soft" />
               ))}
             </div>
           ))}
@@ -217,7 +228,18 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
             <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
               calculateur de CA
             </Link>
-            .
+            . Pour le détail technique, notre article sur{" "}
+            <Link
+              href="/blog/carte-fidelite-apple-wallet-google-wallet"
+              className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800"
+            >
+              le fonctionnement de la carte Apple Wallet et Google Wallet
+            </Link>{" "}
+            explique chaque étape, et la page{" "}
+            <Link href="/fonctionnalites" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+              fonctionnalités
+            </Link>{" "}
+            liste tout ce que la carte permet de faire.
           </p>
         </Container>
       </section>

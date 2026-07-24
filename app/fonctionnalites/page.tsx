@@ -352,6 +352,13 @@ export default function FeaturesPage() {
             <Link href="/tarifs" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
               tarifs détaillés
             </Link>
+            . Pour comprendre en détail comment la carte s&apos;ajoute à Apple Wallet et Google Wallet, lisez notre{" "}
+            <Link
+              href="/blog/carte-fidelite-apple-wallet-google-wallet"
+              className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800"
+            >
+              article complet sur le fonctionnement du Wallet
+            </Link>
             .
           </p>
         </Container>

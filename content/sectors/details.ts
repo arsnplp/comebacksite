@@ -165,6 +165,13 @@ export const sectorDetails: SectorDetail[] = [
     ],
     seoBlocks: [
       {
+        title: "Les enjeux de fidélisation propres au salon de coiffure",
+        paragraphs: [
+          "En coiffure, l'enjeu ne ressemble à celui d'aucun autre commerce : votre clientèle ne passe pas tous les jours, mais toutes les quelques semaines, ce qui rend chaque rendez-vous décisif pour la suite de la relation. Trois cas d'usage reviennent particulièrement chez nos clients coiffeurs. D'abord, la relance avant le rendez-vous suivant : une cliente qui espace ses visites de six à huit semaines sans notification finit souvent par essayer un autre salon plus proche de son nouveau rythme. Ensuite, la fidélisation autour d'une prestation complémentaire (couleur, soin) via une récompense dédiée. Enfin, l'animation des jours creux en début de semaine, grâce à une promo flash réservée aux clientes inscrites.",
+          "Le rythme de rotation d'une clientèle de salon reste propre à chaque adresse et à chaque quartier : c'est justement ce que votre dashboard mesure une fois le programme lancé, plutôt qu'une moyenne nationale qui ne collerait à aucun salon en particulier. Pour aller plus loin sur la mécanique de relance, notre article sur la [fidélisation en salon de coiffure](/blog/fideliser-clients-coiffeur) détaille la méthode complète, et notre analyse des [erreurs de fidélisation les plus fréquentes](/blog/erreurs-fidelisation-commercants) aide à éviter les pièges classiques d'un lancement.",
+        ],
+      },
+      {
         title: "Fidéliser en coiffure : la fréquence vaut plus que le panier",
         paragraphs: [
           "En coiffure, le panier moyen varie peu d'une visite à l'autre : le levier de chiffre d'affaires, c'est la fréquence. Une cliente qui revient toutes les 6 semaines au lieu de 8 représente près de 30 % de visites en plus sur l'année, sans le moindre rendez-vous supplémentaire à trouver ailleurs. C'est exactement ce que travaille un programme de fidélité bien réglé : raccourcir, même légèrement, le délai entre deux visites.",
@@ -199,6 +206,11 @@ export const sectorDetails: SectorDetail[] = [
         question: "Mes clientes plus âgées vont-elles y arriver ?",
         answer:
           "Si elles savent prendre une photo, elles savent ajouter la carte : on scanne le QR code avec l'appareil photo, on appuie sur « Ajouter », c'est terminé. Et pour les rares clientes sans smartphone, rien ne vous empêche de garder quelques cartes papier en parallèle.",
+      },
+      {
+        question: "Puis-je proposer une carte différente pour la coloration et pour la coupe simple ?",
+        answer:
+          "Oui, selon votre plan : plusieurs cartes de fidélité permettent de séparer les mécaniques par type de prestation, avec un palier adapté à la fréquence réelle de chacune plutôt qu'une règle unique pour tout le salon.",
       },
     ],
   },
@@ -253,6 +265,13 @@ export const sectorDetails: SectorDetail[] = [
     ],
     seoBlocks: [
       {
+        title: "Les enjeux de fidélisation propres à la boulangerie",
+        paragraphs: [
+          "La boulangerie a une particularité que peu d'autres commerces partagent : une fréquence d'achat potentiellement quotidienne, ce qui change complètement la façon de penser la fidélité. Trois cas d'usage reviennent souvent chez nos clients boulangers. D'abord, capter le client occasionnel qui n'achète qu'une baguette de temps en temps, avec un palier court qui installe l'habitude du passage quotidien. Ensuite, valoriser la formule déjeuner du midi, au panier plus élevé que la baguette du matin, avec une récompense dédiée à cette clientèle. Enfin, écouler les invendus de fin de journée via une promo flash envoyée aux clients inscrits, un canal direct qui ne dépend d'aucun réseau social.",
+          "Le nombre de passages hebdomadaires d'un client fidèle varie fortement d'une boulangerie à l'autre selon le quartier : c'est un chiffre que votre dashboard affiche précisément une fois le programme lancé. Pour construire durablement cette habitude, notre article sur la [fidélisation en boulangerie](/blog/fideliser-clients-boulangerie) détaille la mécanique complète, et notre guide pour [créer une carte de fidélité digitale](/blog/comment-creer-carte-fidelite-digitale) accompagne pas à pas le lancement.",
+        ],
+      },
+      {
         title: "La fidélité en boulangerie : de petits paniers, un énorme enjeu",
         paragraphs: [
           "Un panier de boulangerie paraît modeste, mais la fréquence change tout : un client qui passe 4 fois par semaine à 3 euros pèse plus de 600 euros par an. Le vrai sujet n'est donc pas le panier moyen, c'est le nombre de matins où il choisit votre boulangerie plutôt qu'une autre. Quelques passages de plus par mois et par client, multipliés par des centaines de clients, représentent des milliers d'euros de chiffre d'affaires annuel.",
@@ -287,6 +306,11 @@ export const sectorDetails: SectorDetail[] = [
         question: "Puis-je réserver certaines offres à mes clients fidèles ?",
         answer:
           "Oui, c'est le principe des promos flash : elles ne partent qu'aux clients inscrits à votre carte. Une fournée spéciale, des invendus en fin de journée, une nouveauté à faire goûter : vos fidèles sont prévenus en premier, et ils le savent.",
+      },
+      {
+        question: "Combien de temps avant de voir l'effet sur mon chiffre d'affaires ?",
+        answer:
+          "Les premières inscriptions arrivent dès les premiers jours si le QR code est bien visible et proposé systématiquement. L'effet sur la fréquence de passage se mesure plutôt sur quelques semaines, le temps que les premiers clients atteignent leur palier de récompense.",
       },
     ],
   },
@@ -341,6 +365,13 @@ export const sectorDetails: SectorDetail[] = [
     ],
     seoBlocks: [
       {
+        title: "Les enjeux de fidélisation propres à la boutique",
+        paragraphs: [
+          "En boutique, l'enjeu se joue moins sur la fréquence (un client revient rarement chaque semaine) que sur le panier moyen et la valeur de chaque achat, ce qui change la nature des mécaniques à privilégier. Trois cas d'usage concrets reviennent chez nos clients boutiques. D'abord, l'offre de vente privée réservée aux clients inscrits pour écouler une nouvelle collection sans casser les prix affichés en vitrine. Ensuite, la remise progressive qui récompense davantage un gros achat régulier qu'un petit achat isolé. Enfin, la reconquête d'un client qui n'est pas revenu depuis plusieurs mois, via une relance ciblée plutôt qu'une communication générique à toute la base.",
+          "Le panier moyen d'un client fidèle dépasse en général celui d'un client de passage, dans des proportions propres à chaque boutique et à chaque secteur : votre dashboard vous donne ce chiffre précis une fois le programme actif. Pour construire un programme qui protège votre marge plutôt que de la rogner, notre article sur [fidéliser sans réductions](/blog/fideliser-sans-reduction) présente des alternatives concrètes, et notre panorama des [idées de récompenses efficaces](/blog/idees-recompenses-programme-fidelite) aide à choisir la mécanique la plus adaptée à votre offre.",
+        ],
+      },
+      {
         title: "Fidéliser en boutique sans brader : le rôle du programme",
         paragraphs: [
           "La tentation classique pour faire revenir un client, c'est la remise permanente. Elle fonctionne, mais elle détruit la marge et habitue la clientèle à ne plus acheter au prix normal. Un programme de fidélité inverse la logique : l'avantage se mérite au fil des passages, il récompense un comportement (revenir) plutôt qu'un statut (passer par là un jour de solde).",
@@ -375,6 +406,11 @@ export const sectorDetails: SectorDetail[] = [
         question: "Que se passe-t-il si un client rend un article ?",
         answer:
           "Vous gardez la main : un tampon peut être retiré aussi simplement qu'il a été ajouté, directement depuis votre espace. En pratique, les retours sont rares et la plupart des boutiques n'y touchent pas.",
+      },
+      {
+        question: "Comment savoir si mon programme profite vraiment à ma marge ?",
+        answer:
+          "Comparez le chiffre d'affaires généré par les clients inscrits au coût de l'abonnement : c'est ce que votre dashboard calcule directement, sans logiciel de gestion complexe ni calcul manuel de votre part.",
       },
     ],
   },
@@ -517,6 +553,13 @@ export const sectorDetails: SectorDetail[] = [
     ],
     seoBlocks: [
       {
+        title: "Les enjeux de fidélisation propres au café et au bar",
+        paragraphs: [
+          "Un café ou un bar vit sur un rituel plus que sur un simple achat, ce qui oriente la fidélité vers la régularité du passage plutôt que vers le montant dépensé. Trois cas d'usage reviennent souvent chez nos clients cafés et bars. D'abord, ancrer le rituel du matin ou de la pause, avec un palier court qui récompense rapidement la régularité. Ensuite, faire découvrir une pâtisserie ou un encas associé au café, via une récompense qui pousse la vente additionnelle plutôt qu'une simple remise. Enfin, animer les après-midis calmes ou les débuts de semaine grâce à une promo flash réservée aux clients inscrits, sans dépendre d'un réseau social à la portée imprévisible.",
+          "Le nombre de passages hebdomadaires d'un habitué de café varie beaucoup selon l'emplacement et la clientèle du quartier : votre dashboard vous donne ce chiffre précisément une fois le programme actif. Notre article sur [pourquoi vos clients ne reviennent pas](/blog/pourquoi-clients-ne-reviennent-pas) éclaire ce qui, au-delà du café lui-même, fait qu'un client garde ou perd l'habitude, et notre panorama des [idées de récompenses efficaces](/blog/idees-recompenses-programme-fidelite) aide à choisir la mécanique la plus adaptée à votre rythme de service.",
+        ],
+      },
+      {
         title: "Pourquoi le 10e café offert fonctionne toujours aussi bien",
         paragraphs: [
           "La force du 10 + 1, c'est sa lisibilité : le client sait exactement ce qu'il doit faire et ce qu'il va gagner. Sur un produit à forte marge comme le café, offrir la 11e tasse coûte quelques dizaines de centimes pour dix passages encaissés : c'est l'un des meilleurs rapports coût/effet du commerce de proximité.",
@@ -551,6 +594,11 @@ export const sectorDetails: SectorDetail[] = [
         question: "Et si mes clients viennent en groupe ?",
         answer:
           "Chaque client a sa propre carte : dans une tournée de quatre cafés, chacun peut faire tamponner la sienne. C'est d'ailleurs un accélérateur d'inscriptions : le premier qui scanne montre aux autres comment faire.",
+      },
+      {
+        question: "Puis-je réserver une happy hour uniquement aux clients fidèles ?",
+        answer:
+          "Oui, via une promo flash envoyée uniquement aux clients inscrits à votre carte. C'est un excellent moyen de remplir un après-midi calme sans casser vos prix affichés pour tout le monde.",
       },
     ],
   },
@@ -693,6 +741,13 @@ export const sectorDetails: SectorDetail[] = [
     ],
     seoBlocks: [
       {
+        title: "Les enjeux de fidélisation propres à un réseau ou une franchise",
+        paragraphs: [
+          "Un réseau multi-établissements affronte un enjeu qu'un commerce isolé ne connaît pas : garder une expérience homogène partout tout en gardant la capacité de piloter chaque site individuellement. Trois cas d'usage reviennent chez les enseignes que nous accompagnons. D'abord, la carte commune qui suit le client d'un établissement à l'autre, sans qu'il ait à s'inscrire séparément à chaque adresse. Ensuite, les opérations nationales lancées en un seul envoi (nouveauté au menu, anniversaire de l'enseigne), tout en laissant chaque site animer sa propre zone via des promos locales. Enfin, la comparaison des établissements entre eux, un levier de pilotage stratégique qu'aucune carte indépendante par site ne permettait auparavant.",
+          "L'écart de performance entre deux établissements d'une même enseigne dépend de nombreux facteurs locaux : c'est précisément ce que le dashboard consolidé rend enfin mesurable, site par site. Pour approfondir cette centralisation, notre article dédié à la [carte de fidélité multi-établissements](/blog/carte-fidelite-multi-etablissements) détaille comment déployer le programme sans friction, et notre guide sur [comment créer une carte de fidélité digitale](/blog/comment-creer-carte-fidelite-digitale) accompagne le lancement du premier établissement pilote.",
+        ],
+      },
+      {
         title: "Pourquoi centraliser la fidélité à l'échelle du réseau",
         paragraphs: [
           "Tant que chaque établissement gère sa propre carte, l'enseigne ne capitalise rien : le client fidèle d'un site est un inconnu dans le site voisin, les données restent éparpillées, et aucune animation nationale n'est possible. Un programme centralisé transforme cette collection d'initiatives locales en actif d'enseigne : une base client unifiée, une expérience homogène et un levier d'animation qui touche tout le réseau en un envoi.",
@@ -727,6 +782,11 @@ export const sectorDetails: SectorDetail[] = [
         question: "Combien de temps faut-il pour équiper un réseau complet ?",
         answer:
           "Le déploiement technique d'un site se fait en une journée. Pour un réseau, le rythme dépend surtout de votre plan d'animation : la plupart des enseignes lancent quelques sites pilotes sur un mois, puis généralisent sur un trimestre avec notre accompagnement.",
+      },
+      {
+        question: "Peut-on comparer les performances de deux établissements entre eux ?",
+        answer:
+          "Oui, c'est l'un des principaux bénéfices de la centralisation : le dashboard consolidé affiche inscriptions, visites et chiffre d'affaires générés par établissement, ce qui permet à la tête de réseau de repérer les écarts et de diffuser les bonnes pratiques d'un site à l'autre.",
       },
     ],
   },

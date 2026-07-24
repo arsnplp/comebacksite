@@ -1,49 +1,120 @@
 ---
 title: "Carte de fidélité dans Apple Wallet et Google Wallet : comment ça marche"
-description: "Comment une carte de fidélité s'ajoute dans Apple Wallet ou Google Wallet en un scan : le parcours complet, sans application ni compte à créer."
+description: "Comment mettre une carte de fidélité sur Apple Wallet ou Google Wallet en un scan : le parcours complet, sans application ni compte à créer."
 date: "2026-06-24"
 category: "Produit"
-readingMinutes: 6
+readingMinutes: 10
+faq:
+  - question: "Comment mettre une carte de fidélité sur mon iPhone ?"
+    answer: "Scannez le QR code affiché par le commerçant avec l'appareil photo de votre iPhone, puis appuyez sur « Ajouter à Apple Wallet » quand la proposition apparaît à l'écran. La carte s'ouvre dans l'application Wallet, déjà installée sur tous les iPhone : aucun téléchargement n'est nécessaire."
+  - question: "Comment ajouter une carte de fidélité sur Google Wallet ?"
+    answer: "Le principe est identique sur Android : vous scannez le QR code avec l'appareil photo ou un lecteur de codes, puis vous appuyez sur « Ajouter à Google Wallet ». Sur certains téléphones, Google Wallet doit être installé une première fois depuis le Play Store, mais l'application est gratuite et déjà présente sur la grande majorité des Android récents."
+  - question: "Une carte de fidélité Wallet fonctionne-t-elle sans connexion internet ?"
+    answer: "Oui pour la consultation : une fois ajoutée, la carte reste visible et affiche son dernier état connu même sans réseau, dans une cave, un parking ou un sous-sol. En revanche, valider un nouveau tampon nécessite que le téléphone du commerçant (pas celui du client) ait une connexion, comme pour un terminal de paiement classique."
+  - question: "Que se passe-t-il si mon client change de téléphone ?"
+    answer: "S'il restaure une sauvegarde iCloud ou Google sur son nouvel appareil, la carte réapparaît automatiquement dans son Wallet, avec ses tampons intacts. S'il change d'écosystème (d'un iPhone vers un Android, ou l'inverse) sans restauration, il lui suffit de rescanner le QR code en boutique : le commerçant retrouve son compte grâce à son identifiant et la progression n'est pas perdue."
+  - question: "Une carte de fidélité Wallet coûte-t-elle plus cher qu'une carte papier ou une application ?"
+    answer: "À l'usage, non : la carte papier semble gratuite mais coûte l'impression, la perte et l'absence totale de données exploitables. Une application dédiée coûte surtout en développement et en adoption, la plupart des clients refusant de la télécharger pour un seul commerce. La carte Wallet s'intègre en général dans un abonnement mensuel fixe, sans coût par carte imprimée ni par client inscrit."
+howTo:
+  name: "Comment intégrer une carte de fidélité à Apple Wallet et Google Wallet"
+  steps:
+    - name: "Créer la carte"
+      text: "Choisissez la mécanique de récompense, ajoutez votre logo et vos couleurs depuis votre espace Comeback : la carte est prête en une dizaine de minutes."
+    - name: "Générer le QR code"
+      text: "Un QR code unique à votre commerce est généré automatiquement et peut être imprimé ou affiché sur une tablette au comptoir."
+    - name: "Le client scanne le code"
+      text: "Avec l'appareil photo de son téléphone, sans application tierce à ouvrir au préalable."
+    - name: "Le client ajoute la carte à son Wallet"
+      text: "Un bouton « Ajouter à Apple Wallet » ou « Ajouter à Google Wallet » s'affiche automatiquement selon son système."
+    - name: "Le commerçant valide les tampons"
+      text: "À chaque passage, un scan depuis le téléphone du commerçant met à jour la carte du client en temps réel, avec notification à l'appui."
 ---
 
-Quand on parle de carte de fidélité digitale, beaucoup de commerçants imaginent une application à faire télécharger à leurs clients. C'est exactement l'inverse : la carte Wallet s'appuie sur deux applications que vos clients possèdent déjà, Apple Wallet sur iPhone et Google Wallet sur Android. Voici comment tout cela fonctionne, étape par étape.
+Quand on parle de carte de fidélité digitale, beaucoup de commerçants imaginent une application à faire télécharger à leurs clients. C'est exactement l'inverse : la carte Wallet s'appuie sur deux applications que vos clients possèdent déjà, Apple Wallet sur iPhone et Google Wallet sur Android. Voici comment mettre une carte de fidélité sur Wallet, étape par étape, et ce que cela change concrètement pour votre commerce.
 
 ## Le Wallet, c'est quoi exactement ?
 
 Apple Wallet et Google Wallet sont les portefeuilles numériques préinstallés sur les smartphones. Ils stockent les cartes bancaires pour le paiement sans contact, mais aussi les cartes d'embarquement, les billets de concert et les cartes de fidélité. Le format est le même pour tous ces usages : un « pass », c'est-à-dire une petite carte numérique qui peut se mettre à jour et envoyer des notifications.
 
-Concrètement, cela veut dire que la barrière classique du digital (télécharger, créer un compte, retenir un mot de passe) n'existe pas. Le téléphone sait déjà accueillir votre carte de fidélité.
+Concrètement, cela veut dire que la barrière classique du digital (télécharger, créer un compte, retenir un mot de passe) n'existe pas. Le téléphone sait déjà accueillir votre carte de fidélité, qu'il s'agisse d'un iPhone ou d'un Android.
 
-## Côté client : un scan, et c'est dans la poche
+## Côté client : mettre une carte de fidélité sur son Wallet, étape par étape
 
-Le parcours du client tient en trois gestes :
+Le parcours du client tient en trois gestes, quel que soit son téléphone :
 
 - Il vise le QR code posé sur votre comptoir avec l'appareil photo de son téléphone.
 - Il appuie sur « Ajouter à Apple Wallet » ou « Ajouter à Google Wallet ».
 - Il renseigne son prénom, et sa carte apparaît, à vos couleurs, avec ses tampons.
 
-L'opération prend une dizaine de secondes, sans application, sans compte ni mot de passe. C'est ce qui explique l'écart massif de taux d'adoption avec les applications dédiées : proposer la carte au moment du paiement suffit, même à une clientèle peu technophile.
+L'opération prend une dizaine de secondes, sans application dédiée, sans compte ni mot de passe. Voici toutefois deux nuances utiles selon l'appareil.
+
+### Sur iPhone (Apple Wallet)
+
+Apple Wallet est installée par défaut sur tous les iPhone depuis plusieurs générations : il n'y a donc jamais de téléchargement à faire. Dès que le client scanne le QR code, iOS reconnaît le format du pass et propose directement le bouton d'ajout. Ensuite, la carte de fidélité vit au même endroit que sa carte bancaire ou sa carte d'embarquement, accessible d'un double-clic sur le bouton latéral ou via le raccourci sur l'écran verrouillé.
+
+Si le bouton « Ajouter à Apple Wallet » n'apparaît pas après le scan, la cause la plus fréquente est simplement un appareil photo qui a ouvert le lien dans un navigateur plutôt que de reconnaître le QR code : il suffit alors de refaire la visée, un peu plus stable, à une vingtaine de centimètres du code. Aucun réglage caché n'est nécessaire côté client.
+
+### Sur Android (Google Wallet)
+
+Sur Android, Google Wallet équipe la quasi-totalité des téléphones récents, mais certains modèles plus anciens ou reconditionnés peuvent nécessiter une installation initiale, gratuite, depuis le Play Store. Une fois cette étape passée (souvent déjà faite, ne serait-ce que pour le paiement sans contact), le parcours est identique à celui d'un iPhone : scan, ajout, prénom, carte prête.
+
+Sur certains Android de marques différentes (Samsung, Xiaomi, Huawei notamment), l'application photo native ne lit pas toujours les QR code par défaut : dans ce cas, ouvrez simplement l'application Google Wallet ou Google Lens et scannez depuis là. Une fois la carte ajoutée une première fois, ce détail ne se represente plus jamais pour ce client.
+
+## Comment intégrer une carte de fidélité à Apple Wallet et Google Wallet en 5 étapes
+
+Côté commerçant, la mise en place suit toujours le même déroulé, résumé ici puis détaillé dans les sections suivantes :
+
+1. **Créez la carte** : mécanique de récompense, logo, couleurs, configurés en une dizaine de minutes depuis votre espace.
+2. **Générez le QR code** : il est propre à votre commerce et peut être imprimé ou affiché sur une tablette.
+3. **Le client scanne le code** avec l'appareil photo de son téléphone, sans rien installer au préalable.
+4. **Le client ajoute la carte à son Wallet** : le bouton adapté (Apple ou Google) s'affiche automatiquement selon son système.
+5. **Vous validez les tampons** à chaque passage, par un scan depuis votre propre téléphone.
+
+Cette procédure ne change jamais, que votre clientèle soit majoritairement équipée d'iPhone ou d'Android : c'est le téléphone du client qui détecte tout seul le bon format.
 
 ## Côté commerçant : un tampon en 2 secondes
 
 À chaque passage, vous validez le tampon en scannant le code du client avec votre propre téléphone. La carte se met à jour instantanément dans son Wallet : le compteur avance, et quand la récompense approche, il le voit. Aucun matériel dédié, aucune intégration avec votre caisse : votre téléphone actuel fait l'affaire, même en plein rush.
 
-## Les notifications : le superpouvoir du pass Wallet
+Autrement dit, la complexité technique reste entièrement invisible pour vous comme pour votre client. Vous scannez, le pass se met à jour, c'est tout.
 
-C'est la vraie différence avec le carton. Un pass Wallet peut afficher des notifications sur l'écran de verrouillage : le rappel qu'il ne manque que deux tampons, la relance après trois semaines d'absence, l'offre anniversaire, la promo flash d'un jour creux. Ces messages n'arrivent ni dans une boîte mail saturée ni dans un fil d'actualité filtré par un algorithme : ils s'affichent là où le client regarde cent fois par jour.
+## Apple Wallet vs Google Wallet : le comparatif
 
-Et parce que la carte a été ajoutée volontairement, ces notifications sont perçues comme un service, pas comme du spam. Le client qui n'en veut plus retire simplement sa carte : le consentement reste entre ses mains, ce qui est aussi l'esprit du RGPD.
+Beaucoup de commerçants se demandent s'il faut choisir entre les deux systèmes, ou si l'un est plus fiable que l'autre pour une carte de fidélité. En pratique, les deux plateformes reposent sur le même principe technique (le format de pass) et offrent des capacités très proches. Voici les points qui font une vraie différence :
 
-## Apple Wallet ou Google Wallet : faut-il choisir ?
+| Critère | Apple Wallet (iOS) | Google Wallet (Android) |
+| --- | --- | --- |
+| Application préinstallée | Oui, sur tout iPhone | Oui sur la plupart des Android récents, sinon installation gratuite via le Play Store |
+| Ajout de la carte | Scan puis bouton natif | Scan puis bouton natif |
+| Mise à jour du pass | Automatique, en arrière-plan | Automatique, en arrière-plan |
+| Notifications sur écran verrouillé | Oui | Oui |
+| Fonctionne hors connexion | Oui, pour la consultation | Oui, pour la consultation |
+| Ce que ça change pour le commerçant | Rien à paramétrer différemment | Rien à paramétrer différemment |
 
-Non, et c'est justement l'intérêt d'une solution comme Comeback : la même carte existe dans les deux formats. Concrètement, quand votre client scanne le QR code du comptoir, son téléphone détecte tout seul son système : un iPhone propose Apple Wallet, un Android propose Google Wallet. Vous n'avez donc rien à paramétrer, et aucun client n'est laissé de côté.
+Autrement dit, la vraie question n'est pas « Apple ou Google », mais « est-ce que ma solution couvre les deux en même temps ». C'est justement l'intérêt d'une solution comme Comeback : la même carte existe dans les deux formats, et le téléphone du client détecte tout seul son système au moment du scan.
 
 Ce point compte plus qu'il n'y paraît. En France, le parc se répartit grosso modo entre deux tiers d'Android et un tiers d'iPhone, avec de fortes variations selon les quartiers et les clientèles. Autrement dit, une solution qui ne couvrirait qu'un seul des deux écosystèmes exclurait mécaniquement une partie de vos habitués. Vérifiez donc toujours ce critère avant de choisir un outil de fidélité.
 
-Ajoutez à cela un avantage souvent oublié : la carte reste visible même sans connexion. Dans une cave, un marché couvert ou un sous-sol, le pass s'affiche quand même, car il est stocké sur le téléphone. Pour voir la liste complète de ce que permet la carte, parcourez la page [fonctionnalités](/fonctionnalites).
+### Ce qui ne change pas, quel que soit le téléphone
 
-## Ce qu'il faut retenir
+Indépendamment de la marque du téléphone, trois garanties restent identiques : la carte de fidélité sur téléphone ne coûte jamais rien au client (ni l'ajout, ni le stockage, ni les mises à jour), elle ne collecte que ce qu'il a lui-même renseigné (en général un simple prénom), et elle peut être retirée en un geste depuis le Wallet, exactement comme on supprime une carte bancaire enregistrée. Ce sont ces garanties, plus que la marque du téléphone, qui déterminent si un client accepte de scanner votre code.
 
-La carte de fidélité Wallet combine la simplicité de la carte à tampons (un passage, un tampon, une récompense) avec des capacités que le papier n'aura jamais : mise à jour en temps réel, notifications, fichier client automatique et mesure du chiffre d'affaires généré.
+## Les notifications : le superpouvoir du pass Wallet
+
+C'est la vraie différence avec le carton. Un pass Wallet peut afficher des notifications sur l'écran de verrouillage : le rappel qu'il ne manque que deux tampons, la relance après trois semaines d'absence, l'offre anniversaire, la promo flash d'un jour creux. Ces messages n'arrivent ni dans une boîte mail saturée ni dans un fil d'actualité filtré par un algorithme : ils s'affichent là où le client regarde des dizaines de fois par jour.
+
+Et parce que la carte a été ajoutée volontairement, ces notifications sont perçues comme un service, pas comme du spam. Le client qui n'en veut plus retire simplement sa carte : le consentement reste entre ses mains, ce qui est aussi l'esprit du RGPD.
+
+Ajoutez à cela un avantage souvent oublié : la carte reste visible même sans connexion. Dans une cave, un marché couvert ou un sous-sol, le pass s'affiche quand même, car il est stocké sur le téléphone.
+
+Concrètement, un commerçant qui active seulement deux types de notifications (la relance après plusieurs semaines d'absence et le rappel de récompense proche) constate déjà l'essentiel du bénéfice : ce sont ces deux messages, envoyés au bon moment plutôt qu'en masse, qui ramènent le plus régulièrement des clients qui commençaient à espacer leurs visites. Inutile de multiplier les envois : mieux vaut deux notifications pertinentes par mois qu'une par semaine, ignorée puis désactivée.
+
+## Comeback selon votre métier
+
+La mécanique Wallet reste la même partout, mais la récompense et le rythme de relance changent selon votre activité. Découvrez comment elle s'applique à votre métier : [restaurant](/carte-fidelite/restaurant), [salon de coiffure](/carte-fidelite/coiffeur), [boulangerie](/carte-fidelite/boulangerie), [boutique](/carte-fidelite/boutique), [institut de beauté](/carte-fidelite/institut-beaute), [café ou bar](/carte-fidelite/cafe-bar), [food truck](/carte-fidelite/food-truck) ou [franchise et réseau](/carte-fidelite/franchise). Pour la liste complète de ce que permet la carte, direction la page [fonctionnalités](/fonctionnalites).
+
+## Carte Wallet Comeback : ce qu'il faut retenir
+
+La carte de fidélité Wallet combine la simplicité de la carte à tampons (un passage, un tampon, une récompense) avec des capacités que le papier n'aura jamais : mise à jour en temps réel, notifications, fichier client automatique et mesure du chiffre d'affaires généré. Elle fonctionne à l'identique sur iPhone et sur Android, sans que vous ayez à choisir un camp ni à paramétrer quoi que ce soit de différent selon le téléphone de votre client.
 
 Pour comparer précisément les trois approches (papier, Wallet, application), notre [comparatif détaillé](/carte-fidelite-papier-ou-digitale) passe chaque critère en revue. Et pour voir une carte Wallet à vos couleurs, [l'essai gratuit de 30 jours](https://app.getcomeback.fr/login) reste la meilleure démonstration.
