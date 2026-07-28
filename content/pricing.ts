@@ -1,9 +1,9 @@
 /**
- * Plans tarifaires (grille mise à jour le 20 juillet 2026).
+ * Plans tarifaires (grille mise à jour le 28 juillet 2026 : Starter gratuit).
  *
  * Le claim « rentabilisé dès 2 clients fidélisés par mois » se base sur :
  * plan Pro 49 €/mois ÷ panier moyen ~25 € ≈ 2 visites supplémentaires
- * par mois. Au plan Starter (19 €), une seule visite suffit.
+ * par mois. Le plan Starter est gratuit, sans coût à amortir.
  */
 export type Plan = {
   name: string;
@@ -22,12 +22,12 @@ export type Plan = {
 export const plans: Plan[] = [
   {
     name: "Starter",
-    price: 19,
+    price: 0,
     period: "/mois",
-    equivalent: "Sans engagement",
+    equivalent: "Gratuit, sans engagement",
     description: "Idéal pour démarrer.",
     features: [
-      "50 clients maximum",
+      "30 clients maximum",
       "1 000 notifications par mois",
       "1 carte de fidélité",
       "Ciblage basique : tous les clients",

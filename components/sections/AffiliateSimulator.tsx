@@ -14,7 +14,7 @@ import { trackEvent } from "@/lib/analytics";
  */
 
 const PLANS = [
-  { name: "Starter", price: 19 },
+  { name: "Starter", price: 0 },
   { name: "Pro", price: 49 },
   { name: "Business", price: 99 },
 ] as const;

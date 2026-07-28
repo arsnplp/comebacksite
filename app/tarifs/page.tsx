@@ -15,9 +15,9 @@ import { plans } from "@/content/pricing";
 import type { FaqItem } from "@/content/faq";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Tarifs : carte de fidélité digitale dès 19 €/mois, 30 jours gratuits",
+  title: "Tarifs : carte de fidélité digitale, Starter gratuit jusqu'à 30 clients",
   description:
-    "Starter à 19 €, Pro à 49 €, Business à 99 € HT par mois. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidèles.",
+    "Starter gratuit (30 clients), Pro à 49 €, Business à 99 € HT par mois. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidèles.",
   path: "/tarifs",
 });
 
@@ -33,7 +33,7 @@ const compareGroups: CompareGroup[] = [
   {
     title: "Clients et cartes",
     rows: [
-      { label: "Clients enregistrés", cells: ["50", "100", "Illimités"] },
+      { label: "Clients enregistrés", cells: ["30", "100", "Illimités"] },
       { label: "Cartes de fidélité", cells: ["1", "2", "2"] },
       { label: "Carte Apple Wallet et Google Wallet", cells: [true, true, true] },
       { label: "QR code comptoir prêt à imprimer", cells: [true, true, true] },
@@ -87,7 +87,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Le nombre de clients ou de notifications est-il limité ?",
     answer:
-      "Le plan Starter inclut 50 clients, 1 000 notifications par mois et 1 carte de fidélité : de quoi valider la mécanique. Le plan Pro passe à 100 clients, 10 000 notifications et 2 cartes. Le plan Business est illimité en clients comme en notifications, avec 2 cartes également. Si vous atteignez une limite, vous passez au plan supérieur en 2 clics, sans rien perdre.",
+      "Le plan Starter est gratuit et inclut 30 clients, 1 000 notifications par mois et 1 carte de fidélité : de quoi valider la mécanique sans rien payer. Le plan Pro passe à 100 clients, 10 000 notifications et 2 cartes. Le plan Business est illimité en clients comme en notifications, avec 2 cartes également. Si vous atteignez une limite, vous passez au plan supérieur en 2 clics, sans rien perdre.",
   },
   {
     question: "Les prix affichés sont-ils HT ou TTC ?",
@@ -97,7 +97,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Comment être sûr que ce sera rentable pour mon commerce ?",
     answer:
-      "Faites le calcul avec vos propres chiffres : au plan Starter, une seule visite supplémentaire par mois couvre l'abonnement, et au plan Pro il en faut environ 2, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
+      "Faites le calcul avec vos propres chiffres : le plan Starter étant gratuit, il n'y a même pas d'abonnement à amortir pour commencer. Au plan Pro, il faut environ 2 visites supplémentaires par mois pour couvrir l'abonnement, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
   },
 ];
 
@@ -178,7 +178,7 @@ export default function PricingPage() {
       >
         <Badge>Sans carte bancaire</Badge>
         <Badge>Sans engagement</Badge>
-        <Badge>Dès 19 € par mois</Badge>
+        <Badge>Starter gratuit</Badge>
       </PageHero>
 
       {/* Cartes de plans */}
@@ -343,7 +343,7 @@ export default function PricingPage() {
                 14 600 € / an
               </p>
               <p className="mt-2 text-sm text-leaf-200">
-                de CA récupérable estimé, contre 228 € d&apos;abonnement annuel au plan Starter.
+                de CA récupérable estimé, contre 588 € d&apos;abonnement annuel au plan Pro.
               </p>
             </div>
           </div>

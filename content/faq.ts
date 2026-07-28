@@ -51,7 +51,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: "Combien coûte une carte de fidélité digitale ?",
     answer:
-      "Chez Comeback, à partir de 19 € HT par mois avec le plan Starter, puis 49 € pour le plan Pro (100 clients et relances automatiques) et 99 € pour le plan Business (clients et notifications illimités). Aucun frais d'installation, aucun matériel à acheter. Commencez par l'essai gratuit de 30 jours : testez d'abord avec vos vrais clients, décidez ensuite, chiffres en main.",
+      "Le plan Starter est gratuit, jusqu'à 30 clients. Ensuite, 49 € HT par mois pour le plan Pro (100 clients et relances automatiques) et 99 € pour le plan Business (clients et notifications illimités). Aucun frais d'installation, aucun matériel à acheter. Commencez par l'essai gratuit de 30 jours : testez d'abord avec vos vrais clients, décidez ensuite, chiffres en main.",
   },
   {
     question: "Quelle différence avec une carte de fidélité papier ?",
