@@ -49,7 +49,7 @@ export function DashboardProof() {
             </div>
             <div className="mt-8">
               <CTALink href="https://app.getcomeback.fr/login" position="dashboard">
-                Voir mes chiffres pendant 30 jours
+                Voir mes chiffres gratuitement
               </CTALink>
             </div>
           </div>

@@ -39,7 +39,7 @@ export const plans: Plan[] = [
       "Export CSV",
     ],
     recommended: false,
-    cta: "Choisir Starter",
+    cta: "Essayer gratuitement",
   },
   {
     name: "Pro",
