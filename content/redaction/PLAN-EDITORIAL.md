@@ -28,7 +28,7 @@ Note : 10 articles supplémentaires ont été publiés hors de cette file, dans 
 | fideliser-clients-boulangerie | fidéliser les clients de sa boulangerie | Transformer le passage quotidien en habitude mesurable, carte tampons digitale au comptoir | Publié le 2026-07-13 |
 | faire-revenir-clients-commerce | comment faire revenir ses clients | Pourquoi un client satisfait ne revient pas tout seul, mécaniques de retour concrètes | Publié le 2026-07-23 |
 | fideliser-clients-institut-beaute | fidéliser les clientes de son institut de beauté | Fréquence de soins, relance des inactives, offre anniversaire | Publié le 2026-07-20 |
-| remplir-jours-creux-commerce | remplir les jours creux de son commerce | Promos flash ciblées sur les heures et jours faibles, exemples par métier | À écrire |
+| remplir-jours-creux-commerce | remplir les jours creux de son commerce | Promos flash ciblées sur les heures et jours faibles, exemples par métier | Publié le 2026-08-01 |
 | fideliser-clients-boutique | fidéliser les clients de sa boutique | Se différencier des grandes enseignes avec un fichier client et des relances personnelles | Publié le 2026-07-27 |
 | creer-fichier-client-commerce | créer un fichier client quand on est commerçant | Le fichier client comme actif du fonds de commerce, collecte RGPD simple via la carte de fidélité | À écrire |
 | fideliser-clients-cafe-bar | fidéliser les clients de son café ou bar | Rituel quotidien, happy hours ciblées, la carte dans le téléphone plutôt que dans le portefeuille | À écrire |
