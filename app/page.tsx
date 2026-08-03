@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
+import { CardCreationDemo } from "@/components/sections/CardCreationDemo";
 import { RevenueTeaser } from "@/components/sections/RevenueTeaser";
 import { Steps } from "@/components/sections/Steps";
 import { Testimonials } from "@/components/sections/Testimonials";
@@ -56,6 +57,7 @@ export default function HomePage() {
       <JsonLd data={softwareJsonLd} />
       <JsonLd data={faqJsonLd} />
       <Hero />
+      <CardCreationDemo />
       <RevenueTeaser />
       <Steps />
       <Testimonials />
