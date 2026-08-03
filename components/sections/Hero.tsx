@@ -72,8 +72,8 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Colonne visuelle */}
-          <div className="anim-rise relative" style={{ "--rise-delay": "200ms" } as CSSProperties}>
+          {/* Colonne visuelle — masquée sur mobile/tablette, trop encombrante sous lg */}
+          <div className="anim-rise relative hidden lg:block" style={{ "--rise-delay": "200ms" } as CSSProperties}>
             <div
               className="absolute left-1/2 top-1/2 h-[26rem] w-[26rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-leaf-100 opacity-70 blur-3xl"
               aria-hidden="true"
