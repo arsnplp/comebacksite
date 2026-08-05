@@ -131,7 +131,13 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden items-center gap-2 lg:flex">
+          <Link
+            href="/connexion"
+            className="rounded-full px-4 py-2 text-[0.95rem] font-semibold text-ink transition-colors hover:text-leaf-700"
+          >
+            Se connecter
+          </Link>
           <CTALink href="https://app.getcomeback.fr/login" position="header" size="md">
             Essai gratuit
           </CTALink>
@@ -191,9 +197,18 @@ export function Header() {
             ))}
           </ul>
           <div className="mt-6 px-4">
-            <CTALink href="https://app.getcomeback.fr/login" position="mobile-menu" className="w-full">
-              Essayer gratuitement
-            </CTALink>
+            <Link
+              href="/connexion"
+              className="block w-full rounded-full border border-ink/15 px-5 py-3 text-center text-lg font-semibold text-ink transition-colors hover:border-leaf-300"
+              onClick={() => setMobileOpen(false)}
+            >
+              Se connecter
+            </Link>
+            <div className="mt-3">
+              <CTALink href="https://app.getcomeback.fr/login" position="mobile-menu" className="w-full">
+                Essayer gratuitement
+              </CTALink>
+            </div>
             <p className="mt-3 text-center text-sm text-ink-soft">Sans carte bancaire · Sans engagement</p>
           </div>
         </nav>

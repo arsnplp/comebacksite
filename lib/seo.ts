@@ -43,6 +43,7 @@ export const routes: { path: string; priority: number; changeFrequency: "daily" 
   { path: "/carte-fidelite-papier-ou-digitale", priority: 0.6, changeFrequency: "monthly" },
   { path: "/a-propos", priority: 0.5, changeFrequency: "monthly" },
   { path: "/contact", priority: 0.5, changeFrequency: "monthly" },
+  { path: "/connexion", priority: 0.4, changeFrequency: "monthly" },
   { path: "/mentions-legales", priority: 0.3, changeFrequency: "monthly" },
   { path: "/politique-confidentialite", priority: 0.3, changeFrequency: "monthly" },
   { path: "/cgv", priority: 0.3, changeFrequency: "monthly" },

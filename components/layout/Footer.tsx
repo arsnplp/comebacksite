@@ -16,6 +16,7 @@ export function Footer() {
         { href: "/temoignages", label: "Témoignages" },
         { href: "/demo", label: "Réserver une démo" },
         { href: "https://app.getcomeback.fr/login", label: "Essai gratuit" },
+        { href: "/connexion", label: "Se connecter" },
       ],
     },
     {
