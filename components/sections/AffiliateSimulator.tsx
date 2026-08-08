@@ -4,19 +4,20 @@ import { useEffect, useRef, useState } from "react";
 import { Slider } from "@/components/ui/Slider";
 import { CTALink } from "@/components/ui/CTALink";
 import { trackEvent } from "@/lib/analytics";
+import { formatPlanPrice } from "@/content/pricing";
 
 /**
  * Simulateur de gains du programme d'affiliation.
  * Paliers officiels : Bronze 20 % (0-100 € générés/mois),
  * Gold 35 % (100-500 €), Platinum 50 % (500 € et plus).
- * Défaut : 49 commerces au plan Pro (49 €) = 2 401 € générés,
- * palier Platinum, soit 1 200,50 € de commission mensuelle.
+ * Défaut : 60 commerces au plan Pro (9,99 €) = 599,40 € générés,
+ * palier Platinum, soit 299,70 € de commission mensuelle.
  */
 
 const PLANS = [
   { name: "Starter", price: 0 },
-  { name: "Pro", price: 49 },
-  { name: "Business", price: 99 },
+  { name: "Pro", price: 9.99 },
+  { name: "Business", price: 39.99 },
 ] as const;
 
 type Tier = { name: string; rate: number; chipCls: string };
@@ -105,7 +106,7 @@ function AnimatedEuros({ value, className = "" }: { value: number; className?: s
 }
 
 export function AffiliateSimulator() {
-  const [shops, setShops] = useState(49);
+  const [shops, setShops] = useState(60);
   const [planIdx, setPlanIdx] = useState(1);
   const usedRef = useRef(false);
 
@@ -154,7 +155,7 @@ export function AffiliateSimulator() {
                   }`}
                 >
                   {p.name}
-                  <span className="block text-xs font-normal opacity-80">{p.price} € / mois</span>
+                  <span className="block text-xs font-normal opacity-80">{formatPlanPrice(p.price)} € / mois</span>
                 </button>
               ))}
             </div>

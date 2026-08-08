@@ -1,12 +1,12 @@
 # Comeback
 
-> Comeback est un SaaS français de carte de fidélité digitale pour commerçants indépendants. Les clients ajoutent la carte à Apple Wallet ou Google Wallet en scannant un QR code au comptoir, cumulent des tampons et reçoivent des notifications de relance. Le commerçant suit visites, clients et chiffre d'affaires généré depuis un dashboard. Plans : Starter gratuit (30 clients), Pro 49 €, Business 99 € HT/mois, avec 30 jours d'essai gratuit sans carte bancaire. Site en français, marché : France.
+> Comeback est un SaaS français de carte de fidélité digitale pour commerçants indépendants. Les clients ajoutent la carte à Apple Wallet ou Google Wallet en scannant un QR code au comptoir, cumulent des tampons et reçoivent des notifications de relance. Le commerçant suit visites, clients et chiffre d'affaires généré depuis un dashboard. Plans : Starter gratuit (30 clients), Pro 9,99 €, Business 39,99 € HT/mois, avec 30 jours d'essai gratuit sans carte bancaire. Site en français, marché : France.
 
 ## Pages principales
 
 - [Accueil](https://getcomeback.fr/): présentation de la carte de fidélité digitale Comeback
 - [Fonctionnalités](https://getcomeback.fr/fonctionnalites): carte Wallet, relances automatiques, promos flash, dashboard
-- [Tarifs](https://getcomeback.fr/tarifs): plans Starter gratuit, Pro 49 €, Business 99 € HT/mois, comparatif détaillé
+- [Tarifs](https://getcomeback.fr/tarifs): plans Starter gratuit, Pro 9,99 €, Business 39,99 € HT/mois, comparatif détaillé
 - [Calculateur](https://getcomeback.fr/calculateur): estimation du chiffre d'affaires récupérable par la fidélisation
 - [Témoignages](https://getcomeback.fr/temoignages): résultats de commerçants utilisateurs
 - [Affiliation](https://getcomeback.fr/affiliation): programme partenaire, 20 à 50 % de commission récurrente

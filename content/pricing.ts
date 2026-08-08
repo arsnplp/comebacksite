@@ -1,8 +1,8 @@
 /**
- * Plans tarifaires (grille mise à jour le 28 juillet 2026 : Starter gratuit).
+ * Plans tarifaires (grille mise à jour le 6 août 2026 : baisse Pro/Business).
  *
- * Le claim « rentabilisé dès 2 clients fidélisés par mois » se base sur :
- * plan Pro 49 €/mois ÷ panier moyen ~25 € ≈ 2 visites supplémentaires
+ * Le claim « rentabilisé dès 1 client fidélisé par mois » se base sur :
+ * plan Pro 9,99 €/mois ÷ panier moyen ~25 € < 1 visite supplémentaire
  * par mois. Le plan Starter est gratuit, sans coût à amortir.
  */
 export type Plan = {
@@ -18,6 +18,11 @@ export type Plan = {
   recommended: boolean;
   cta: string;
 };
+
+/** "9,99" plutôt que "9.99" — affichage des prix à la française. */
+export function formatPlanPrice(price: number): string {
+  return price.toLocaleString("fr-FR", { maximumFractionDigits: 2 });
+}
 
 export const plans: Plan[] = [
   {
@@ -43,7 +48,7 @@ export const plans: Plan[] = [
   },
   {
     name: "Pro",
-    price: 49,
+    price: 9.99,
     period: "/mois",
     equivalent: "Sans engagement",
     description: "Le choix des commerçants actifs.",
@@ -62,7 +67,7 @@ export const plans: Plan[] = [
   },
   {
     name: "Business",
-    price: 99,
+    price: 39.99,
     period: "/mois",
     equivalent: "Sans engagement",
     description: "Pour les enseignes en croissance.",

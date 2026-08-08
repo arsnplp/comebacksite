@@ -776,7 +776,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         question: "Comment se passe la facturation pour un réseau ?",
         answer:
-          "Le plan Business est à 99 € HT par mois, avec clients et notifications illimités : un seul abonnement couvre tout le réseau. Pour une organisation particulière (facturation répartie par site, très grand réseau), contactez-nous.",
+          "Le plan Business est à 39,99 € HT par mois, avec clients et notifications illimités : un seul abonnement couvre tout le réseau. Pour une organisation particulière (facturation répartie par site, très grand réseau), contactez-nous.",
       },
       {
         question: "Combien de temps faut-il pour équiper un réseau complet ?",

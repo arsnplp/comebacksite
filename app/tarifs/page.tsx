@@ -11,13 +11,13 @@ import { Icon } from "@/components/ui/Icon";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMetadata, site } from "@/lib/seo";
-import { plans } from "@/content/pricing";
+import { plans, formatPlanPrice } from "@/content/pricing";
 import type { FaqItem } from "@/content/faq";
 
 export const metadata: Metadata = pageMetadata({
   title: "Tarifs : carte de fidélité digitale, Starter gratuit jusqu'à 30 clients",
   description:
-    "Starter gratuit (30 clients), Pro à 49 €, Business à 99 € HT par mois. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 2 clients fidèles.",
+    "Starter gratuit (30 clients), Pro à 9,99 €, Business à 39,99 € HT par mois. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 1 client fidèle.",
   path: "/tarifs",
 });
 
@@ -97,7 +97,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Comment être sûr que ce sera rentable pour mon commerce ?",
     answer:
-      "Faites le calcul avec vos propres chiffres : le plan Starter étant gratuit, il n'y a même pas d'abonnement à amortir pour commencer. Au plan Pro, il faut environ 2 visites supplémentaires par mois pour couvrir l'abonnement, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
+      "Faites le calcul avec vos propres chiffres : le plan Starter étant gratuit, il n'y a même pas d'abonnement à amortir pour commencer. Au plan Pro, à 9,99 € par mois, une seule visite supplémentaire suffit largement à couvrir l'abonnement, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
   },
 ];
 
@@ -172,8 +172,8 @@ export default function PricingPage() {
       <PageHero
         crumbs={[{ label: "Tarifs", href: "/tarifs" }]}
         eyebrow="Tarifs"
-        title="Un prix simple, rentabilisé dès 2 clients fidélisés par mois"
-        highlight="2 clients fidélisés"
+        title="Un prix simple, rentabilisé dès 1 client fidélisé par mois"
+        highlight="1 client fidélisé"
         lead="30 jours d'essai gratuit avec toutes les fonctionnalités Business, sans carte bancaire. Vous ne payez que si la fidélité vous rapporte, et votre dashboard vous le prouve en euros."
       >
         <Badge>Sans carte bancaire</Badge>
@@ -208,7 +208,7 @@ export default function PricingPage() {
                     {plan.price !== null ? (
                       <>
                         <span className="font-display text-4xl font-extrabold tracking-tight">
-                          {plan.price}&nbsp;€
+                          {formatPlanPrice(plan.price)}&nbsp;€
                         </span>
                         <span className="text-ink-soft">{plan.period} HT</span>
                       </>
@@ -280,7 +280,7 @@ export default function PricingPage() {
                     <th key={plan.name} scope="col" className="px-4 py-5 text-center">
                       <span className="font-display text-base font-bold text-ink">{plan.name}</span>
                       <span className="block text-sm font-normal text-ink-soft">
-                        {plan.price !== null ? `${plan.price} €/mois` : "Sur devis"}
+                        {plan.price !== null ? `${formatPlanPrice(plan.price)} €/mois` : "Sur devis"}
                       </span>
                     </th>
                   ))}
@@ -343,7 +343,7 @@ export default function PricingPage() {
                 14 600 € / an
               </p>
               <p className="mt-2 text-sm text-leaf-200">
-                de CA récupérable estimé, contre 588 € d&apos;abonnement annuel au plan Pro.
+                de CA récupérable estimé, contre 120 € d&apos;abonnement annuel au plan Pro.
               </p>
             </div>
           </div>

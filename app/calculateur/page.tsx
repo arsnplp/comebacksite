@@ -147,7 +147,7 @@ export default function CalculatorPage() {
           </h2>
           <p className="mt-5 text-ink-soft leading-relaxed">
             Premier réflexe : comparez ce montant au coût d&apos;un programme de fidélité. Le plan
-            Starter est gratuit jusqu&apos;à 30 clients, et le plan Pro démarre à 49 euros par mois ;
+            Starter est gratuit jusqu&apos;à 30 clients, et le plan Pro démarre à 9,99 euros par mois ;
             si votre estimation dépasse quelques centaines d&apos;euros par an, la question n&apos;est
             donc plus « est-ce rentable ? » mais « pourquoi attendre ? ». Consultez les <Link href="/tarifs" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">tarifs détaillés</Link> pour
             choisir le plan qui correspond à votre volume de clients.

@@ -26,15 +26,15 @@ const LOGIN_URL = "https://app.getcomeback.fr/affilies";
 
 /* ------------------------------------------------------------------ */
 /* Notifications du héros : montants cohérents avec les paliers        */
-/* (49,50 = 50 % de Business, 17,15 = 35 % de Pro, 9,80 = 20 % de Pro, */
-/* 34,65 = 35 % de Business). Total affiché : 111,10 €.                */
+/* (20,00 = 50 % de Business, 3,50 = 35 % de Pro, 2,00 = 20 % de Pro,  */
+/* 14,00 = 35 % de Business). Total affiché : 39,50 €.                 */
 /* ------------------------------------------------------------------ */
 
 const notifications = [
-  { amount: "+ 49,50 €", shop: "Pizzeria Da Marco", when: "à l'instant" },
-  { amount: "+ 17,15 €", shop: "Institut Rosa", when: "il y a 2 h" },
-  { amount: "+ 9,80 €", shop: "Barber Le Fauteuil", when: "hier" },
-  { amount: "+ 34,65 €", shop: "Café des Halles", when: "il y a 3 jours" },
+  { amount: "+ 20,00 €", shop: "Pizzeria Da Marco", when: "à l'instant" },
+  { amount: "+ 3,50 €", shop: "Institut Rosa", when: "il y a 2 h" },
+  { amount: "+ 2,00 €", shop: "Barber Le Fauteuil", when: "hier" },
+  { amount: "+ 14,00 €", shop: "Café des Halles", when: "il y a 3 jours" },
 ];
 
 /* ------------------------------------------------------------------ */
@@ -61,7 +61,7 @@ const steps = [
   },
   {
     title: "Le commerce essaie, puis s'abonne",
-    text: "Il teste Comeback gratuitement 30 jours. S'il s'abonne (19, 49 ou 99 € par mois), il est rattaché à vous.",
+    text: "Il teste Comeback gratuitement 30 jours. S'il s'abonne (9,99 ou 39,99 € par mois, le Starter étant gratuit), il est rattaché à vous.",
   },
   {
     title: "Vous touchez 20 à 50 %, chaque mois",
@@ -288,7 +288,7 @@ export default function AffiliationPage() {
                   className="anim-stamp mx-auto w-fit rounded-full bg-gold-100 px-4 py-1.5 text-sm font-semibold text-gold-700 ring-1 ring-gold-300"
                   style={{ "--rise-delay": "1300ms" } as CSSProperties}
                 >
-                  + 111,10 € ce mois-ci, et ça recommence le mois prochain
+                  + 39,50 € ce mois-ci, et ça recommence le mois prochain
                 </div>
               </div>
             </div>
