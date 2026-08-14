@@ -34,9 +34,9 @@ export const sectorDetails: SectorDetail[] = [
     slug: "restaurant",
     label: "Restaurant",
     icon: "utensils",
-    metaTitle: "Carte de fidélité restaurant : faites revenir vos clients à table",
+    metaTitle: "Carte de fidélité restaurant : gratuite, sans engagement",
     metaDescription:
-      "Créez la carte de fidélité digitale de votre restaurant en 10 minutes : vos clients reviennent plus souvent et remplissent vos services creux.",
+      "Créez la carte de fidélité digitale de votre restaurant, gratuitement jusqu'à 30 clients. Vos habitués reviennent plus souvent, sans effort côté cuisine.",
     h1: "La carte de fidélité qui remplit votre restaurant, midi et soir",
     h1Highlight: "remplit votre restaurant",
     intro:
@@ -122,9 +122,9 @@ export const sectorDetails: SectorDetail[] = [
     slug: "coiffeur",
     label: "Salon de coiffure",
     icon: "scissors",
-    metaTitle: "Carte de fidélité salon de coiffure : des rendez-vous plus rapprochés",
+    metaTitle: "Carte de fidélité coiffeur : gratuite, sans engagement",
     metaDescription:
-      "La carte de fidélité digitale pour salons de coiffure : des relances automatiques qui rapprochent les rendez-vous. Essai gratuit 30 jours.",
+      "La carte de fidélité digitale pour salons de coiffure, gratuite jusqu'à 30 clientes. Relances automatiques entre deux rendez-vous, sans y penser.",
     h1: "La carte de fidélité qui raccourcit le temps entre deux rendez-vous",
     h1Highlight: "raccourcit le temps",
     intro:
@@ -222,9 +222,9 @@ export const sectorDetails: SectorDetail[] = [
     slug: "boulangerie",
     label: "Boulangerie",
     icon: "bread",
-    metaTitle: "Carte de fidélité boulangerie : transformez les passants en habitués",
+    metaTitle: "Carte de fidélité boulangerie : gratuite, sans engagement",
     metaDescription:
-      "Carte de fidélité digitale pour boulangerie : un tampon en 2 secondes même en plein rush, et des clients qui reviennent chaque matin.",
+      "La carte de fidélité digitale pour boulangeries, gratuite jusqu'à 30 clients. Un tampon en 2 secondes, même en plein rush du matin.",
     h1: "La carte de fidélité qui transforme les passants en habitués du matin",
     h1Highlight: "habitués du matin",
     intro:

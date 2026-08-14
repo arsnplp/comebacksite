@@ -172,6 +172,35 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
         </Container>
       </section>
 
+      {/* CTA intermédiaire : après l'explication, avant la preuve sociale */}
+      <section className="pb-20 sm:pb-28" aria-label="Essayer Comeback">
+        <Container>
+          <div className="mx-auto max-w-3xl rounded-3xl bg-leaf-50 p-8 text-center ring-1 ring-leaf-200 sm:p-12">
+            <h2 className="font-display text-2xl font-bold tracking-tight text-balance sm:text-3xl">
+              Prêt(e) à faire revenir vos clients&nbsp;?
+            </h2>
+            <p className="mt-3 text-lg text-ink-soft">
+              Votre carte {sector.label.toLowerCase()} peut être prête avant la fin de la journée.
+            </p>
+            <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2">
+              {["Starter gratuit jusqu'à 30 clients", "Sans carte bancaire", "Résiliable à tout moment"].map((f) => (
+                <li key={f} className="flex items-center gap-2 text-[0.95rem] font-medium text-ink">
+                  <svg viewBox="0 0 16 16" className="h-4 w-4 shrink-0 text-leaf-600" aria-hidden="true">
+                    <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  {f}
+                </li>
+              ))}
+            </ul>
+            <div className="mt-8">
+              <CTALink href="https://app.getcomeback.fr/login" position={`secteur-${sector.slug}-mid`} size="xl">
+                Créer ma carte de fidélité
+              </CTALink>
+            </div>
+          </div>
+        </Container>
+      </section>
+
       {/* Témoignage du secteur */}
       {testimonial && (
         <section className="pb-20 sm:pb-28" aria-labelledby="testimonial-title">
