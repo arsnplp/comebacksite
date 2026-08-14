@@ -29,8 +29,8 @@ export const plans: Plan[] = [
     name: "Starter",
     price: 0,
     period: "/mois",
-    equivalent: "Gratuit, sans engagement",
-    description: "Idéal pour démarrer.",
+    equivalent: "Gratuit à vie, sans engagement",
+    description: "Idéal pour démarrer, gratuit pour toujours.",
     features: [
       "30 clients maximum",
       "1 000 notifications par mois",

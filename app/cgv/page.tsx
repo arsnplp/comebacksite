@@ -30,7 +30,7 @@ const sections: LegalSection[] = [
   {
     title: "3. Essai gratuit",
     body: [
-      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours, sans carte bancaire et sans engagement. À l'issue de l'essai, le compte est suspendu si aucun abonnement n'est souscrit ; le Client peut exporter ses données avant et après cette échéance, pendant une durée de [DURÉE] jours.",
+      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours avec l'ensemble des fonctionnalités du plan Business, sans carte bancaire et sans engagement. À l'issue de l'essai, le Client choisit un abonnement payant (Pro ou Business) ou continue gratuitement, sans limite de durée, avec le plan Starter et ses fonctionnalités réduites. Le compte n'est jamais suspendu pour défaut de paiement d'un abonnement gratuit. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de [DURÉE] jours.",
     ],
   },
   {

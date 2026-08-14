@@ -16,7 +16,7 @@ export function FinalCTA() {
           Vos concurrents fidélisent déjà. Et vous&nbsp;?
         </p>
         <p className="mx-auto mt-5 max-w-xl text-lg text-leaf-100">
-          Essai gratuit · Sans CB · Installé en 10 minutes
+          Plan gratuit à vie · Sans CB · Installé en 10 minutes
         </p>
 
         <div className="mt-10">

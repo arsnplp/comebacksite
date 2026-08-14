@@ -14,7 +14,7 @@ export function PricingPreview() {
           eyebrow="Combien ça coûte"
           title="Un tarif simple. Rentabilisé dès 1 client fidélisé par mois."
           highlight="1 client fidélisé"
-          lead="30 jours gratuits avec toutes les fonctionnalités Business, sans carte bancaire. Ensuite :"
+          lead="30 jours gratuits avec toutes les fonctionnalités Business, sans carte bancaire. Ensuite, restez gratuit à vie sur Starter si vous préférez :"
         />
 
         <Stagger className="grid items-stretch gap-6 lg:grid-cols-3">

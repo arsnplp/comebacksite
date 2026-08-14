@@ -26,7 +26,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: "Que se passe-t-il à la fin de l'essai gratuit ?",
     answer:
-      "Vous décidez. Pendant 30 jours, votre dashboard vous montre en euros ce que la fidélité vous rapporte, avec vos vraies données. Si Comeback vous rapporte plus qu'il ne coûte, vous continuez. Sinon, vous arrêtez : nous ne demandons pas de carte bancaire, il n'y a donc rien à annuler.",
+      "Vous décidez. Pendant 30 jours, votre dashboard vous montre en euros ce que la fidélité vous rapporte, avec vos vraies données, en profitant de toutes les fonctionnalités du plan Business. Ensuite, vous choisissez un abonnement payant si vous voulez plus de volume, ou vous continuez gratuitement à vie sur le plan Starter : nous ne demandons pas de carte bancaire, il n'y a donc rien à annuler ni aucun risque d'être prélevé sans le vouloir.",
   },
   {
     question: "Puis-je garder mes cartes papier en parallèle ?",

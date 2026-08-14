@@ -66,6 +66,7 @@ export function Hero() {
               className="anim-rise mt-5 flex flex-wrap gap-2"
               style={{ "--rise-delay": "360ms" } as CSSProperties}
             >
+              <Badge variant="gold">Plan gratuit à vie</Badge>
               <Badge>Sans carte bancaire</Badge>
               <Badge>Sans engagement</Badge>
               <Badge>Installé en 10 min</Badge>

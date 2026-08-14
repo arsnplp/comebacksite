@@ -89,6 +89,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
 
       <div className="pb-6">
         <Container wide className="flex flex-wrap justify-center gap-2">
+          <Badge variant="gold">Plan gratuit à vie</Badge>
           <Badge>Sans application à télécharger</Badge>
           <Badge>Installé en 10 minutes</Badge>
           <Badge>Essai gratuit, sans CB</Badge>
@@ -183,7 +184,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
               Votre carte {sector.label.toLowerCase()} peut être prête avant la fin de la journée.
             </p>
             <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2">
-              {["Starter gratuit jusqu'à 30 clients", "Sans carte bancaire", "Résiliable à tout moment"].map((f) => (
+              {["Starter gratuit à vie jusqu'à 30 clients", "Sans carte bancaire", "Résiliable à tout moment"].map((f) => (
                 <li key={f} className="flex items-center gap-2 text-[0.95rem] font-medium text-ink">
                   <svg viewBox="0 0 16 16" className="h-4 w-4 shrink-0 text-leaf-600" aria-hidden="true">
                     <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />

@@ -72,7 +72,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "L'essai gratuit de 30 jours engage-t-il à quelque chose ?",
     answer:
-      "Non. Nous ne demandons pas de carte bancaire à l'inscription : à la fin des 30 jours, rien n'est prélevé. Si Comeback vous rapporte, vous choisissez un plan. Sinon, votre compte s'arrête tout seul et vous récupérez votre fichier client.",
+      "Non. Nous ne demandons pas de carte bancaire à l'inscription : à la fin des 30 jours, rien n'est prélevé. Si Comeback vous rapporte gros, vous passez sur Pro ou Business. Sinon, vous continuez gratuitement à vie sur le plan Starter, sans rien perdre de votre fichier client.",
   },
   {
     question: "Y a-t-il des frais d'installation ou des coûts cachés ?",
@@ -174,11 +174,11 @@ export default function PricingPage() {
         eyebrow="Tarifs"
         title="Un prix simple, rentabilisé dès 1 client fidélisé par mois"
         highlight="1 client fidélisé"
-        lead="30 jours d'essai gratuit avec toutes les fonctionnalités Business, sans carte bancaire. Vous ne payez que si la fidélité vous rapporte, et votre dashboard vous le prouve en euros."
+        lead="30 jours d'essai gratuit avec toutes les fonctionnalités Business, sans carte bancaire. Vous ne payez que si la fidélité vous rapporte, et votre dashboard vous le prouve en euros. Sinon, restez gratuit à vie sur Starter."
       >
+        <Badge variant="gold">Starter gratuit à vie</Badge>
         <Badge>Sans carte bancaire</Badge>
         <Badge>Sans engagement</Badge>
-        <Badge>Starter gratuit</Badge>
       </PageHero>
 
       {/* Cartes de plans */}
