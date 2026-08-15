@@ -31,7 +31,7 @@ Note : 10 articles supplémentaires ont été publiés hors de cette file, dans 
 | remplir-jours-creux-commerce | remplir les jours creux de son commerce | Promos flash ciblées sur les heures et jours faibles, exemples par métier | Publié le 2026-08-01 |
 | fideliser-clients-boutique | fidéliser les clients de sa boutique | Se différencier des grandes enseignes avec un fichier client et des relances personnelles | Publié le 2026-07-27 |
 | creer-fichier-client-commerce | créer un fichier client quand on est commerçant | Le fichier client comme actif du fonds de commerce, collecte RGPD simple via la carte de fidélité | À écrire |
-| fideliser-clients-cafe-bar | fidéliser les clients de son café ou bar | Rituel quotidien, happy hours ciblées, la carte dans le téléphone plutôt que dans le portefeuille | À écrire |
+| fideliser-clients-cafe-bar | fidéliser les clients de son café ou bar | Rituel quotidien, happy hours ciblées, la carte dans le téléphone plutôt que dans le portefeuille | Publié le 2026-08-15 |
 | relancer-clients-inactifs-commerce | relancer les clients inactifs | Détecter l'inactivité, quoi envoyer, quand, avec quels résultats attendre | À écrire |
 | fideliser-clients-food-truck | fidéliser les clients de son food truck | Fidéliser sans adresse fixe, emplacements multiples, notification de l'emplacement du jour | À écrire |
 | augmenter-panier-moyen-commerce | augmenter le panier moyen de son commerce | Paliers de récompense, vente additionnelle, seuils psychologiques | À écrire |
