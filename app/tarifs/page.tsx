@@ -326,7 +326,12 @@ export default function PricingPage() {
               </h2>
               <p className="mt-4 max-w-xl text-lg text-leaf-100">
                 Notre calculateur estime le chiffre d&apos;affaires que votre commerce laisse filer chaque année
-                sans programme de fidélité. Deux curseurs, dix secondes, et un chiffre en euros.
+                sans programme de fidélité. Deux curseurs, dix secondes, et un chiffre en euros. Pour resituer ce
+                calcul dans votre budget, notre article{" "}
+                <Link href="/blog/combien-coute-carte-fidelite-digitale" className="font-semibold text-white underline underline-offset-4 hover:text-leaf-200">
+                  combien coûte une carte de fidélité digitale
+                </Link>{" "}
+                compare les modèles de tarification du marché.
               </p>
               <div className="mt-8">
                 <CTALink href="/calculateur" position="tarifs-roi" size="lg">

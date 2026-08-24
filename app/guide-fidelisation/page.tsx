@@ -266,6 +266,24 @@ export default function GuidePage() {
                 </Link>{" "}
                 de la fidélisation.
               </li>
+              <li>
+                <Link href="/blog/comment-creer-carte-fidelite-digitale" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                  Créez votre carte de fidélité digitale
+                </Link>{" "}
+                avec notre guide pas à pas.
+              </li>
+              <li>
+                <Link href="/blog/idees-recompenses-programme-fidelite" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                  Choisissez votre mécanique de récompense
+                </Link>{" "}
+                parmi 5 idées qui font leurs preuves.
+              </li>
+              <li>
+                <Link href="/blog/erreurs-fidelisation-commercants" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                  Évitez les erreurs les plus fréquentes
+                </Link>{" "}
+                des commerçants indépendants.
+              </li>
             </ul>
           </div>
         </Container>

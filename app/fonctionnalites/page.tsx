@@ -359,6 +359,13 @@ export default function FeaturesPage() {
             >
               article complet sur le fonctionnement du Wallet
             </Link>
+            , ou suivez notre{" "}
+            <Link
+              href="/blog/comment-creer-carte-fidelite-digitale"
+              className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800"
+            >
+              guide pas à pas pour créer votre carte
+            </Link>
             .
           </p>
         </Container>

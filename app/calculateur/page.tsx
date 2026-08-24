@@ -157,7 +157,14 @@ export default function CalculatorPage() {
             ordre de grandeur volontairement prudent ; en revanche, votre dashboard Comeback mesure,
             lui, des visites réelles, un panier réel et un chiffre d&apos;affaires réel. Lancez
             l&apos;essai gratuit de 30 jours, posez le QR code sur votre comptoir, puis laissez les
-            chiffres parler : c&apos;est la seule preuve qui compte.
+            chiffres parler : c&apos;est la seule preuve qui compte. Notre article sur{" "}
+            <Link
+              href="/blog/mesurer-roi-programme-fidelite"
+              className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800"
+            >
+              mesurer le ROI d&apos;un programme de fidélité
+            </Link>{" "}
+            détaille la méthode complète, mois après mois.
           </p>
           <p className="mt-4 text-ink-soft leading-relaxed">
             Gardez aussi en tête ce que cette estimation ne dit pas : elle ne prédit ni la météo, ni

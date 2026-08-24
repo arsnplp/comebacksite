@@ -174,7 +174,11 @@ export default function ComparisonPage() {
               commerce qu&apos;il fréquente peut-être une fois par semaine. La plupart refusent poliment, et
               parmi ceux qui installent, beaucoup désactivent les notifications ou suppriment l&apos;application
               au premier nettoyage de téléphone. Réserver cette approche aux très grandes enseignes n&apos;est
-              pas un hasard : il faut leur budget marketing pour la faire vivre.
+              pas un hasard : il faut leur budget marketing pour la faire vivre. Notre article{" "}
+              <Link href="/blog/carte-fidelite-digitale-sans-application" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                carte de fidélité sans application
+              </Link>{" "}
+              détaille pourquoi cette friction fait échouer tant de programmes.
             </p>
           </div>
           <div>
@@ -187,7 +191,11 @@ export default function ComparisonPage() {
               L&apos;inscription tient en un scan de 10 secondes, la carte est impossible à perdre, le tampon
               impossible à frauder, et chaque passage enrichit un fichier client qui vous appartient. Ajoutez
               les relances automatiques et les notifications de récompense, et la comparaison est pliée pour
-              l&apos;immense majorité des commerces de proximité.
+              l&apos;immense majorité des commerces de proximité. Notre guide sur{" "}
+              <Link href="/blog/carte-fidelite-apple-wallet-google-wallet" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                le fonctionnement d&apos;Apple Wallet et Google Wallet
+              </Link>{" "}
+              explique chaque étape, du scan côté client à la validation côté commerçant.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-ink-soft">
               Pour estimer ce que ce changement représente pour votre commerce, le{" "}

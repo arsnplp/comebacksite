@@ -79,8 +79,8 @@ export const sectorDetails: SectorDetail[] = [
       {
         title: "Pourquoi un programme de fidélité change l'économie d'un restaurant",
         paragraphs: [
-          "Acquérir un nouveau client coûte cher : visibilité sur les plateformes, commissions de livraison, publicité locale. Fidéliser un client existant coûte une fraction de ce montant, et un habitué dépense davantage à chaque visite : il connaît la carte, ose le plat du jour, ajoute le café. En augmentant simplement la fréquence de visite de vos clients existants, vous augmentez votre chiffre d'affaires sans dépenser un euro de plus en publicité.",
-          "C'est encore plus vrai en restauration, où la décision se joue à l'habitude et à la proximité. Le client qui a votre carte dans son téléphone pense à vous au moment où il se demande où déjeuner. La notification qui lui rappelle qu'il ne lui manque que deux tampons arrive exactement dans ce moment de décision.",
+          "Acquérir un nouveau client coûte cher : visibilité sur les plateformes, commissions de livraison, publicité locale. Fidéliser un client existant coûte une fraction de ce montant, et un habitué dépense davantage à chaque visite : il connaît la carte, ose le plat du jour, ajoute le café. En augmentant simplement la fréquence de visite de vos clients existants, vous augmentez votre chiffre d'affaires sans dépenser un euro de plus en publicité, un principe détaillé dans notre article sur [comment augmenter le chiffre d'affaires de son commerce](/blog/comment-augmenter-chiffre-affaires-commerce).",
+          "C'est encore plus vrai en restauration, où la décision se joue à l'habitude et à la proximité. Le client qui a votre carte dans son téléphone pense à vous au moment où il se demande où déjeuner. La notification qui lui rappelle qu'il ne lui manque que deux tampons arrive exactement dans ce moment de décision. Pour aller plus loin, notre guide sur [comment fidéliser les clients de son restaurant](/blog/comment-fideliser-clients-restaurant) détaille 7 leviers concrets.",
         ],
       },
       {
@@ -374,7 +374,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         title: "Fidéliser en boutique sans brader : le rôle du programme",
         paragraphs: [
-          "La tentation classique pour faire revenir un client, c'est la remise permanente. Elle fonctionne, mais elle détruit la marge et habitue la clientèle à ne plus acheter au prix normal. Un programme de fidélité inverse la logique : l'avantage se mérite au fil des passages, il récompense un comportement (revenir) plutôt qu'un statut (passer par là un jour de solde).",
+          "La tentation classique pour faire revenir un client, c'est la remise permanente. Elle fonctionne, mais elle détruit la marge et habitue la clientèle à ne plus acheter au prix normal. Un programme de fidélité inverse la logique : l'avantage se mérite au fil des passages, il récompense un comportement (revenir) plutôt qu'un statut (passer par là un jour de solde), comme le développe notre article dédié à la [fidélisation en boutique face aux grandes enseignes](/blog/fideliser-clients-boutique).",
           "Le second bénéfice est moins visible mais plus précieux : le fichier client. Chaque scan enrichit une base qui vous appartient, avec prénom et historique de visites. Le jour où vous ouvrez un deuxième point de vente, lancez un site ou organisez un événement, ce fichier vaut de l'or, et il est exportable en un clic.",
         ],
       },
@@ -467,7 +467,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         title: "La régularité, premier levier de chiffre d'affaires d'un institut",
         paragraphs: [
-          "Le chiffre d'affaires d'un institut repose sur un petit nombre de clientes régulières : celles qui viennent chaque mois pèsent plusieurs fois plus lourd que les clientes occasionnelles. Or cette régularité est fragile : un déménagement, un changement d'emploi du temps, une période chargée, et le rythme se casse sans bruit. Le rôle du programme de fidélité est précisément de protéger cette régularité, en rendant chaque visite un peu plus gratifiante que la précédente.",
+          "Le chiffre d'affaires d'un institut repose sur un petit nombre de clientes régulières : celles qui viennent chaque mois pèsent plusieurs fois plus lourd que les clientes occasionnelles. Or cette régularité est fragile : un déménagement, un changement d'emploi du temps, une période chargée, et le rythme se casse sans bruit. Le rôle du programme de fidélité est précisément de protéger cette régularité, en rendant chaque visite un peu plus gratifiante que la précédente, comme le détaille notre article sur [fidéliser les clientes de son institut de beauté](/blog/fideliser-clients-institut-beaute).",
           "La carte à tampons digitale ajoute un élément que le papier n'a jamais eu : la visibilité. La cliente voit sa progression dans son téléphone, reçoit un signe quand la récompense approche, et un rappel discret si elle laisse passer trop de temps. Rien d'intrusif : juste ce qu'il faut pour rester l'institut de référence.",
         ],
       },
@@ -475,7 +475,7 @@ export const sectorDetails: SectorDetail[] = [
         title: "Un outil qui respecte l'image de votre institut",
         paragraphs: [
           "Dans les métiers de la beauté, l'image compte autant que le geste : difficile d'imaginer tendre une carte en carton mal découpée dans un institut premium. La carte Wallet est à l'inverse un objet soigné, personnalisé à vos couleurs, qui vit dans le même téléphone que les cartes d'embarquement et les billets de spectacle.",
-          "Et parce que vos clientes vous confient des informations personnelles, l'hébergement des données en Europe et la conformité RGPD ne sont pas des options : elles sont intégrées dès la conception. Vos données ne sont jamais revendues et restent exportables à tout moment.",
+          "Et parce que vos clientes vous confient des informations personnelles, l'hébergement des données en Europe et la conformité RGPD ne sont pas des options : elles sont intégrées dès la conception, comme nous l'expliquons dans notre article sur [carte de fidélité et RGPD](/blog/carte-fidelite-rgpd). Vos données ne sont jamais revendues et restent exportables à tout moment.",
         ],
       },
     ],
@@ -563,7 +563,7 @@ export const sectorDetails: SectorDetail[] = [
         title: "Pourquoi le 10e café offert fonctionne toujours aussi bien",
         paragraphs: [
           "La force du 10 + 1, c'est sa lisibilité : le client sait exactement ce qu'il doit faire et ce qu'il va gagner. Sur un produit à forte marge comme le café, offrir la 11e tasse coûte quelques dizaines de centimes pour dix passages encaissés : c'est l'un des meilleurs rapports coût/effet du commerce de proximité.",
-          "Le passage au digital ne change pas la mécanique, il enlève les frictions : plus de carte oubliée (elle est dans le téléphone), plus de fraude (le tampon est validé par vous), et surtout un compteur visible qui crée l'envie de compléter la série. À 8 tampons sur 10, votre café gagne systématiquement l'arbitrage face au concurrent d'en face.",
+          "Le passage au digital ne change pas la mécanique, il enlève les frictions : plus de carte oubliée (elle est dans le téléphone), plus de fraude (le tampon est validé par vous), et surtout un compteur visible qui crée l'envie de compléter la série. À 8 tampons sur 10, votre café gagne systématiquement l'arbitrage face au concurrent d'en face, un ressort détaillé dans notre article sur la [fidélisation au quotidien en café et bar](/blog/fideliser-clients-cafe-bar).",
         ],
       },
       {
@@ -655,7 +655,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         title: "Fidéliser sans adresse fixe : le défi particulier du food truck",
         paragraphs: [
-          "Le commerce ambulant repose sur un paradoxe : votre force, c'est d'aller chercher les clients là où ils sont, mais chaque déplacement met votre clientèle à zéro si personne ne sait où vous retrouver. Les réseaux sociaux ne résolvent qu'à moitié le problème : l'algorithme décide qui voit vos publications, et vos clients les plus fidèles ne sont pas forcément vos abonnés les plus actifs.",
+          "Le commerce ambulant repose sur un paradoxe : votre force, c'est d'aller chercher les clients là où ils sont, mais chaque déplacement met votre clientèle à zéro si personne ne sait où vous retrouver. Les réseaux sociaux ne résolvent qu'à moitié le problème : l'algorithme décide qui voit vos publications, et vos clients les plus fidèles ne sont pas forcément vos abonnés les plus actifs. Notre article sur [pourquoi vos clients ne reviennent pas](/blog/pourquoi-clients-ne-reviennent-pas) détaille ce mécanisme plus largement.",
           "La carte de fidélité digitale attaque le problème à la racine : chaque client qui scanne devient joignable directement, par une notification qui arrive sur son écran de verrouillage. Votre emplacement du jour, vos horaires, votre plat de la semaine : l'information part une fois et touche tout le monde.",
         ],
       },
@@ -663,7 +663,7 @@ export const sectorDetails: SectorDetail[] = [
         title: "La file d'attente, votre meilleur moment pour recruter des fidèles",
         paragraphs: [
           "Un food truck a un atout que peu de commerces possèdent : un temps d'attente pendant lequel le client a son téléphone en main. C'est le moment idéal pour proposer le scan : le QR code affiché sur le camion, une phrase (« Scannez, le 10e menu est offert »), et l'inscription se fait pendant que la commande chauffe.",
-          "À ce rythme, un truck qui sert 80 clients par service construit un fichier de plusieurs centaines de fidèles en quelques semaines. Un capital qui vous suit dans chaque nouveau spot, et que ni la pluie ni un changement d'emplacement ne peuvent effacer.",
+          "À ce rythme, un truck qui sert 80 clients par service construit un fichier de plusieurs centaines de fidèles en quelques semaines. Un capital qui vous suit dans chaque nouveau spot, et que ni la pluie ni un changement d'emplacement ne peuvent effacer. Pour lisser les emplacements plus calmes, notre article sur [remplir les jours creux de son commerce](/blog/remplir-jours-creux-commerce) donne des mécaniques concrètes.",
         ],
       },
     ],
