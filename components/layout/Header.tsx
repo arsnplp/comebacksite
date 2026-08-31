@@ -131,10 +131,10 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 lg:flex">
+        <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/connexion"
-            className="rounded-full px-4 py-2 text-[0.95rem] font-semibold text-ink transition-colors hover:text-leaf-700"
+            className="rounded-full border border-ink/15 px-4 py-2 text-[0.95rem] font-semibold text-ink transition-colors hover:border-leaf-300 hover:bg-leaf-50 hover:text-leaf-700"
           >
             Se connecter
           </Link>

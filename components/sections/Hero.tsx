@@ -1,8 +1,8 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
 import { CTALink } from "@/components/ui/CTALink";
 import { Container } from "@/components/ui/Container";
-import { PhoneWalletMockup } from "@/components/mockups/PhoneWalletMockup";
 
 /* [PLACEHOLDER] — remplacer par de vrais noms/logos de clients */
 const trustedShops = [
@@ -80,7 +80,14 @@ export function Hero() {
               aria-hidden="true"
             />
             <div className="relative">
-              <PhoneWalletMockup />
+              <Image
+                src="/telheader.png"
+                alt="Carte de fidélité Comeback ajoutée dans Apple Wallet sur un iPhone"
+                width={1024}
+                height={1536}
+                priority
+                className="mx-auto h-auto w-full max-w-[360px] drop-shadow-2xl"
+              />
               {/* Chip flottante — arrive comme un coup de tampon */}
               <div
                 className="anim-stamp absolute -right-2 bottom-14 hidden rounded-2xl bg-white px-4 py-2.5 shadow-card-lg ring-1 ring-ink/5 sm:block"
