@@ -284,6 +284,12 @@ export default function GuidePage() {
                 </Link>{" "}
                 des commerçants indépendants.
               </li>
+              <li>
+                <Link href="/carte-fidelite/franchise" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                  Équipez tout un réseau ou une franchise
+                </Link>{" "}
+                avec un programme centralisé.
+              </li>
             </ul>
           </div>
         </Container>
