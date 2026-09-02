@@ -8,12 +8,16 @@ import { sectors } from "@/content/sectors";
 
 const navLinks = [
   { href: "/fonctionnalites", label: "Fonctionnalités" },
+  { href: "/carte-fidelite/franchise", label: "Franchise" },
   { href: "/tarifs", label: "Tarifs" },
   { href: "/temoignages", label: "Témoignages" },
   { href: "/affiliation", label: "Affiliation" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
+
+/** Le dropdown Secteurs liste les métiers hors franchise, qui a son lien direct dans la nav. */
+const dropdownSectors = sectors.filter((s) => s.slug !== "franchise");
 
 /** Header sticky : se compacte au scroll, dropdown Secteurs, menu mobile. */
 export function Header() {
@@ -56,7 +60,7 @@ export function Header() {
 
   /* Soulignement animé : un trait or grandit depuis la gauche au survol */
   const linkCls =
-    "relative rounded-full px-3.5 py-2 text-[0.95rem] font-medium text-ink-soft transition-colors hover:text-ink after:absolute after:inset-x-3.5 after:bottom-0.5 after:h-[2px] after:origin-left after:scale-x-0 after:rounded-full after:bg-gold-500 after:transition-transform after:duration-300 hover:after:scale-x-100";
+    "relative rounded-full px-2.5 py-2 text-[0.9rem] font-medium text-ink-soft transition-colors hover:text-ink after:absolute after:inset-x-2.5 after:bottom-0.5 after:h-[2px] after:origin-left after:scale-x-0 after:rounded-full after:bg-gold-500 after:transition-transform after:duration-300 hover:after:scale-x-100";
 
   return (
     <header
@@ -99,7 +103,7 @@ export function Header() {
             {sectorsOpen && (
               <div className="absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-2xl bg-white p-2 shadow-card-lg ring-1 ring-ink/5">
                 <ul>
-                  {sectors.map((s) => (
+                  {dropdownSectors.map((s) => (
                     <li key={s.slug}>
                       <Link
                         href={`/carte-fidelite/${s.slug}`}
@@ -131,10 +135,10 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <Link
             href="/connexion"
-            className="rounded-full border border-ink/15 px-4 py-2 text-[0.95rem] font-semibold text-ink transition-colors hover:border-leaf-300 hover:bg-leaf-50 hover:text-leaf-700"
+            className="rounded-full border border-ink/15 px-3.5 py-2 text-[0.9rem] font-semibold text-ink transition-colors hover:border-leaf-300 hover:bg-leaf-50 hover:text-leaf-700"
           >
             Se connecter
           </Link>
@@ -184,7 +188,7 @@ export function Header() {
           </ul>
           <p className="mt-4 px-4 text-sm font-semibold uppercase tracking-wider text-ink-soft">Secteurs</p>
           <ul className="mt-1 grid grid-cols-2 gap-1">
-            {sectors.map((s) => (
+            {dropdownSectors.map((s) => (
               <li key={s.slug}>
                 <Link
                   href={`/carte-fidelite/${s.slug}`}
