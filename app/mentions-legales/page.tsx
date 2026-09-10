@@ -8,23 +8,26 @@ export const metadata: Metadata = pageMetadata({
   path: "/mentions-legales",
 });
 
-/*
- * ⚠️ [PLACEHOLDER] — Toutes les informations entre crochets sont à compléter
- * avec les données réelles de la société avant la mise en ligne.
- */
 const sections: LegalSection[] = [
   {
     title: "1. Éditeur du site",
     body: [
-      "Le site getcomeback.fr est édité par [RAISON SOCIALE], [FORME JURIDIQUE] au capital de [CAPITAL] euros, immatriculée au RCS de [VILLE] sous le numéro [NUMÉRO RCS / SIREN], dont le siège social est situé [ADRESSE COMPLÈTE].",
-      "Numéro de TVA intracommunautaire : [NUMÉRO TVA]. Directeur de la publication : [NOM DU DIRECTEUR DE LA PUBLICATION].",
+      "Le site getcomeback.fr est édité par NAIROX FORMATION, société par actions simplifiée (SAS) au capital de 200 euros, immatriculée au RCS de Nanterre sous le numéro 995 237 567, dont le siège social est situé 53 rue des Alouettes, 92000 Nanterre.",
+      {
+        list: [
+          "SIRET (siège) : 995 237 567 00012",
+          "Code APE / NAF : 8559A (formation continue d'adultes)",
+          "Numéro de TVA intracommunautaire : FR42995237567",
+        ],
+      },
+      "Directeur de la publication : Arsène Lecoq, Président de NAIROX FORMATION.",
       "Contact : arsene.lecoq@getcomeback.fr.",
     ],
   },
   {
     title: "2. Hébergement",
     body: [
-      "Le site est hébergé par [HÉBERGEUR : ex. Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis], dans le respect des mesures d'encadrement des transferts de données prévues par le RGPD.",
+      "Le site est hébergé par Hostinger International Ltd., 61 Lordou Vironos Street, 6023 Larnaca, Chypre, dans le respect des mesures d'encadrement des transferts de données prévues par le RGPD.",
     ],
   },
   {
@@ -53,7 +56,7 @@ export default function LegalNoticePage() {
   return (
     <LegalArticle
       title="Mentions légales"
-      updated="4 juillet 2026"
+      updated="10 septembre 2026"
       crumbLabel="Mentions légales"
       crumbHref="/mentions-legales"
       sections={sections}

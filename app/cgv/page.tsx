@@ -10,14 +10,14 @@ export const metadata: Metadata = pageMetadata({
 });
 
 /*
- * ⚠️ [PLACEHOLDER] — Trame de CGV à compléter (informations société) et à
- * faire valider par un conseil juridique avant toute mise en ligne.
+ * ⚠️ Trame de CGV : les informations société sont a jour, mais le document
+ * reste a faire valider par un conseil juridique avant toute mise en ligne.
  */
 const sections: LegalSection[] = [
   {
     title: "1. Objet",
     body: [
-      "Les présentes conditions générales de vente (CGV) régissent la souscription et l'utilisation du service Comeback, solution de carte de fidélité digitale éditée par [RAISON SOCIALE] (ci-après « l'Éditeur »), par tout professionnel (ci-après « le Client »). Toute souscription au service emporte acceptation pleine et entière des présentes CGV.",
+      "Les présentes conditions générales de vente (CGV) régissent la souscription et l'utilisation du service Comeback, solution de carte de fidélité digitale éditée par NAIROX FORMATION, société par actions simplifiée (SAS) au capital de 200 euros, immatriculée au RCS de Nanterre sous le numéro 995 237 567, dont le siège social est situé 53 rue des Alouettes, 92000 Nanterre (ci-après « l'Éditeur »), par tout professionnel (ci-après « le Client »). Toute souscription au service emporte acceptation pleine et entière des présentes CGV.",
     ],
   },
   {
@@ -30,7 +30,7 @@ const sections: LegalSection[] = [
   {
     title: "3. Essai gratuit",
     body: [
-      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours avec l'ensemble des fonctionnalités du plan Business, sans carte bancaire et sans engagement. À l'issue de l'essai, le Client choisit un abonnement payant (Pro ou Business) ou continue gratuitement, sans limite de durée, avec le plan Starter et ses fonctionnalités réduites. Le compte n'est jamais suspendu pour défaut de paiement d'un abonnement gratuit. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de [DURÉE] jours.",
+      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours avec l'ensemble des fonctionnalités du plan Business, sans carte bancaire et sans engagement. À l'issue de l'essai, le Client choisit un abonnement payant (Pro ou Business) ou continue gratuitement, sans limite de durée, avec le plan Starter et ses fonctionnalités réduites. Le compte n'est jamais suspendu pour défaut de paiement d'un abonnement gratuit. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de 90 jours.",
     ],
   },
   {
@@ -73,7 +73,7 @@ const sections: LegalSection[] = [
   {
     title: "9. Droit applicable et litiges",
     body: [
-      "Les présentes CGV sont soumises au droit français. En cas de litige, les parties rechercheront une solution amiable avant toute action ; à défaut, compétence exclusive est attribuée aux tribunaux de [VILLE], nonobstant pluralité de défendeurs ou appel en garantie.",
+      "Les présentes CGV sont soumises au droit français. En cas de litige, les parties rechercheront une solution amiable avant toute action ; à défaut, compétence exclusive est attribuée aux tribunaux de Nanterre, nonobstant pluralité de défendeurs ou appel en garantie.",
     ],
   },
 ];
@@ -82,7 +82,7 @@ export default function TermsPage() {
   return (
     <LegalArticle
       title="Conditions générales de vente"
-      updated="4 juillet 2026"
+      updated="10 septembre 2026"
       crumbLabel="CGV"
       crumbHref="/cgv"
       sections={sections}

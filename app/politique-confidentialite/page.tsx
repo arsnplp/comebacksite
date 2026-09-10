@@ -10,14 +10,14 @@ export const metadata: Metadata = pageMetadata({
 });
 
 /*
- * ⚠️ [PLACEHOLDER] — Les informations entre crochets sont à compléter, et le
- * document complet à faire valider par un conseil juridique avant mise en ligne.
+ * ⚠️ Les informations société sont a jour ; le document complet reste a
+ * faire valider par un conseil juridique avant mise en ligne.
  */
 const sections: LegalSection[] = [
   {
     title: "1. Qui est responsable du traitement ?",
     body: [
-      "Le responsable du traitement des données collectées sur le site getcomeback.fr est [RAISON SOCIALE], [ADRESSE COMPLÈTE], joignable à l'adresse arsene.lecoq@getcomeback.fr.",
+      "Le responsable du traitement des données collectées sur le site getcomeback.fr est NAIROX FORMATION (SAS), 53 rue des Alouettes, 92000 Nanterre, joignable à l'adresse arsene.lecoq@getcomeback.fr.",
       "Cette politique couvre le site vitrine getcomeback.fr. Les données traitées dans l'application Comeback pour le compte des commerçants (données de leurs clients fidélisés) font l'objet d'un accord de traitement des données dédié, conclu avec chaque commerçant.",
     ],
   },
@@ -92,7 +92,7 @@ export default function PrivacyPage() {
   return (
     <LegalArticle
       title="Politique de confidentialité"
-      updated="4 juillet 2026"
+      updated="10 septembre 2026"
       crumbLabel="Confidentialité"
       crumbHref="/politique-confidentialite"
       intro="Chez Comeback, la protection des données n'est pas un paragraphe obligatoire : c'est un argument produit. Voici, en clair, ce que nous collectons sur ce site, pourquoi, et les droits dont vous disposez."
