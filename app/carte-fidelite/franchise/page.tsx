@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
 import { CTALink } from "@/components/ui/CTALink";
-import { Badge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconTile } from "@/components/ui/Icon";
@@ -13,6 +12,12 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMetadata, site } from "@/lib/seo";
 import type { FaqItem } from "@/content/faq";
+
+/* ------------------------------------------------------------------ */
+/* Points clés rassurants du héros                                     */
+/* ------------------------------------------------------------------ */
+
+const heroPoints = ["Gérez chaque établissement", "Suivez vos statistiques", "Un seul compte centralisé"];
 
 export const metadata: Metadata = pageMetadata({
   title: "Carte de fidélité franchise : programme multi-établissements",
@@ -127,6 +132,22 @@ const serviceJsonLd = {
   url: `${site.url}/carte-fidelite/franchise`,
 };
 
+/* Fil d'Ariane : uniquement le balisage SEO, pas d'affichage visuel dans ce héros plein écran. */
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { label: "Accueil", href: "/" },
+    { label: "Secteurs", href: "/secteurs" },
+    { label: "Franchise & réseaux", href: "/carte-fidelite/franchise" },
+  ].map((crumb, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: crumb.label,
+    item: `${site.url}${crumb.href === "/" ? "" : crumb.href}`,
+  })),
+};
+
 const linkCls = "font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800";
 
 export default function FranchisePage() {
@@ -134,33 +155,58 @@ export default function FranchisePage() {
     <>
       <JsonLd data={faqJsonLd} />
       <JsonLd data={serviceJsonLd} />
+      <JsonLd data={breadcrumbJsonLd} />
 
-      <PageHero
-        crumbs={[
-          { label: "Secteurs", href: "/secteurs" },
-          { label: "Franchise & réseaux", href: "/carte-fidelite/franchise" },
-        ]}
-        eyebrow="Franchise & réseaux"
-        title="Équipez vos franchises d'un système de carte de fidélité en quelques clics"
-        highlight="en quelques clics"
-        lead="Une carte de fidélité commune à tout votre réseau, une base client centralisée, et des statistiques claires établissement par établissement."
-      >
-        <CTALink href="https://app.getcomeback.fr/login" position="franchise-hero" size="xl">
-          Essayer gratuitement
-        </CTALink>
-        <CTALink href="/demo" position="franchise-hero-demo" variant="ghost" size="xl">
-          Réserver une démo
-        </CTALink>
-      </PageHero>
+      <section className="relative flex min-h-screen items-center overflow-hidden bg-cream">
+        <Image
+          src="/headerFranchise.png"
+          alt="La carte de fidélité Comeback, la même expérience dans tous vos points de vente"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[68%_center]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-cream from-0% via-cream/75 via-32% to-transparent to-50%" />
 
-      <div className="pb-6">
-        <Container wide className="flex flex-wrap justify-center gap-2">
-          <Badge variant="gold">Plan gratuit à vie</Badge>
-          <Badge>Installation en quelques clics</Badge>
-          <Badge>Sans carte bancaire</Badge>
-          <Badge>Aucune intégration caisse</Badge>
+        <Container wide className="relative py-28">
+          <div className="max-w-xl">
+            <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight text-balance sm:text-6xl lg:text-7xl">
+              Un système de fidélité <span className="hl-gold">pensé pour les franchises</span>
+            </h1>
+
+            <ul className="mt-8 space-y-3">
+              {heroPoints.map((point) => (
+                <li key={point} className="flex items-center gap-3 font-display text-lg font-bold text-ink">
+                  <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-leaf-700 text-white">
+                    <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" aria-hidden="true">
+                      <path
+                        d="M3 8.5 6.5 12 13 4.5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                  {point}
+                </li>
+              ))}
+            </ul>
+
+            <div className="mt-10">
+              <span className="inline-flex items-center rounded-full bg-leaf-700 px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-white">
+                Réponse sous 48 h
+              </span>
+              <div className="mt-4">
+                <CTALink href="/contact" position="franchise-hero-contact" size="xl">
+                  Nous contacter
+                </CTALink>
+              </div>
+            </div>
+          </div>
         </Container>
-      </div>
+      </section>
 
       {/* Ce que Comeback change pour un réseau */}
       <section className="py-16 sm:py-20" aria-labelledby="benefits-title">
