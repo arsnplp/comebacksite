@@ -33,7 +33,7 @@ Note : 10 articles supplémentaires ont été publiés hors de cette file, dans 
 | creer-fichier-client-commerce | créer un fichier client quand on est commerçant | Le fichier client comme actif du fonds de commerce, collecte RGPD simple via la carte de fidélité | Publié le 2026-09-01 |
 | fideliser-clients-cafe-bar | fidéliser les clients de son café ou bar | Rituel quotidien, happy hours ciblées, la carte dans le téléphone plutôt que dans le portefeuille | Publié le 2026-08-15 |
 | relancer-clients-inactifs-commerce | relancer les clients inactifs | Détecter l'inactivité, quoi envoyer, quand, avec quels résultats attendre | À écrire |
-| fideliser-clients-food-truck | fidéliser les clients de son food truck | Fidéliser sans adresse fixe, emplacements multiples, notification de l'emplacement du jour | À écrire |
+| fideliser-clients-food-truck | fidéliser les clients de son food truck | Fidéliser sans adresse fixe, emplacements multiples, notification de l'emplacement du jour | Publié le 2026-09-15 |
 | augmenter-panier-moyen-commerce | augmenter le panier moyen de son commerce | Paliers de récompense, vente additionnelle, seuils psychologiques | À écrire |
 | obtenir-avis-google-commerce | obtenir plus d'avis Google pour son commerce | Demander au bon moment (après la récompense), lien direct, répondre aux avis | À écrire |
 | notification-push-vs-sms-commercant | notification push ou SMS pour son commerce | Coût par message, délivrabilité, consentement : le comparatif honnête | À écrire |
