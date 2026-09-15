@@ -8,9 +8,9 @@ import { CTALink } from "@/components/ui/CTALink";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Connexion : commerçant, client ou affilié",
+  title: "Connexion : commerçant, employé, client ou affilié",
   description:
-    "Accédez à votre espace Comeback : dashboard commerçant, cartes de fidélité client ou espace partenaire affilié.",
+    "Accédez à votre espace Comeback : dashboard commerçant, accès employé, cartes de fidélité client ou espace partenaire affilié.",
   path: "/connexion",
 });
 
@@ -29,6 +29,13 @@ const profiles: {
     href: "https://app.getcomeback.fr/login",
     cta: "Me connecter",
     footer: { label: "Pas encore de compte ? Essai gratuit", href: "https://app.getcomeback.fr/login" },
+  },
+  {
+    icon: "scan",
+    title: "Employé",
+    description: "Scannez les cartes de vos clients et validez les tampons directement au comptoir.",
+    href: "https://app.getcomeback.fr/employe",
+    cta: "Me connecter",
   },
   {
     icon: "card",
@@ -54,12 +61,12 @@ export default function ConnexionPage() {
         crumbs={[{ label: "Connexion", href: "/connexion" }]}
         eyebrow="Connexion"
         title="Connectez-vous à votre espace Comeback"
-        lead="Trois espaces, trois usages : choisissez celui qui vous correspond."
+        lead="Quatre espaces, quatre usages : choisissez celui qui vous correspond."
       />
 
       <section className="pb-20 sm:pb-28" aria-label="Choisir son espace de connexion">
         <Container>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {profiles.map((p) => (
               <Card key={p.title} hover className="flex h-full flex-col p-8 text-center">
                 <IconTile name={p.icon} className="mx-auto" />
