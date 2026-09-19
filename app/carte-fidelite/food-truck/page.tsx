@@ -25,21 +25,24 @@ export const metadata: Metadata = pageMetadata({
 });
 
 /* ------------------------------------------------------------------ */
-/* Problèmes du quotidien                                              */
+/* Ce que Comeback apporte à un food truck                             */
 /* ------------------------------------------------------------------ */
 
-const pains = [
+const benefits = [
   {
-    title: "Des clients qui vous perdent de vue",
-    text: "Un emplacement qui change, un marché annulé, et un habitué disparaît. Une notification suffit à lui dire où vous trouver cette semaine.",
+    icon: "card" as const,
+    title: "La carte papier, en mieux",
+    text: "Vos clients ont déjà une carte tampons. Avec Comeback, elle vit dans leur téléphone : ils ne la perdent plus, ne l'oublient plus, et l'utilisent vraiment à chaque passage.",
   },
   {
-    title: "Une clientèle à reconstruire à chaque emplacement",
-    text: "La carte suit le client, pas l'adresse : vos fidèles du mardi midi en zone d'activité restent vos fidèles le samedi au marché.",
+    icon: "users" as const,
+    title: "Une vraie visibilité sur vos clients",
+    text: "Chaque scan vous dit qui revient, à quelle fréquence et sur quel emplacement. Vous connaissez enfin vos habitués, au-delà des visages que vous reconnaissez au comptoir.",
   },
   {
-    title: "La météo qui décide de votre journée",
-    text: "Un mardi pluvieux s'annonce ? Une promo flash le matin même à vos fidèles du secteur peut sauver le service.",
+    icon: "megaphone" as const,
+    title: "Vos fidèles reviennent encore plus souvent",
+    text: "Une notification pour annoncer l'emplacement du jour, le plat de la semaine ou une offre du midi : vos clients fidèles reviennent plus souvent, sans dépenser en pub.",
   },
 ];
 
@@ -79,10 +82,10 @@ const steps = [
 
 const seoBlocks = [
   {
-    title: "Fidéliser sans adresse fixe : le défi particulier du food truck",
+    title: "Une carte de fidélité qui suit vos clients, où que vous soyez garé",
     paragraphs: [
-      "Le commerce ambulant repose sur un paradoxe : votre force, c'est d'aller chercher les clients là où ils sont, mais chaque déplacement met votre clientèle à zéro si personne ne sait où vous retrouver. Les réseaux sociaux ne résolvent qu'à moitié le problème : l'algorithme décide qui voit vos publications, et vos clients les plus fidèles ne sont pas forcément vos abonnés les plus actifs. Notre article sur [pourquoi vos clients ne reviennent pas](/blog/pourquoi-clients-ne-reviennent-pas) détaille ce mécanisme plus largement.",
-      "La carte de fidélité digitale attaque le problème à la racine : chaque client qui scanne devient joignable directement, par une notification qui arrive sur son écran de verrouillage. Votre emplacement du jour, vos horaires, votre plat de la semaine : l'information part une fois et touche tout le monde.",
+      "La force d'un food truck, c'est d'aller chercher les clients là où ils sont. La carte de fidélité digitale prolonge cet avantage : elle reste dans la poche du client d'un emplacement à l'autre, là où une carte papier finit oubliée ou perdue. Les réseaux sociaux complètent le dispositif mais l'algorithme décide qui voit vos publications ; avec Comeback, chaque client qui scanne devient joignable directement, par une notification sur son écran de verrouillage.",
+      "Votre emplacement du jour, vos horaires, votre plat de la semaine : l'information part une fois et touche tous vos inscrits. C'est ce lien direct qui fait revenir vos habitués plus souvent. Notre article sur [pourquoi vos clients ne reviennent pas](/blog/pourquoi-clients-ne-reviennent-pas) explique ce que change ce contact régulier sur la fréquence de visite.",
     ],
   },
   {
@@ -183,9 +186,10 @@ export default function FoodTruckPage() {
               </h1>
 
               <p className="mt-6 max-w-xl text-lg text-ink-soft text-pretty sm:text-xl">
-                Un food truck a un problème que les restaurants n&apos;ont pas : vos clients changent
-                d&apos;emplacement. Comeback vous aide à rester dans leur poche, où qu&apos;ils soient, et
-                à les faire revenir.
+                Vos habitués vous suivent d&apos;un emplacement à l&apos;autre. Comeback remplace la
+                carte papier par une carte dans leur téléphone, vous donne une vraie visibilité sur vos
+                clients et vous permet de les prévenir en une notification pour les faire revenir plus
+                souvent.
               </p>
 
               <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
@@ -224,21 +228,22 @@ export default function FoodTruckPage() {
         </Container>
       </section>
 
-      {/* Les problèmes du quotidien */}
-      <section className="py-16 sm:py-20" aria-labelledby="pains-title">
+      {/* Ce que Comeback apporte */}
+      <section className="py-16 sm:py-20" aria-labelledby="benefits-title">
         <Container>
           <SectionHeader
-            eyebrow="Votre quotidien"
-            title="Food truck : trois problèmes que vous connaissez par cœur"
-            highlight="par cœur"
+            eyebrow="Ce que ça change pour vous"
+            title="Vos clients fidèles reviennent encore plus souvent"
+            highlight="encore plus souvent"
+            lead="Vous avez déjà des habitués. Comeback vous donne les moyens de les garder proches et de les faire revenir plus régulièrement, où que vous soyez garé."
           />
           <div className="grid gap-6 md:grid-cols-3">
-            {pains.map((pain, i) => (
-              <Reveal key={pain.title} delayMs={i * 100} className="h-full">
+            {benefits.map((b, i) => (
+              <Reveal key={b.title} delayMs={i * 100} className="h-full">
                 <Card hover className="h-full p-8">
-                  <IconTile name="truck" tone={i === 1 ? "gold" : "leaf"} className="mb-5" />
-                  <h3 className="font-display text-lg font-bold">{pain.title}</h3>
-                  <p className="mt-2.5 text-ink-soft">{pain.text}</p>
+                  <IconTile name={b.icon} tone={i === 1 ? "gold" : "leaf"} className="mb-5" />
+                  <h3 className="font-display text-lg font-bold">{b.title}</h3>
+                  <p className="mt-2.5 text-ink-soft">{b.text}</p>
                 </Card>
               </Reveal>
             ))}
