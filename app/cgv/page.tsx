@@ -30,13 +30,13 @@ const sections: LegalSection[] = [
   {
     title: "3. Essai gratuit",
     body: [
-      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours avec l'ensemble des fonctionnalités du plan Business, sans carte bancaire et sans engagement. À l'issue de l'essai, le Client choisit un abonnement payant (Pro ou Business) ou continue gratuitement, sans limite de durée, avec le plan Starter et ses fonctionnalités réduites. Le compte n'est jamais suspendu pour défaut de paiement d'un abonnement gratuit. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de 90 jours.",
+      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours avec l'ensemble des fonctionnalités du plan Business, sans carte bancaire et sans engagement. À l'issue de l'essai, l'accès au tableau de bord est suspendu jusqu'à ce que le Client choisisse un plan : un abonnement payant (Pro ou Business) ou le plan Starter, gratuit sans limite de durée avec des fonctionnalités réduites. Le compte et l'intégralité des données sont conservés pendant cette suspension et redeviennent accessibles dès qu'un plan est choisi ; aucune donnée n'est supprimée. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de 90 jours.",
     ],
   },
   {
     title: "4. Tarifs et facturation",
     body: [
-      "Les tarifs en vigueur sont ceux affichés sur la page Tarifs au jour de la souscription, exprimés hors taxes. L'abonnement est mensuel, payable d'avance par prélèvement ou carte bancaire. Toute évolution tarifaire sera notifiée au moins 30 jours avant son application, le Client restant libre de résilier avant cette date.",
+      "Les tarifs en vigueur sont ceux affichés sur la page Tarifs au jour de la souscription, exprimés toutes taxes comprises (TVA française 20 % incluse). L'abonnement est mensuel, payable d'avance par prélèvement ou carte bancaire. Toute évolution tarifaire sera notifiée au moins 30 jours avant son application, le Client restant libre de résilier avant cette date.",
       "Chaque plan (Starter, Pro, Business) inclut les volumes indiqués sur la page Tarifs : nombre de clients enregistrés, de cartes de fidélité et de notifications mensuelles. Aucun dépassement n'est facturé automatiquement : en cas d'atteinte d'une limite, le Client est invité à passer au plan supérieur.",
     ],
   },

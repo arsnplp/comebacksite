@@ -17,7 +17,7 @@ import type { FaqItem } from "@/content/faq";
 export const metadata: Metadata = pageMetadata({
   title: "Tarifs : carte de fidélité digitale, Starter gratuit jusqu'à 30 clients",
   description:
-    "Starter gratuit (30 clients), Pro à 9,99 €, Business à 39,99 € HT par mois. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 1 client fidèle.",
+    "Starter gratuit (30 clients), Pro à 9,99 €, Business à 39,99 € TTC par mois. 30 jours d'essai gratuit sans carte bancaire, sans engagement. Rentabilisé dès 1 client fidèle.",
   path: "/tarifs",
 });
 
@@ -35,6 +35,8 @@ const compareGroups: CompareGroup[] = [
     rows: [
       { label: "Clients enregistrés", cells: ["30", "100", "Illimités"] },
       { label: "Cartes de fidélité", cells: ["1", "2", "2"] },
+      { label: "Comptes employés", cells: ["1", "3", "Illimités"] },
+      { label: "Parrainage client", cells: [true, true, true] },
       { label: "Carte Apple Wallet et Google Wallet", cells: [true, true, true] },
       { label: "QR code comptoir prêt à imprimer", cells: [true, true, true] },
     ],
@@ -51,7 +53,11 @@ const compareGroups: CompareGroup[] = [
     title: "Données et statistiques",
     rows: [
       { label: "Export CSV du fichier client", cells: [false, true, true] },
-      { label: "Historique des statistiques", cells: ["7 derniers jours", "Complet", "Complet"] },
+      // L'historique des statistiques n'est pas différencié par plan dans
+      // l'app : le tableau de bord affiche les mêmes fenêtres (30 et 90
+      // jours) pour tout le monde. La ligne annonçait « 7 derniers jours /
+      // Complet / Complet » — trois valeurs fausses.
+      { label: "Tableau de bord et statistiques", cells: [true, true, true] },
     ],
   },
   {
@@ -82,7 +88,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Puis-je changer de plan ou résilier à tout moment ?",
     answer:
-      "Oui. L'abonnement est mensuel et sans engagement : vous passez de Starter à Pro ou de Pro à Business (et inversement) en 2 clics depuis votre espace, et la différence est calculée au prorata. La résiliation est immédiate, sans préavis ni justification.",
+      "Oui. L'abonnement est mensuel et sans engagement : vous passez de Starter à Pro ou de Pro à Business (et inversement) en 2 clics depuis votre espace, et la différence est calculée au prorata. La résiliation se fait en un clic, sans préavis ni justification : elle prend effet à la fin du mois déjà payé, que vous conservez en entier.",
   },
   {
     question: "Le nombre de clients ou de notifications est-il limité ?",
@@ -92,12 +98,12 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Les prix affichés sont-ils HT ou TTC ?",
     answer:
-      "Les prix sont affichés hors taxes, comme pour la plupart des logiciels professionnels. Si votre commerce est assujetti, la TVA de 20 % est récupérable : le coût réel reste donc celui affiché.",
+      "Tous les prix affichés sont TTC, toutes taxes comprises : le montant que vous voyez est exactement celui qui sera prélevé. Le plan Pro à 9,99 € correspond à 8,33 € HT plus 1,66 € de TVA, détaillés sur chaque facture. Si votre commerce est assujetti, cette TVA est récupérable.",
   },
   {
     question: "Comment être sûr que ce sera rentable pour mon commerce ?",
     answer:
-      "Faites le calcul avec vos propres chiffres : le plan Starter étant gratuit, il n'y a même pas d'abonnement à amortir pour commencer. Au plan Pro, à 9,99 € par mois, une seule visite supplémentaire suffit largement à couvrir l'abonnement, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
+      "Faites le calcul avec vos propres chiffres : le plan Starter étant gratuit, il n'y a même pas d'abonnement à amortir pour commencer. Au plan Pro, à 9,99 € TTC par mois, une seule visite supplémentaire suffit largement à couvrir l'abonnement, sur la base d'un panier moyen de 25 euros. Notre calculateur vous donne une estimation du chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard.",
   },
 ];
 
@@ -120,6 +126,13 @@ const offersJsonLd = {
       price: p.price,
       priceCurrency: "EUR",
       description: p.description,
+      // Les prix publiés aux moteurs sont TTC, comme sur le site.
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: p.price,
+        priceCurrency: "EUR",
+        valueAddedTaxIncluded: true,
+      },
     })),
 };
 
@@ -210,7 +223,7 @@ export default function PricingPage() {
                         <span className="font-display text-4xl font-extrabold tracking-tight">
                           {formatPlanPrice(plan.price)}&nbsp;€
                         </span>
-                        <span className="text-ink-soft">{plan.period} HT</span>
+                        <span className="text-ink-soft">{plan.period}</span>
                       </>
                     ) : (
                       <span className="font-display text-4xl font-extrabold tracking-tight">Sur devis</span>
@@ -348,7 +361,7 @@ export default function PricingPage() {
                 14 600 € / an
               </p>
               <p className="mt-2 text-sm text-leaf-200">
-                de CA récupérable estimé, contre 120 € d&apos;abonnement annuel au plan Pro.
+                de CA récupérable estimé, contre 96 € d&apos;abonnement annuel au plan Pro (formule annuelle, -20 %).
               </p>
             </div>
           </div>
