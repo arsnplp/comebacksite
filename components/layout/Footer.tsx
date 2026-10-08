@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { sectors } from "@/content/sectors";
+import { ManageCookiesButton } from "@/components/layout/ConsentBanner";
 
 /**
  * Footer = outil de maillage interne : chaque page sectorielle et
@@ -92,7 +93,10 @@ export function Footer() {
         </div>
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 text-sm text-leaf-300 sm:flex-row">
-          <p>© {new Date().getFullYear()} Comeback · getcomeback.fr</p>
+          <p>
+            © {new Date().getFullYear()} Comeback · getcomeback.fr
+            <ManageCookiesButton className="ml-3 underline underline-offset-2 transition-colors hover:text-white" />
+          </p>
           <p>Vos clients reviennent. Votre CA aussi.</p>
         </div>
       </div>
