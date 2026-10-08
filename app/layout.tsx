@@ -6,6 +6,8 @@ import { StickyMobileCTA } from "@/components/layout/StickyMobileCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { Analytics } from "@/components/seo/Analytics";
 import { ScrollTracker } from "@/components/seo/ScrollTracker";
+import { MetaPixel } from "@/components/seo/MetaPixel";
+import { ConsentBanner } from "@/components/layout/ConsentBanner";
 import { site } from "@/lib/seo";
 import "./globals.css";
 
@@ -95,6 +97,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <StickyMobileCTA />
         <ScrollTracker />
+        <MetaPixel />
+        <ConsentBanner />
       </body>
     </html>
   );

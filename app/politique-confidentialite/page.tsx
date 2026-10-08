@@ -36,9 +36,19 @@ const sections: LegalSection[] = [
     ],
   },
   {
-    title: "3. Mesure d'audience sans cookie",
+    title: "3. Mesure d'audience et cookies publicitaires",
     body: [
-      "Le site utilise une solution de mesure d'audience respectueuse de la vie privée (Plausible Analytics), qui fonctionne sans cookie et ne collecte aucune donnée permettant de vous identifier. C'est pourquoi aucune bannière de consentement n'est nécessaire : aucun traceur publicitaire n'est déposé sur votre appareil.",
+      "Le site utilise une solution de mesure d'audience respectueuse de la vie privée (Plausible Analytics), qui fonctionne sans cookie et ne collecte aucune donnée permettant de vous identifier.",
+      "Uniquement si vous l'acceptez via notre bannière de consentement, nous utilisons également le pixel Meta (Meta Platforms Ireland Ltd.) afin de mesurer l'efficacité de nos publicités diffusées sur Facebook et Instagram et de proposer nos publicités à des personnes susceptibles d'être intéressées :",
+      {
+        list: [
+          "Données concernées : pages consultées, clics sur nos boutons d'inscription, envoi de nos formulaires, identifiants techniques (cookie _fbp, adresse IP, navigateur).",
+          "Base légale : votre consentement (article 82 de la loi Informatique et Libertés et article 6.1.a du RGPD).",
+          "Durée : le cookie _fbp est conservé 90 jours au maximum ; votre choix est mémorisé 6 mois.",
+          "Transferts : Meta peut traiter ces données hors de l'Union européenne, dans le cadre du EU-US Data Privacy Framework.",
+        ],
+      },
+      "Refuser n'a aucune conséquence sur votre navigation. Vous pouvez modifier ou retirer votre choix à tout moment via le lien « Gérer les cookies » en bas de chaque page.",
     ],
   },
   {
