@@ -3,7 +3,7 @@ import { Hero } from "@/components/sections/Hero";
 import { CardCreationDemo } from "@/components/sections/CardCreationDemo";
 import { RevenueTeaser } from "@/components/sections/RevenueTeaser";
 import { Steps } from "@/components/sections/Steps";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { Commitments } from "@/components/sections/Commitments";
 import { Benefits } from "@/components/sections/Benefits";
 import { DashboardProof } from "@/components/sections/DashboardProof";
 import { PricingPreview } from "@/components/sections/PricingPreview";
@@ -29,9 +29,7 @@ const softwareJsonLd = {
   applicationCategory: "BusinessApplication",
   operatingSystem: "Web",
   description: site.description,
-  offers: plans
-    .filter((p) => p.price !== null)
-    .map((p) => ({
+  offers: plans.map((p) => ({
       "@type": "Offer",
       name: p.name,
       price: p.price,
@@ -60,7 +58,7 @@ export default function HomePage() {
       <CardCreationDemo />
       <RevenueTeaser />
       <Steps />
-      <Testimonials />
+      <Commitments />
       <Benefits />
       <DashboardProof />
       <PricingPreview />

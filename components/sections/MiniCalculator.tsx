@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { Slider } from "@/components/ui/Slider";
 import { AnimatedNumber } from "@/components/ui/AnimatedNumber";
-import { CTALink } from "@/components/ui/CTALink";
 import { estimateLostRevenue, roundToHundred } from "@/lib/calculator";
 import { trackEvent } from "@/lib/analytics";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 /**
  * Mini-calculateur de la homepage (version courte de /calculateur).
@@ -67,9 +67,7 @@ export function MiniCalculator() {
             <AnimatedNumber value={lost} kind="euros" />
           </p>
           <p className="text-base font-medium text-ink-soft">de CA par an</p>
-          <CTALink href="https://app.getcomeback.fr/login" position="calculator" className="mt-7">
-            Récupérer ce CA
-          </CTALink>
+          <TrialCTA position="calculator" className="mt-7" />
         </div>
       </div>
     </div>

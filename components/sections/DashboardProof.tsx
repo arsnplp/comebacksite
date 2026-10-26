@@ -1,10 +1,10 @@
 import type { CSSProperties } from "react";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
-import { CTALink } from "@/components/ui/CTALink";
 import { StampCheck } from "@/components/ui/Stamps";
 import { Reveal } from "@/components/ui/Reveal";
 import { DashboardMockup } from "@/components/mockups/DashboardMockup";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 /** Section 6 — Le dashboard : l'essai qui rend accro. */
 export function DashboardProof() {
@@ -48,9 +48,7 @@ export function DashboardProof() {
               <Badge>CA généré, en euros</Badge>
             </div>
             <div className="mt-8">
-              <CTALink href="https://app.getcomeback.fr/login" position="dashboard">
-                Voir mes chiffres gratuitement
-              </CTALink>
+              <TrialCTA position="dashboard" />
             </div>
           </div>
         </div>

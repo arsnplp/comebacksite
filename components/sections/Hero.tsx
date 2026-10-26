@@ -1,17 +1,16 @@
 import type { CSSProperties } from "react";
 import Image from "next/image";
 import { Badge } from "@/components/ui/Badge";
-import { CTALink } from "@/components/ui/CTALink";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 import { Container } from "@/components/ui/Container";
 
-/* [PLACEHOLDER] — remplacer par de vrais noms/logos de clients */
-const trustedShops = [
-  "Boulangerie Martin",
-  "Le Comptoir",
-  "Salon L'Atelier",
-  "Café Prosper",
-  "Maison Lila",
-  "Institut Éclat",
+/** Garanties vérifiables, à la place d'une fausse liste de clients. */
+const facts = [
+  "Apple Wallet et Google Wallet",
+  "Aucune appli à télécharger",
+  "Installée avec vous en 10 min",
+  "Données exportables à tout moment",
+  "Conçu en France",
 ];
 
 export function Hero() {
@@ -26,7 +25,7 @@ export function Hero() {
           <div>
             <div className="anim-rise">
               <Badge variant="gold" className="mb-6">
-                Carte de fidélité digitale, sans application à télécharger
+                La carte de fidélité qui vit dans le téléphone de vos clients
               </Badge>
             </div>
 
@@ -34,42 +33,32 @@ export function Hero() {
               className="anim-rise font-display text-[2.6rem] font-bold leading-[1.05] tracking-tight text-balance sm:text-5xl lg:text-6xl"
               style={{ "--rise-delay": "90ms" } as CSSProperties}
             >
-              Vos clients reviennent <span className="hl-gold">2× plus souvent</span>. Votre CA augmente
-              sans dépenser en pub.
+              Transformez chaque passage en <span className="hl-gold">client fidèle</span>.
             </h1>
 
             <p
               className="anim-rise mt-6 max-w-xl text-lg text-ink-soft text-pretty sm:text-xl"
               style={{ "--rise-delay": "180ms" } as CSSProperties}
             >
-              Comeback crée votre carte de fidélité digitale en 10 minutes. Vos clients l&apos;ajoutent à
-              leur téléphone en 1 scan. Ils reviennent, vous encaissez.
+              Un scan au comptoir et votre carte s&apos;installe dans leur Wallet. Ensuite, vous leur parlez
+              directement sur l&apos;écran verrouillé : récompense à portée de main, client absent depuis trois
+              semaines, jour creux à remplir. Ils reviennent, vous le voyez en euros.
             </p>
 
             <div
               className="anim-rise mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center"
               style={{ "--rise-delay": "270ms" } as CSSProperties}
             >
-              <CTALink href="https://app.getcomeback.fr/login" position="hero" size="xl">
-                Essayer gratuitement
-              </CTALink>
-              <CTALink href="/demo" position="hero-demo" variant="ghost" size="xl" withArrow={false}>
-                <svg viewBox="0 0 20 20" className="h-5 w-5 text-leaf-700" aria-hidden="true">
-                  <circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" strokeWidth="1.6" />
-                  <path d="M8 6.8v6.4l5.2-3.2L8 6.8Z" fill="currentColor" />
-                </svg>
-                Voir une démo (2 min)
-              </CTALink>
+              <TrialCTA position="hero" size="xl" />
             </div>
 
             <div
               className="anim-rise mt-5 flex flex-wrap gap-2"
               style={{ "--rise-delay": "360ms" } as CSSProperties}
             >
-              <Badge variant="gold">Plan gratuit à vie</Badge>
-              <Badge>Sans carte bancaire</Badge>
-              <Badge>Sans engagement</Badge>
-              <Badge>Installé en 10 min</Badge>
+              <Badge variant="gold">0 € aujourd&apos;hui</Badge>
+              <Badge>Résiliable en 1 clic</Badge>
+              <Badge>Installation offerte</Badge>
             </div>
           </div>
 
@@ -102,25 +91,18 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Barre de confiance — bandeau défilant, en pause au survol */}
+        {/* Barre de garanties : uniquement des faits vérifiables */}
         <div className="anim-rise mt-16 border-t border-ink/10 pt-8 lg:mt-20" style={{ "--rise-delay": "450ms" } as CSSProperties}>
-          {/* [PLACEHOLDER] — remplacer par le vrai nombre de commerçants clients */}
-          <p className="text-center text-sm font-medium text-ink-soft">
-            Déjà 150+ commerçants font revenir leurs clients avec Comeback
-          </p>
-          <div className="mt-5 overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_12%,black_88%,transparent)]">
-            <ul className="anim-marquee flex w-max items-center">
-              {[...trustedShops, ...trustedShops].map((name, i) => (
-                <li
-                  key={`${name}-${i}`}
-                  aria-hidden={i >= trustedShops.length || undefined}
-                  className="mr-12 whitespace-nowrap font-display text-base font-semibold text-ink/35"
-                >
-                  {name}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
+            {facts.map((fact) => (
+              <li key={fact} className="flex items-center gap-2 text-sm font-medium text-ink-soft">
+                <svg viewBox="0 0 16 16" className="h-4 w-4 shrink-0 text-leaf-600" aria-hidden="true">
+                  <path d="m3.5 8.5 3 3 6-7" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+                {fact}
+              </li>
+            ))}
+          </ul>
         </div>
       </Container>
     </section>

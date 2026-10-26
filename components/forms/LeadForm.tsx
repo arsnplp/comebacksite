@@ -6,6 +6,8 @@ import { StampCheck } from "@/components/ui/Stamps";
 import { trackEvent } from "@/lib/analytics";
 import { sectors } from "@/content/sectors";
 
+const CONTACT_EMAIL = "arsene.lecoq@getcomeback.fr";
+
 type LeadFormProps = {
   /** trial = essai gratuit · demo = réservation de démo · contact = message libre */
   kind: "trial" | "demo" | "contact";
@@ -16,9 +18,8 @@ type Status = "idle" | "sending" | "success" | "error";
 
 /**
  * Formulaire de capture de leads (essai, démo, contact).
- * [PLACEHOLDER] — brancher NEXT_PUBLIC_LEAD_ENDPOINT (Formspree, API interne…)
- * dans .env : sans endpoint configuré, le formulaire affiche l'état de succès
- * en local mais n'envoie rien (un avertissement est loggé en console).
+ * Envoie à NEXT_PUBLIC_LEAD_ENDPOINT s'il est configuré (Formspree, API
+ * interne…). Sinon, ouvre la messagerie du visiteur avec le message prêt.
  */
 export function LeadForm({ kind, submitLabel }: LeadFormProps) {
   const [status, setStatus] = useState<Status>("idle");
@@ -43,7 +44,14 @@ export function LeadForm({ kind, submitLabel }: LeadFormProps) {
         });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
       } else {
-        console.warn("[LeadForm] NEXT_PUBLIC_LEAD_ENDPOINT non configuré : lead non envoyé.", { kind, data });
+        // Pas d'endpoint configuré : on ouvre la messagerie du visiteur avec
+        // son message pré-rempli, plutôt que d'afficher un faux succès et de
+        // perdre la demande.
+        const body = Object.entries(data)
+          .filter(([key, value]) => key !== "website" && String(value).trim() !== "")
+          .map(([key, value]) => `${key} : ${value}`)
+          .join("\n");
+        window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Contact depuis getcomeback.fr")}&body=${encodeURIComponent(body)}`;
       }
       trackEvent("lead_submitted", { kind });
       setStatus("success");

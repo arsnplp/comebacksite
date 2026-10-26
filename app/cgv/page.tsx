@@ -30,14 +30,17 @@ const sections: LegalSection[] = [
   {
     title: "3. Essai gratuit",
     body: [
-      "Tout nouveau Client bénéficie d'une période d'essai gratuite de 30 jours avec l'ensemble des fonctionnalités du plan Business, sans carte bancaire et sans engagement. À l'issue de l'essai, l'accès au tableau de bord est suspendu jusqu'à ce que le Client choisisse un plan : un abonnement payant (Pro ou Business) ou le plan Starter, gratuit sans limite de durée avec des fonctionnalités réduites. Le compte et l'intégralité des données sont conservés pendant cette suspension et redeviennent accessibles dès qu'un plan est choisi ; aucune donnée n'est supprimée. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de 90 jours.",
+      "Tout nouveau Client bénéficie d'une période d'essai de 30 jours donnant accès à l'ensemble des fonctionnalités du plan Business. L'enregistrement d'une carte bancaire est requis pour démarrer l'essai ; aucun montant n'est prélevé pendant ces 30 jours.",
+      "À l'issue de la période d'essai, et sauf résiliation par le Client avant son terme, l'essai se poursuit automatiquement par un abonnement mensuel au plan Business, facturé au tarif en vigueur et prélevé sur la carte enregistrée. La date du premier prélèvement est indiquée au Client au moment où il saisit sa carte, et rappelée dans son espace client. Le Client peut également choisir à tout moment le plan Pro.",
+      "Le Client peut résilier à tout moment depuis son espace, sans frais ni préavis. Une résiliation intervenant avant la fin de l'essai n'entraîne aucun prélèvement ; le compte bascule alors sur un accès gratuit aux fonctionnalités réduites.",
+      "L'essai gratuit est limité à une fois par Client. Le compte et l'intégralité des données sont conservés en cas de résiliation ; aucune donnée n'est supprimée. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de 90 jours.",
     ],
   },
   {
     title: "4. Tarifs et facturation",
     body: [
       "Les tarifs en vigueur sont ceux affichés sur la page Tarifs au jour de la souscription, exprimés toutes taxes comprises (TVA française 20 % incluse). L'abonnement est mensuel, payable d'avance par prélèvement ou carte bancaire. Toute évolution tarifaire sera notifiée au moins 30 jours avant son application, le Client restant libre de résilier avant cette date.",
-      "Chaque plan (Starter, Pro, Business) inclut les volumes indiqués sur la page Tarifs : nombre de clients enregistrés, de cartes de fidélité et de notifications mensuelles. Aucun dépassement n'est facturé automatiquement : en cas d'atteinte d'une limite, le Client est invité à passer au plan supérieur.",
+      "Chaque plan inclut les volumes indiqués sur la page Tarifs : nombre de clients enregistrés, de cartes de fidélité et de notifications mensuelles. Aucun dépassement n'est facturé automatiquement : en cas d'atteinte d'une limite, le Client est invité à passer au plan supérieur.",
     ],
   },
   {

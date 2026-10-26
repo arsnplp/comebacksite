@@ -5,6 +5,7 @@ import { Icon, type IconName } from "@/components/ui/Icon";
 import { StampCheck } from "@/components/ui/Stamps";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { LeadForm } from "@/components/forms/LeadForm";
+import { CTA_LABEL, SIGNUP_URL } from "@/lib/links";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMetadata, site } from "@/lib/seo";
 
@@ -32,18 +33,11 @@ const contactJsonLd = {
 
 const otherChannels: { icon: IconName; title: string; text: string; href: string; linkLabel: string }[] = [
   {
-    icon: "calendar",
-    title: "Vous préférez en parler de vive voix ?",
-    text: "Réservez une démo de 20 minutes : produit en conditions réelles et réponses en direct.",
-    href: "/demo",
-    linkLabel: "Réserver une démo",
-  },
-  {
     icon: "zap",
     title: "Vous voulez juste essayer ?",
-    text: "L'essai gratuit se lance sans rendez-vous et sans carte bancaire, en 10 minutes.",
-    href: "https://app.getcomeback.fr/login",
-    linkLabel: "Commencer l'essai gratuit",
+    text: "Créez votre compte en 2 minutes, on vous appelle ensuite pour installer votre carte avec vous.",
+    href: SIGNUP_URL,
+    linkLabel: CTA_LABEL,
   },
   {
     icon: "book",

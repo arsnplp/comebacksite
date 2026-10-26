@@ -210,7 +210,7 @@ export const sectorDetails: SectorDetail[] = [
       {
         question: "Puis-je proposer une carte différente pour la coloration et pour la coupe simple ?",
         answer:
-          "Oui, selon votre plan : plusieurs cartes de fidélité permettent de séparer les mécaniques par type de prestation, avec un palier adapté à la fréquence réelle de chacune plutôt qu'une règle unique pour tout le salon.",
+          "Comeback fonctionne avec une seule carte par commerce, volontairement : au comptoir, un client qui doit choisir entre deux cartes hésite, et l'employé aussi. Pour distinguer vos prestations, jouez sur le nombre de tampons exigé selon le montant dépensé, ou sur des récompenses de paliers différents sur la même carte.",
       },
     ],
   },

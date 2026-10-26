@@ -1,15 +1,13 @@
 # Comeback
 
-> Comeback est un SaaS français de carte de fidélité digitale pour commerçants indépendants. Les clients ajoutent la carte à Apple Wallet ou Google Wallet en scannant un QR code au comptoir, cumulent des tampons et reçoivent des notifications de relance. Le commerçant suit visites, clients et chiffre d'affaires généré depuis un dashboard. Plans : Starter gratuit (30 clients), Pro 9,99 €, Business 39,99 € HT/mois, avec 30 jours d'essai gratuit sans carte bancaire. Site en français, marché : France.
+> Comeback est un SaaS français de carte de fidélité digitale pour commerçants indépendants. Les clients ajoutent la carte à Apple Wallet ou Google Wallet en scannant un QR code au comptoir, cumulent des tampons et reçoivent des notifications sur l'écran verrouillé (relances, offres, proximité de la boutique sur iPhone), et peuvent jouer leurs points à des mini-jeux. Le commerçant suit visites, clients et chiffre d'affaires généré depuis un dashboard. Plans : Pro 9,99 € TTC/mois (100 clients) et Business 39,99 € TTC/mois (illimité), sans engagement. Essai gratuit de 30 jours sur Business (carte bancaire demandée, 0 € prélevé), installation faite avec le commerçant et offerte. Site en français, marché : France.
 
 ## Pages principales
 
 - [Accueil](https://getcomeback.fr/): présentation de la carte de fidélité digitale Comeback
-- [Fonctionnalités](https://getcomeback.fr/fonctionnalites): carte Wallet, relances automatiques, promos flash, dashboard
-- [Tarifs](https://getcomeback.fr/tarifs): plans Starter gratuit, Pro 9,99 €, Business 39,99 € HT/mois, comparatif détaillé
+- [Fonctionnalités](https://getcomeback.fr/fonctionnalites): carte Wallet, notifications et relances automatiques, notifications de proximité, mini-jeux, dashboard
+- [Tarifs](https://getcomeback.fr/tarifs): plans Pro 9,99 € et Business 39,99 € TTC/mois, déroulé de l'essai de 30 jours, comparatif détaillé
 - [Calculateur](https://getcomeback.fr/calculateur): estimation du chiffre d'affaires récupérable par la fidélisation
-- [Témoignages](https://getcomeback.fr/temoignages): résultats de commerçants utilisateurs
-- [Affiliation](https://getcomeback.fr/affiliation): programme partenaire, 20 à 50 % de commission récurrente
 - [Contact](https://getcomeback.fr/contact): formulaire et email de contact
 
 ## Par métier

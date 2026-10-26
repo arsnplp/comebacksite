@@ -19,12 +19,13 @@ const benefits = [
   {
     icon: (
       <>
-        <rect x="3" y="5" width="18" height="14" rx="3" />
-        <path d="M3 10h18M7 15h4" />
+        <path d="M4 11v3l10 4V6L4 11Z" />
+        <path d="M14 8.5c2 .5 3 1.5 3 3s-1 2.5-3 3" />
+        <path d="M6 15.5V18a1.5 1.5 0 0 0 3 0v-1.4" />
       </>
     ),
-    title: "Ils n'oublient jamais leur carte",
-    text: "Elle vit dans leur téléphone, dans le Wallet, avec vos couleurs. Impossible à perdre au fond d'un sac.",
+    title: "Un message sur leur écran verrouillé",
+    text: "Jour creux, nouveauté, offre flash : vos clients reçoivent votre notification en 2 clics. Sans SMS à payer, sans flyer à imprimer.",
   },
   {
     icon: (
@@ -34,7 +35,27 @@ const benefits = [
       </>
     ),
     title: "Ils reviennent avant d'aller chez le concurrent",
-    text: "Notification automatique quand ils ne sont pas venus depuis X jours. Vous restez dans leur poche, et dans leur tête.",
+    text: "Un client ne vient plus depuis quelques semaines ? Une relance part toute seule. Vous restez dans leur poche, et dans leur tête.",
+  },
+  {
+    icon: (
+      <>
+        <path d="M12 21s-6-5.3-6-10a6 6 0 0 1 12 0c0 4.7-6 10-6 10Z" />
+        <circle cx="12" cy="11" r="2.2" />
+      </>
+    ),
+    title: "Votre carte s'affiche quand ils passent devant",
+    text: "Sur iPhone, à moins de 100 mètres de votre boutique, la carte remonte sur l'écran verrouillé avec votre message.",
+  },
+  {
+    icon: (
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="3" />
+        <path d="M3 10h18M7 15h4" />
+      </>
+    ),
+    title: "Ils n'oublient jamais leur carte",
+    text: "Elle vit dans leur téléphone, dans le Wallet, avec vos couleurs. Impossible à perdre au fond d'un sac.",
   },
   {
     icon: (
@@ -46,7 +67,7 @@ const benefits = [
       </>
     ),
     title: "Vous savez enfin qui sont vos clients",
-    text: "Prénoms, fréquence, dépenses : votre fichier client se construit tout seul, à chaque scan.",
+    text: "Prénoms, fréquence, dépenses : votre fichier client se construit tout seul, à chaque scan. Il vous appartient et s'exporte en un clic.",
   },
   {
     icon: (
@@ -55,28 +76,7 @@ const benefits = [
       </>
     ),
     title: "Le CA généré, en euros, sur un écran",
-    text: "Pas de vanity metrics. Votre dashboard vous dit ce que la fidélité vous rapporte, en euros.",
-  },
-  {
-    icon: (
-      <>
-        <path d="M6 20c8 0 13-5 13-14-9 0-14 5-14 13" />
-        <path d="M6 20c0-6 3-10 8-12" />
-      </>
-    ),
-    title: "Zéro carte imprimée, zéro tampon perdu",
-    text: "Fini le papier. Écologique, et impossible à frauder avec un tampon acheté sur internet.",
-  },
-  {
-    icon: (
-      <>
-        <path d="M4 11v3l10 4V6L4 11Z" />
-        <path d="M14 8.5c2 .5 3 1.5 3 3s-1 2.5-3 3" />
-        <path d="M6 15.5V18a1.5 1.5 0 0 0 3 0v-1.4" />
-      </>
-    ),
-    title: "Vos promos envoyées en 30 secondes",
-    text: "Une offre flash un jour de pluie ? Notifiez tous vos clients en 2 clics, sans imprimer un seul flyer.",
+    text: "Pas de chiffres pour faire joli. Votre dashboard vous dit ce que la fidélité vous rapporte, en euros.",
   },
 ];
 

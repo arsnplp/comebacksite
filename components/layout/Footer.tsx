@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
 import { sectors } from "@/content/sectors";
+import { CTA_LABEL, SIGNUP_URL } from "@/lib/links";
 
 /**
  * Footer = outil de maillage interne : chaque page sectorielle et
@@ -13,9 +14,7 @@ export function Footer() {
       links: [
         { href: "/fonctionnalites", label: "Fonctionnalités" },
         { href: "/tarifs", label: "Tarifs" },
-        { href: "/temoignages", label: "Témoignages" },
-        { href: "/demo", label: "Réserver une démo" },
-        { href: "https://app.getcomeback.fr/login", label: "Essai gratuit" },
+        { href: SIGNUP_URL, label: CTA_LABEL },
         { href: "/connexion", label: "Se connecter" },
       ],
     },
@@ -40,7 +39,6 @@ export function Footer() {
       title: "Entreprise",
       links: [
         { href: "/a-propos", label: "À propos" },
-        { href: "/affiliation", label: "Affiliation" },
         { href: "/contact", label: "Contact" },
         { href: "/mentions-legales", label: "Mentions légales" },
         { href: "/politique-confidentialite", label: "Confidentialité (RGPD)" },

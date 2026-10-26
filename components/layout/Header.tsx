@@ -3,21 +3,23 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { Logo } from "@/components/ui/Logo";
-import { CTALink } from "@/components/ui/CTALink";
+import { TrialCTA } from "@/components/ui/TrialCTA";
+import { CTA_REASSURANCE } from "@/lib/links";
 import { sectors } from "@/content/sectors";
 
+/**
+ * Navigation volontairement courte : un commerçant doit trouver en un coup
+ * d'œil ce que fait l'outil, pour qui, et combien ça coûte. Blog, contact
+ * et ressources vivent dans le footer.
+ */
 const navLinks = [
   { href: "/fonctionnalites", label: "Fonctionnalités" },
-  { href: "/carte-fidelite/franchise", label: "Franchise" },
   { href: "/tarifs", label: "Tarifs" },
-  { href: "/temoignages", label: "Témoignages" },
-  { href: "/affiliation", label: "Affiliation" },
-  { href: "/blog", label: "Blog" },
-  { href: "/contact", label: "Contact" },
+  { href: "/a-propos", label: "À propos" },
 ];
 
-/** Le dropdown Secteurs liste les métiers hors franchise, qui a son lien direct dans la nav. */
-const dropdownSectors = sectors.filter((s) => s.slug !== "franchise");
+/** Le dropdown Métiers liste tous les secteurs, franchise comprise. */
+const dropdownSectors = sectors;
 
 /** Header sticky : se compacte au scroll, dropdown Secteurs, menu mobile. */
 export function Header() {
@@ -91,7 +93,7 @@ export function Header() {
               aria-haspopup="true"
               onClick={() => setSectorsOpen((o) => !o)}
             >
-              Secteurs
+              Métiers
               <svg
                 viewBox="0 0 16 16"
                 className={`h-3.5 w-3.5 transition-transform ${sectorsOpen ? "rotate-180" : ""}`}
@@ -121,7 +123,7 @@ export function Header() {
                     className="block rounded-xl px-4 py-2.5 text-sm font-semibold text-leaf-700 transition-colors hover:bg-leaf-50"
                     onClick={() => setSectorsOpen(false)}
                   >
-                    Tous les secteurs →
+                    Tous les métiers →
                   </Link>
                 </div>
               </div>
@@ -142,9 +144,7 @@ export function Header() {
           >
             Se connecter
           </Link>
-          <CTALink href="https://app.getcomeback.fr/login" position="header" size="md">
-            Essai gratuit
-          </CTALink>
+          <TrialCTA position="header" size="md" />
         </div>
 
         {/* Burger mobile */}
@@ -186,7 +186,7 @@ export function Header() {
               </li>
             ))}
           </ul>
-          <p className="mt-4 px-4 text-sm font-semibold uppercase tracking-wider text-ink-soft">Secteurs</p>
+          <p className="mt-4 px-4 text-sm font-semibold uppercase tracking-wider text-ink-soft">Métiers</p>
           <ul className="mt-1 grid grid-cols-2 gap-1">
             {dropdownSectors.map((s) => (
               <li key={s.slug}>
@@ -209,11 +209,9 @@ export function Header() {
               Se connecter
             </Link>
             <div className="mt-3">
-              <CTALink href="https://app.getcomeback.fr/login" position="mobile-menu" className="w-full">
-                Essayer gratuitement
-              </CTALink>
+              <TrialCTA position="mobile-menu" className="w-full" />
             </div>
-            <p className="mt-3 text-center text-sm text-ink-soft">Sans carte bancaire · Sans engagement</p>
+            <p className="mt-3 text-center text-sm text-ink-soft">{CTA_REASSURANCE}</p>
           </div>
         </nav>
       )}

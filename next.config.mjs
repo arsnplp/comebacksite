@@ -18,11 +18,12 @@ const nextConfig = {
         destination: "https://app.getcomeback.fr/ref/:code",
         permanent: true,
       },
-      {
-        source: "/partenaires",
-        destination: "/affiliation",
-        permanent: true,
-      },
+      // Pages retirées le 26 octobre 2026 : l'affiliation n'est plus promue
+      // sur le site, la démo et les témoignages sont remplacés par l'essai.
+      { source: "/partenaires", destination: "/", permanent: true },
+      { source: "/affiliation", destination: "/", permanent: true },
+      { source: "/demo", destination: "/", permanent: true },
+      { source: "/temoignages", destination: "/", permanent: true },
       // URLs renommées le 15 juillet 2026 (mots-clés dans l'URL)
       {
         source: "/secteurs/:slug",

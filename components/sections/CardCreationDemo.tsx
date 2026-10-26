@@ -1,8 +1,8 @@
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { CTALink } from "@/components/ui/CTALink";
 import { Badge } from "@/components/ui/Badge";
 import { Reveal } from "@/components/ui/Reveal";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 /**
  * Section 2 — Preuve visuelle immédiate après le héros : la vraie création
@@ -37,11 +37,9 @@ export function CardCreationDemo() {
         </Reveal>
 
         <div className="mt-10 flex flex-col items-center gap-4">
-          <CTALink href="https://app.getcomeback.fr/login" position="card-creation-demo" size="xl">
-            Créer ma carte gratuitement
-          </CTALink>
+          <TrialCTA position="card-creation-demo" size="xl" />
           <div className="flex flex-wrap justify-center gap-2">
-            <Badge>Sans carte bancaire</Badge>
+            <Badge>0 € aujourd&apos;hui</Badge>
             <Badge>Sans compétence technique</Badge>
             <Badge>Dans Apple Wallet et Google Wallet</Badge>
           </div>

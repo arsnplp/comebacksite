@@ -4,13 +4,13 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
-import { CTALink } from "@/components/ui/CTALink";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconTile, type IconName } from "@/components/ui/Icon";
 import { StampStrip } from "@/components/ui/Stamps";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMetadata, site } from "@/lib/seo";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 export const metadata: Metadata = pageMetadata({
   title: "À propos : pourquoi nous avons créé Comeback",
@@ -134,9 +134,7 @@ export default function AboutPage() {
             français, par des gens qui connaissent le produit.
           </p>
           <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <CTALink href="https://app.getcomeback.fr/login" position="about" size="lg">
-              Essayer gratuitement
-            </CTALink>
+            <TrialCTA position="about" size="lg" />
             <Link
               href="/contact"
               className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800"
@@ -178,11 +176,10 @@ export default function AboutPage() {
             quelqu&apos;un qui peut réellement corriger le problème.
           </p>
           <p className="mt-4 text-ink-soft leading-relaxed">
-            Vous voulez juger sur pièces ? Parcourez les{" "}
-            <Link href="/temoignages" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">témoignages de commerçants</Link>, testez le{" "}
+            Vous voulez juger sur pièces ? Testez le{" "}
             <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">calculateur</Link> avec vos chiffres, puis faites-vous
-            votre propre avis pendant les 30 jours d&apos;essai gratuit : aucune carte bancaire ne vous
-            sera demandée.
+            votre propre avis pendant les 30 jours d&apos;essai gratuit : 0 € prélevé, résiliable en un
+            clic avant la fin.
           </p>
         </Container>
       </section>

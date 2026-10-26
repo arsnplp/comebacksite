@@ -1,17 +1,15 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-import { CTALink } from "@/components/ui/CTALink";
+import { TrialCTA } from "@/components/ui/TrialCTA";
+import { CTA_REASSURANCE } from "@/lib/links";
 
 /**
  * Barre CTA fixe en bas d'écran sur mobile.
  * Apparaît après le hero, disparaît près du footer (le CTA final suffit).
- * Sur /affiliation, elle pousse l'inscription partenaire plutôt que l'essai.
  */
 export function StickyMobileCTA() {
   const [visible, setVisible] = useState(false);
-  const affiliate = usePathname() === "/affiliation";
 
   useEffect(() => {
     const onScroll = () => {
@@ -30,26 +28,8 @@ export function StickyMobileCTA() {
         visible ? "translate-y-0" : "translate-y-full"
       }`}
     >
-      {affiliate ? (
-        <>
-          <CTALink
-            href="https://app.getcomeback.fr/affilies/inscription"
-            position="sticky-mobile-affiliation"
-            className="w-full"
-            size="md"
-          >
-            Devenir partenaire, c&apos;est gratuit
-          </CTALink>
-          <p className="mt-1.5 text-center text-xs text-ink-soft">Sans engagement · Jusqu&apos;à 50 % reversés</p>
-        </>
-      ) : (
-        <>
-          <CTALink href="https://app.getcomeback.fr/login" position="sticky-mobile" className="w-full" size="md">
-            Essayer gratuitement
-          </CTALink>
-          <p className="mt-1.5 text-center text-xs text-ink-soft">Sans CB · Sans engagement · 10 min chrono</p>
-        </>
-      )}
+      <TrialCTA position="sticky-mobile" className="w-full" size="md" />
+      <p className="mt-1.5 text-center text-xs text-ink-soft">{CTA_REASSURANCE}</p>
     </div>
   );
 }

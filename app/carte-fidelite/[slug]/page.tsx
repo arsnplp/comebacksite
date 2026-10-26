@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
-import { CTALink } from "@/components/ui/CTALink";
 import { Badge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
 import { Reveal } from "@/components/ui/Reveal";
@@ -15,7 +14,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMetadata, site } from "@/lib/seo";
 import { sectorDetails, getSectorDetail } from "@/content/sectors/details";
-import { testimonials } from "@/content/testimonials";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 type Params = { slug: string };
 
@@ -40,7 +39,6 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
   const sector = getSectorDetail(slug);
   if (!sector) notFound();
 
-  const testimonial = testimonials.find((t) => t.sectorSlug === sector.slug);
   const otherSectors = sectorDetails.filter((s) => s.slug !== sector.slug);
 
   const faqJsonLd = {
@@ -79,20 +77,15 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
         highlight={sector.h1Highlight}
         lead={sector.intro}
       >
-        <CTALink href="https://app.getcomeback.fr/login" position={`secteur-${sector.slug}-hero`} size="xl">
-          Essayer gratuitement
-        </CTALink>
-        <CTALink href="/demo" position={`secteur-${sector.slug}-hero-demo`} variant="ghost" size="xl">
-          Réserver une démo
-        </CTALink>
+        <TrialCTA position={`secteur-${sector.slug}-hero`} size="xl" />
       </PageHero>
 
       <div className="pb-6">
         <Container wide className="flex flex-wrap justify-center gap-2">
-          <Badge variant="gold">Plan gratuit à vie</Badge>
+          <Badge variant="gold">30 jours gratuits, 0 € aujourd&apos;hui</Badge>
           <Badge>Sans application à télécharger</Badge>
-          <Badge>Installé en 10 minutes</Badge>
-          <Badge>Essai gratuit, sans CB</Badge>
+          <Badge>Installation offerte</Badge>
+          <Badge>Résiliable en 1 clic</Badge>
         </Container>
       </div>
 
@@ -184,7 +177,7 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
               Votre carte {sector.label.toLowerCase()} peut être prête avant la fin de la journée.
             </p>
             <ul className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2">
-              {["Starter gratuit à vie jusqu'à 30 clients", "Sans carte bancaire", "Résiliable à tout moment"].map((f) => (
+              {["30 jours gratuits, 0 € aujourd'hui", "Installation faite avec vous", "Résiliable en 1 clic"].map((f) => (
                 <li key={f} className="flex items-center gap-2 text-[0.95rem] font-medium text-ink">
                   <svg viewBox="0 0 16 16" className="h-4 w-4 shrink-0 text-leaf-600" aria-hidden="true">
                     <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -194,43 +187,12 @@ export default async function SectorPage({ params }: { params: Promise<Params> }
               ))}
             </ul>
             <div className="mt-8">
-              <CTALink href="https://app.getcomeback.fr/login" position={`secteur-${sector.slug}-mid`} size="xl">
-                Créer ma carte de fidélité
-              </CTALink>
+              <TrialCTA position={`secteur-${sector.slug}-mid`} size="xl" />
             </div>
           </div>
         </Container>
       </section>
 
-      {/* Témoignage du secteur */}
-      {testimonial && (
-        <section className="pb-20 sm:pb-28" aria-labelledby="testimonial-title">
-          <h2 id="testimonial-title" className="sr-only">
-            {`Témoignage : ${sector.label}`}
-          </h2>
-          <Container className="max-w-4xl">
-            <figure className="relative overflow-hidden rounded-3xl bg-leaf-950 p-8 text-white sm:p-12">
-              <div className="dot-grid-dark pointer-events-none absolute inset-0 opacity-40" aria-hidden="true" />
-              <div className="relative grid items-center gap-8 sm:grid-cols-[auto_1fr]">
-                <p className="text-center sm:text-left">
-                  <span className="font-display text-5xl font-extrabold tracking-tight text-gold-400">
-                    {testimonial.metric}
-                  </span>
-                  <span className="mt-1 block max-w-[12rem] text-sm text-leaf-200">{testimonial.metricLabel}</span>
-                </p>
-                <div>
-                  <blockquote>
-                    <p className="text-lg text-leaf-100 sm:text-xl">&laquo;&nbsp;{testimonial.quote}&nbsp;&raquo;</p>
-                  </blockquote>
-                  <figcaption className="mt-4 text-sm text-leaf-200">
-                    {testimonial.name}, {testimonial.business}, {testimonial.city}
-                  </figcaption>
-                </div>
-              </div>
-            </figure>
-          </Container>
-        </section>
-      )}
 
       {/* Contenu long SEO */}
       <section className="pb-20 sm:pb-28" aria-label="En savoir plus">

@@ -5,12 +5,13 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Card } from "@/components/ui/Card";
 import { IconTile, type IconName } from "@/components/ui/Icon";
 import { CTALink } from "@/components/ui/CTALink";
+import { SIGNUP_URL } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Connexion : commerçant, employé, client ou affilié",
+  title: "Connexion : commerçant, employé ou client",
   description:
-    "Accédez à votre espace Comeback : dashboard commerçant, accès employé, cartes de fidélité client ou espace partenaire affilié.",
+    "Accédez à votre espace Comeback : dashboard commerçant, accès employé, ou cartes de fidélité client.",
   path: "/connexion",
 });
 
@@ -28,7 +29,7 @@ const profiles: {
     description: "Gérez vos cartes de fidélité, vos clients et vos statistiques depuis votre dashboard.",
     href: "https://app.getcomeback.fr/login",
     cta: "Me connecter",
-    footer: { label: "Pas encore de compte ? Essai gratuit", href: "https://app.getcomeback.fr/login" },
+    footer: { label: "Pas encore de compte ? Essai gratuit 30 jours", href: SIGNUP_URL },
   },
   {
     icon: "scan",
@@ -44,14 +45,6 @@ const profiles: {
     href: "https://app.getcomeback.fr/client/cards",
     cta: "Voir mes cartes",
   },
-  {
-    icon: "trend",
-    title: "Affilié",
-    description: "Suivez vos filleuls, votre palier et vos commissions depuis votre espace partenaire.",
-    href: "https://app.getcomeback.fr/affilies",
-    cta: "Me connecter",
-    footer: { label: "Pas encore partenaire ? Inscription gratuite", href: "/affiliation" },
-  },
 ];
 
 export default function ConnexionPage() {
@@ -61,12 +54,12 @@ export default function ConnexionPage() {
         crumbs={[{ label: "Connexion", href: "/connexion" }]}
         eyebrow="Connexion"
         title="Connectez-vous à votre espace Comeback"
-        lead="Quatre espaces, quatre usages : choisissez celui qui vous correspond."
+        lead="Trois espaces, trois usages : choisissez celui qui vous correspond."
       />
 
       <section className="pb-20 sm:pb-28" aria-label="Choisir son espace de connexion">
         <Container>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {profiles.map((p) => (
               <Card key={p.title} hover className="flex h-full flex-col p-8 text-center">
                 <IconTile name={p.icon} className="mx-auto" />

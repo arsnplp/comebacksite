@@ -3,10 +3,10 @@
 import { useRef, useState } from "react";
 import { Slider } from "@/components/ui/Slider";
 import { AnimatedNumber } from "@/components/ui/AnimatedNumber";
-import { CTALink } from "@/components/ui/CTALink";
 import { estimateLostRevenue, roundToHundred, formatEuros } from "@/lib/calculator";
 import { trackEvent } from "@/lib/analytics";
 import { plans } from "@/content/pricing";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 /**
  * Calculateur complet de la page /calculateur.
@@ -21,8 +21,8 @@ export function FullCalculator() {
   const lostPerYear = roundToHundred(estimateLostRevenue(clientsPerWeek, basket));
   const lostPerMonth = Math.round(lostPerYear / 12);
 
-  const referencePlan = plans.find((p) => p.name === "Pro");
-  const yearlyPlanCost = (referencePlan?.price ?? 49) * 12;
+  const referencePlan = plans.find((p) => p.name === "Business");
+  const yearlyPlanCost = (referencePlan?.price ?? 39.99) * 12;
   const roiMultiple = Math.max(1, Math.round(lostPerYear / yearlyPlanCost));
 
   const onUse = <T,>(setter: (v: T) => void) => (v: T) => {
@@ -83,7 +83,7 @@ export function FullCalculator() {
               </dd>
             </div>
             <div className="flex items-baseline justify-between gap-4">
-              <dt className="text-ink-soft">Abonnement Pro par an</dt>
+              <dt className="text-ink-soft">Abonnement Business par an</dt>
               <dd className="font-display text-lg font-bold text-ink tabular-nums">
                 {formatEuros(yearlyPlanCost)}
               </dd>
@@ -96,10 +96,8 @@ export function FullCalculator() {
             </div>
           </dl>
           <div className="mt-8 text-center">
-            <CTALink href="https://app.getcomeback.fr/login" position="calculator-page" size="xl">
-              Récupérer ce CA gratuitement
-            </CTALink>
-            <p className="mt-3 text-sm text-ink-soft">Sans carte bancaire, résultats mesurés dans votre dashboard.</p>
+            <TrialCTA position="calculator-page" size="xl" />
+            <p className="mt-3 text-sm text-ink-soft">0 € aujourd&apos;hui, résultats mesurés dans votre dashboard.</p>
           </div>
         </div>
       </div>

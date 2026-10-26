@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
-import { CTALink } from "@/components/ui/CTALink";
 import { Badge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
 import { Reveal } from "@/components/ui/Reveal";
@@ -15,6 +14,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMetadata, site } from "@/lib/seo";
 import { sectorDetails } from "@/content/sectors/details";
 import type { FaqItem } from "@/content/faq";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 export const metadata: Metadata = pageMetadata({
   title: "Carte de fidélité food truck : vos clients vous suivent partout",
@@ -193,23 +193,14 @@ export default function FoodTruckPage() {
               </p>
 
               <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-                <CTALink href="https://app.getcomeback.fr/login" position="secteur-food-truck-hero" size="xl">
-                  Essayer gratuitement
-                </CTALink>
-                <CTALink href="/demo" position="secteur-food-truck-hero-demo" variant="ghost" size="xl" withArrow={false}>
-                  <svg viewBox="0 0 20 20" className="h-5 w-5 text-leaf-700" aria-hidden="true">
-                    <circle cx="10" cy="10" r="9" fill="none" stroke="currentColor" strokeWidth="1.6" />
-                    <path d="M8 6.8v6.4l5.2-3.2L8 6.8Z" fill="currentColor" />
-                  </svg>
-                  Réserver une démo
-                </CTALink>
+                <TrialCTA position="secteur-food-truck-hero" size="xl" />
               </div>
 
               <div className="mt-5 flex flex-wrap gap-2">
-                <Badge variant="gold">Plan gratuit à vie</Badge>
+                <Badge variant="gold">30 jours gratuits, 0 € aujourd&apos;hui</Badge>
                 <Badge>Sans application à télécharger</Badge>
-                <Badge>Installé en 10 minutes</Badge>
-                <Badge>Essai gratuit, sans CB</Badge>
+                <Badge>Installation offerte</Badge>
+                <Badge>Résiliable en 1 clic</Badge>
               </div>
             </div>
 

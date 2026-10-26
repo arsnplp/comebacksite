@@ -4,12 +4,12 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
-import { CTALink } from "@/components/ui/CTALink";
 import { Reveal } from "@/components/ui/Reveal";
 import { Icon, IconTile } from "@/components/ui/Icon";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { pageMetadata } from "@/lib/seo";
 import { sectorDetails } from "@/content/sectors/details";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 export const metadata: Metadata = pageMetadata({
   title: "Secteurs : la fidélité adaptée à votre métier",
@@ -28,9 +28,7 @@ export default function SectorsHubPage() {
         highlight="Votre carte non plus"
         lead="Un café ne fidélise pas comme un institut de beauté : ni le même rythme, ni le même palier, ni la même récompense. Retrouvez la mécanique qui a fait ses preuves dans votre métier."
       >
-        <CTALink href="https://app.getcomeback.fr/login" position="secteurs-hero" size="xl">
-          Essayer gratuitement
-        </CTALink>
+        <TrialCTA position="secteurs-hero" size="xl" />
       </PageHero>
 
       <section className="pb-20 sm:pb-28" aria-labelledby="sector-grid-title">
@@ -100,7 +98,7 @@ export default function SectorsHubPage() {
           </p>
           <p className="mt-4 text-ink-soft leading-relaxed">
             Commencez donc par votre métier : vous y trouverez les trois problèmes du quotidien que la
-            fidélité résout, la mécanique de récompense conseillée, un témoignage et une FAQ dédiée.
+            fidélité résout, la mécanique de récompense conseillée et une FAQ dédiée.
             Ensuite, si vous hésitez encore sur la rentabilité, faites le calcul avec vos propres
             chiffres grâce au <Link href="/calculateur" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">calculateur de chiffre d&apos;affaires récupérable</Link>.
             Enfin, comparez les formats : notre <Link href="/carte-fidelite-papier-ou-digitale" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">comparatif carte papier ou digitale</Link>{" "}

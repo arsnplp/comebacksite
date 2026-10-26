@@ -7,15 +7,15 @@ import { Reveal } from "@/components/ui/Reveal";
 const steps = [
   {
     title: "Créez votre carte",
-    text: "Choisissez votre récompense (10 cafés = 1 offert, -10 % au 5e passage…). 5 minutes, zéro compétence technique.",
+    text: "Choisissez votre récompense (10 cafés = 1 offert, un soin offert au 10e rendez-vous…). On le fait avec vous au téléphone, en 10 minutes.",
   },
   {
     title: "Vos clients scannent",
-    text: "Un QR code sur votre comptoir. La carte s'ajoute direct dans leur Apple Wallet ou Google Wallet. Rien à télécharger.",
+    text: "Votre affiche avec QR code est prête à imprimer. La carte s'ajoute dans leur Apple Wallet ou Google Wallet en un scan. Rien à télécharger.",
   },
   {
     title: "Ils reviennent, vous mesurez",
-    text: "Notifications automatiques, tampons digitaux, et un dashboard qui vous montre le CA généré.",
+    text: "Relances automatiques sur leur écran verrouillé, tampons digitaux, et un dashboard qui vous montre le CA généré en euros.",
   },
 ];
 
@@ -54,7 +54,9 @@ export function Steps() {
 
         <p className="mt-10 flex items-center justify-center gap-2 text-center font-medium text-ink-soft">
           <StampCheck className="h-6 w-6 text-leaf-600" />
-          Temps moyen d&apos;installation constaté&nbsp;: <strong className="text-ink">8 min 30</strong>
+          <span>
+            Installation faite <strong className="text-ink">avec vous</strong>, au téléphone, et offerte
+          </span>
         </p>
       </Container>
     </section>

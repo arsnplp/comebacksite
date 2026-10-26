@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
-import { CTALink } from "@/components/ui/CTALink";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 import { Accordion } from "@/components/ui/Accordion";
 import { Reveal } from "@/components/ui/Reveal";
 import { IconTile } from "@/components/ui/Icon";
@@ -195,14 +195,14 @@ export default function FranchisePage() {
             </ul>
 
             <div className="mt-10">
-              <span className="inline-flex items-center rounded-full bg-leaf-700 px-4 py-1.5 text-sm font-bold uppercase tracking-wide text-white">
-                Réponse sous 48 h
-              </span>
-              <div className="mt-4">
-                <CTALink href="/contact" position="franchise-hero-contact" size="xl">
-                  Nous contacter
-                </CTALink>
-              </div>
+              <TrialCTA position="franchise-hero" size="xl" />
+              <p className="mt-4 text-sm text-ink-soft">
+                Plusieurs points de vente à équiper ?{" "}
+                <Link href="/contact" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">
+                  Écrivez-nous
+                </Link>
+                , on organise l&apos;installation avec vous.
+              </p>
             </div>
           </div>
         </Container>

@@ -6,7 +6,7 @@ export const site = {
   url: "https://getcomeback.fr",
   title: "Carte de fidélité en ligne pour commerçants | Comeback",
   description:
-    "Créez votre carte de fidélité digitale en 10 minutes. Vos clients l'ajoutent en 1 scan et reviennent 2 fois plus souvent. Essai gratuit 30 jours.",
+    "Transformez chaque passage en client fidèle : une carte dans le Wallet de vos clients et des notifications sur leur écran verrouillé. Essai gratuit 30 jours, installation offerte.",
   locale: "fr_FR",
   // [PLACEHOLDER] — comptes réseaux sociaux à créer / confirmer
   sameAs: [
@@ -24,9 +24,6 @@ export const routes: { path: string; priority: number; changeFrequency: "daily" 
   { path: "/", priority: 1, changeFrequency: "weekly" },
   { path: "/fonctionnalites", priority: 0.9, changeFrequency: "monthly" },
   { path: "/tarifs", priority: 0.9, changeFrequency: "monthly" },
-  { path: "/demo", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/affiliation", priority: 0.7, changeFrequency: "monthly" },
-  { path: "/temoignages", priority: 0.7, changeFrequency: "weekly" },
   { path: "/secteurs", priority: 0.8, changeFrequency: "monthly" },
   { path: "/carte-fidelite/restaurant", priority: 0.8, changeFrequency: "monthly" },
   { path: "/carte-fidelite/coiffeur", priority: 0.8, changeFrequency: "monthly" },

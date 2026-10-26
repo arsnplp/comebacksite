@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { Card } from "@/components/ui/Card";
-import { CTALink } from "@/components/ui/CTALink";
 import { Badge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
 import { Reveal } from "@/components/ui/Reveal";
@@ -16,6 +15,7 @@ import { FinalCTA } from "@/components/sections/FinalCTA";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { pageMetadata } from "@/lib/seo";
 import type { FaqItem } from "@/content/faq";
+import { TrialCTA } from "@/components/ui/TrialCTA";
 
 export const metadata: Metadata = pageMetadata({
   title: "Fonctionnalités : carte Wallet, relances automatiques, dashboard CA",
@@ -87,14 +87,14 @@ const features: Feature[] = [
 
 const bentoTiles: { icon: IconName; title: string; text: string }[] = [
   {
-    icon: "scan",
-    title: "Inscription en 10 secondes",
-    text: "Un QR code sur le comptoir. Le client scanne avec son appareil photo, la carte est dans son Wallet. Pas de compte, pas de mot de passe.",
+    icon: "mapPin",
+    title: "La carte s'affiche près de chez vous",
+    text: "Sur iPhone, quand le client passe à moins de 100 mètres de votre boutique, votre carte remonte sur son écran verrouillé avec votre message.",
   },
   {
-    icon: "send",
-    title: "Promos flash",
-    text: "Un jour de pluie, un stock à écouler : envoyez une offre à tous vos clients en 30 secondes, sans imprimer un seul flyer.",
+    icon: "spark",
+    title: "Mini-jeux",
+    text: "Roue de la fortune, carte à gratter, coffres mystère : vos clients jouent leurs points pour gagner un lot. Vous fixez les lots, les chances et le coût d'une partie.",
   },
   {
     icon: "gift",
@@ -183,8 +183,8 @@ function NotificationsMockup() {
       accent: false,
     },
     {
-      title: "Joyeux anniversaire Léa",
-      text: "Votre dessert offert est valable toute la semaine.",
+      title: "Jour de marché",
+      text: "Ce matin seulement : un café offert avec chaque viennoiserie.",
       time: "hier",
       accent: true,
     },
@@ -248,12 +248,7 @@ export default function FeaturesPage() {
         highlight="faire revenir vos clients"
         lead="Une carte dans leur Wallet, des relances qui partent toutes seules, un dashboard qui compte en euros. Voici ce que Comeback fait pour votre commerce, concrètement."
       >
-        <CTALink href="https://app.getcomeback.fr/login" position="features-hero" size="xl">
-          Essayer gratuitement
-        </CTALink>
-        <CTALink href="/demo" position="features-hero-demo" variant="ghost" size="xl">
-          Réserver une démo
-        </CTALink>
+        <TrialCTA position="features-hero" size="xl" />
       </PageHero>
 
       <div className="pb-4">
