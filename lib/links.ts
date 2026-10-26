@@ -12,10 +12,10 @@ export const SIGNUP_URL = "https://app.getcomeback.fr/signup?plan=free";
 export const LOGIN_URL = "https://app.getcomeback.fr/login";
 
 /** Libellé unique du CTA, identique sur tout le site. */
-export const CTA_LABEL = "Essai gratuit 30 jours";
+export const CTA_LABEL = "Créer ma carte gratuitement";
 
 /** Réassurance affichée sous le CTA, identique partout. */
-export const CTA_REASSURANCE = "0 € aujourd'hui · Résiliable en 1 clic · Installation offerte";
+export const CTA_REASSURANCE = "30 jours gratuits · 0 € aujourd'hui · Résiliable en 1 clic";
 
 /** Prix des plans, alignés sur l'app (lib/plan-limits.ts côté app). */
 export const BUSINESS_PRICE_LABEL = "39,99 €";
