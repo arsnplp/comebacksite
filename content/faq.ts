@@ -26,7 +26,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: "Faut-il une carte bancaire pour l'essai gratuit ?",
     answer:
-      "Oui, et rien n'est prélevé pendant 30 jours. Elle sert à ce que votre carte de fidélité continue sans coupure si Comeback vous rapporte. Pendant l'essai, vous avez tout le plan Business et votre dashboard vous montre en euros ce que la fidélité vous rapporte. Avant la fin, vous gardez Business, vous passez sur Pro ou vous résiliez en un clic sans être prélevé. Sans action de votre part, Business continue à 39,99 € par mois : la date vous est indiquée dès le départ et rappelée dans votre espace.",
+      "Oui, et rien n'est prélevé pendant 30 jours. Elle sert à ce que votre carte de fidélité continue sans coupure si Comeback vous rapporte. Pendant l'essai, vous avez tout le plan Business et votre dashboard vous montre en euros ce que la fidélité vous rapporte. Avant la fin, vous gardez Business, vous passez sur Pro ou vous résiliez en un clic sans être prélevé. Sans action de votre part, Business continue à 29,99 € par mois : la date vous est indiquée dès le départ et rappelée dans votre espace.",
   },
   {
     question: "Puis-je garder mes cartes papier en parallèle ?",
@@ -51,7 +51,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: "Combien coûte une carte de fidélité digitale ?",
     answer:
-      "9,99 € TTC par mois pour le plan Pro (jusqu'à 100 clients) et 39,99 € TTC pour le plan Business (clients et notifications illimités), sans engagement. Aucun frais d'installation, aucun matériel à acheter. Tout commence par 30 jours d'essai sur Business : vous testez avec vos vrais clients, vous décidez ensuite, chiffres en main.",
+      "14,99 € TTC par mois pour le plan Pro (jusqu'à 300 clients) et 29,99 € TTC pour le plan Business (clients et notifications illimités), sans engagement. Aucun frais d'installation, aucun matériel à acheter. Tout commence par 30 jours d'essai sur Business : vous testez avec vos vrais clients, vous décidez ensuite, chiffres en main.",
   },
   {
     question: "Quelle différence avec une carte de fidélité papier ?",

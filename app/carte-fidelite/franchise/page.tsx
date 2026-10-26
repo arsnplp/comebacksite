@@ -106,7 +106,7 @@ const faq: FaqItem[] = [
   {
     question: "Quel plan choisir pour un réseau de plusieurs établissements ?",
     answer:
-      "Le plan Business à 39,99 € TTC par mois couvre les besoins d'un réseau, avec clients et notifications illimités. Consultez la page tarifs pour comparer les plans en détail, ou contactez-nous pour une organisation particulière.",
+      "Le plan Business à 29,99 € TTC par mois couvre les besoins d'un réseau, avec clients et notifications illimités. Consultez la page tarifs pour comparer les plans en détail, ou contactez-nous pour une organisation particulière.",
   },
 ];
 

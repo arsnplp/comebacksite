@@ -22,7 +22,7 @@ export function FullCalculator() {
   const lostPerMonth = Math.round(lostPerYear / 12);
 
   const referencePlan = plans.find((p) => p.name === "Business");
-  const yearlyPlanCost = (referencePlan?.price ?? 39.99) * 12;
+  const yearlyPlanCost = (referencePlan?.price ?? 29.99) * 12;
   const roiMultiple = Math.max(1, Math.round(lostPerYear / yearlyPlanCost));
 
   const onUse = <T,>(setter: (v: T) => void) => (v: T) => {

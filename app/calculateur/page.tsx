@@ -147,7 +147,7 @@ export default function CalculatorPage() {
           </h2>
           <p className="mt-5 text-ink-soft leading-relaxed">
             Premier réflexe : comparez ce montant au coût d&apos;un programme de fidélité. Le plan
-            Pro démarre à 9,99 euros par mois et le plan Business, illimité, coûte 39,99 euros ;
+            Pro démarre à 14,99 euros par mois et le plan Business, illimité, coûte 29,99 euros ;
             si votre estimation dépasse quelques centaines d&apos;euros par an, la question n&apos;est
             donc plus « est-ce rentable ? » mais « pourquoi attendre ? ». Consultez les <Link href="/tarifs" className="font-semibold text-leaf-700 underline underline-offset-4 hover:text-leaf-800">tarifs détaillés</Link> pour
             choisir le plan qui correspond à votre volume de clients.

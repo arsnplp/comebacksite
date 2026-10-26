@@ -16,9 +16,9 @@ import { plans, formatPlanPrice, includedEverywhere } from "@/content/pricing";
 import type { FaqItem } from "@/content/faq";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Tarifs : carte de fidélité digitale dès 9,99 € par mois, 30 jours d'essai",
+  title: "Tarifs : carte de fidélité digitale dès 14,99 € par mois, 30 jours d'essai",
   description:
-    "Pro à 9,99 € et Business à 39,99 € TTC par mois, sans engagement. 30 jours d'essai sur Business, 0 € prélevé aujourd'hui, installation faite avec vous et offerte.",
+    "Pro à 14,99 € et Business à 29,99 € TTC par mois, sans engagement. 30 jours d'essai sur Business, 0 € prélevé aujourd'hui, installation faite avec vous et offerte.",
   path: "/tarifs",
 });
 
@@ -34,7 +34,7 @@ const compareGroups: CompareGroup[] = [
   {
     title: "Clients et équipe",
     rows: [
-      { label: "Clients inscrits", cells: ["100", "Illimités"] },
+      { label: "Clients inscrits", cells: ["300", "Illimités"] },
       { label: "Comptes employés", cells: ["3", "Illimités"] },
       { label: "Carte de fidélité à vos couleurs", cells: ["1", "1"] },
       { label: "Apple Wallet et Google Wallet", cells: [true, true] },
@@ -89,7 +89,7 @@ const trialSteps = [
   {
     when: "Avant le 30e jour",
     title: "Vous décidez",
-    text: "Vous gardez Business, vous passez sur Pro, ou vous résiliez en un clic sans rien payer. Sans action de votre part, Business continue à 39,99 € par mois.",
+    text: "Vous gardez Business, vous passez sur Pro, ou vous résiliez en un clic sans rien payer. Sans action de votre part, Business continue à 29,99 € par mois.",
   },
 ];
 
@@ -106,7 +106,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Puis-je choisir le plan Pro plutôt que Business ?",
     answer:
-      "Oui. L'essai se fait sur Business pour que vous puissiez tout tester sans limite. Depuis votre espace, vous passez sur Pro quand vous voulez, pendant ou après l'essai. Pro convient tant que vous restez sous 100 clients inscrits.",
+      "Oui. L'essai se fait sur Business pour que vous puissiez tout tester sans limite. Depuis votre espace, vous passez sur Pro quand vous voulez, pendant ou après l'essai. Pro convient tant que vous restez sous 300 clients inscrits.",
   },
   {
     question: "Comment se passe l'installation ?",
@@ -126,17 +126,17 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Existe-t-il une formule annuelle ?",
     answer:
-      "Oui, avec 20 % de réduction : 96 € par an pour Pro (8 € par mois) et 384 € par an pour Business (32 € par mois), facturés en une fois.",
+      "Oui, avec 20 % de réduction : 144 € par an pour Pro (12 € par mois) et 288 € par an pour Business (24 € par mois), facturés en une fois.",
   },
   {
     question: "Les prix affichés sont-ils HT ou TTC ?",
     answer:
-      "Tous les prix affichés sont TTC : le montant que vous voyez est exactement celui qui sera prélevé. Le plan Business à 39,99 € correspond à 33,33 € HT plus 6,66 € de TVA, détaillés sur chaque facture. Si votre commerce est assujetti, cette TVA est récupérable.",
+      "Tous les prix affichés sont TTC : le montant que vous voyez est exactement celui qui sera prélevé. Le plan Business à 29,99 € correspond à 24,99 € HT plus 5,00 € de TVA, détaillés sur chaque facture. Si votre commerce est assujetti, cette TVA est récupérable.",
   },
   {
     question: "Comment être sûr que ce sera rentable pour mon commerce ?",
     answer:
-      "Faites le calcul avec vos chiffres : avec un panier moyen de 20 euros, deux visites supplémentaires par mois couvrent l'abonnement Business. Notre calculateur estime le chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard, avant de payer quoi que ce soit.",
+      "Faites le calcul avec vos chiffres : avec un panier moyen de 20 euros, deux visites supplémentaires par mois couvrent largement l'abonnement Business. Notre calculateur estime le chiffre d'affaires récupérable, et les 30 jours d'essai vous montrent le chiffre réel, mesuré dans votre dashboard, avant de payer quoi que ce soit.",
   },
 ];
 
@@ -425,7 +425,7 @@ export default function PricingPage() {
                 14 600 € / an
               </p>
               <p className="mt-2 text-sm text-leaf-200">
-                de CA récupérable estimé, contre 384 € d&apos;abonnement annuel au plan Business (formule annuelle, -20 %).
+                de CA récupérable estimé, contre 288 € d&apos;abonnement annuel au plan Business (formule annuelle, -20 %).
               </p>
             </div>
           </div>
