@@ -23,7 +23,9 @@ L'app est un autre repo (arsnplp/combeckapp, app.getcomeback.fr).
 - **Pas d'offre gratuite affichée.** Tout commence par l'essai de 30 jours sur
   le plan Business : carte bancaire demandée, 0 € prélevé. Avant la fin, le
   commerçant garde Business, passe sur Pro ou résilie en un clic. Sans action,
-  Business continue.
+  Business continue. Il n'y a plus de plan gratuit nulle part, ni sur le site
+  ni dans l'app : après un essai résilié ou un abonnement arrêté, le compte est
+  mis en pause (données conservées) jusqu'à la souscription d'un plan payant.
 - **Une seule carte de fidélité par commerce**, sur tous les plans.
 - **Installation offerte** : après l'inscription, Arsène appelle le commerçant
   pour configurer la carte avec lui (10 minutes).
