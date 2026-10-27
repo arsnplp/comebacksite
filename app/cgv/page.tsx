@@ -32,7 +32,7 @@ const sections: LegalSection[] = [
     body: [
       "Tout nouveau Client bénéficie d'une période d'essai de 30 jours donnant accès à l'ensemble des fonctionnalités du plan Business. L'enregistrement d'une carte bancaire est requis pour démarrer l'essai ; aucun montant n'est prélevé pendant ces 30 jours.",
       "À l'issue de la période d'essai, et sauf résiliation par le Client avant son terme, l'essai se poursuit automatiquement par un abonnement mensuel au plan Business, facturé au tarif en vigueur et prélevé sur la carte enregistrée. La date du premier prélèvement est indiquée au Client au moment où il saisit sa carte, et rappelée dans son espace client. Le Client peut également choisir à tout moment le plan Pro.",
-      "Le Client peut résilier à tout moment depuis son espace, sans frais ni préavis. Une résiliation intervenant avant la fin de l'essai n'entraîne aucun prélèvement ; le compte bascule alors sur un accès gratuit aux fonctionnalités réduites.",
+      "Le Client peut résilier à tout moment depuis son espace, sans frais ni préavis. Une résiliation intervenant avant la fin de l'essai n'entraîne aucun prélèvement ; le Client conserve l'accès jusqu'au terme de l'essai. Il n'existe pas d'offre gratuite : à l'issue d'un essai résilié ou d'un abonnement arrêté, le compte est mis en pause, et le Client le réactive à tout moment en souscrivant un plan payant.",
       "L'essai gratuit est limité à une fois par Client. Le compte et l'intégralité des données sont conservés en cas de résiliation ; aucune donnée n'est supprimée. Le Client peut exporter ses données à tout moment, y compris après une éventuelle résiliation, pendant une durée de 90 jours.",
     ],
   },
