@@ -8,6 +8,15 @@
  */
 export const SIGNUP_URL = "https://app.getcomeback.fr/signup?plan=free";
 
+/**
+ * Inscription avec une période de facturation choisie sur le site : l'app la
+ * reprend et c'est elle qui est facturée au terme de l'essai. `plan=free`
+ * reste en premier, toujours présent.
+ */
+export function signupUrl(billing?: "monthly" | "quarterly" | "annual"): string {
+  return billing && billing !== "monthly" ? `${SIGNUP_URL}&billing=${billing}` : SIGNUP_URL;
+}
+
 /** Connexion des commerçants déjà inscrits (lien de navigation, pas un CTA). */
 export const LOGIN_URL = "https://app.getcomeback.fr/login";
 
@@ -17,5 +26,32 @@ export const CTA_LABEL = "Créer ma carte gratuitement";
 /** Réassurance affichée sous le CTA, identique partout. */
 export const CTA_REASSURANCE = "30 jours gratuits · 0 € aujourd'hui · Résiliable en 1 clic";
 
-/** Prix des plans, alignés sur l'app (lib/plan-limits.ts côté app). */
+/** Prix des plans, alignés sur l'app (lib/pricing.ts côté app). */
 export const BUSINESS_PRICE_LABEL = "29,99 €";
+
+const BILLING_KEY = "comeback_billing";
+
+/**
+ * Retient la période choisie dans le sélecteur de prix, pour que tous les
+ * CTA de la page (en-tête, bouton mobile collant…) la transmettent aussi.
+ * Stockage de session : rien ne survit à la fermeture de l'onglet.
+ */
+export function rememberBillingCycle(cycle: "monthly" | "quarterly" | "annual"): void {
+  try {
+    sessionStorage.setItem(BILLING_KEY, cycle);
+  } catch {
+    /* navigation privée stricte : le CTA de la carte garde la période */
+  }
+}
+
+/** Lien d'inscription complété par la période retenue, s'il n'en a pas déjà. */
+export function withRememberedBilling(href: string): string {
+  if (!href.startsWith(SIGNUP_URL) || href.includes("billing=")) return href;
+  try {
+    const cycle = sessionStorage.getItem(BILLING_KEY);
+    if (cycle === "quarterly" || cycle === "annual") return signupUrl(cycle);
+  } catch {
+    /* rien de retenu */
+  }
+  return href;
+}

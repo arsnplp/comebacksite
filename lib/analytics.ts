@@ -9,7 +9,8 @@ type EventName =
   | "cta_click" // props: { position: "header" | "hero" | "calculator" | ... }
   | "calculator_used"
   | "lead_submitted"
-  | "scroll_75";
+  | "scroll_75"
+  | "billing_cycle"; // props: { cycle: "monthly" | "quarterly" | "annual" }
 
 type EventProps = Record<string, string | number | boolean>;
 

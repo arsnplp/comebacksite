@@ -4,6 +4,7 @@ import { Container } from "@/components/ui/Container";
 import { PageHero } from "@/components/ui/PageHero";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 import { TrialCTA } from "@/components/ui/TrialCTA";
+import { PricingPlans } from "@/components/sections/PricingPlans";
 import { CTA_REASSURANCE } from "@/lib/links";
 import { Badge } from "@/components/ui/Badge";
 import { Accordion } from "@/components/ui/Accordion";
@@ -89,7 +90,7 @@ const trialSteps = [
   {
     when: "Avant le 30e jour",
     title: "Vous décidez",
-    text: "Vous gardez Business, vous passez sur Pro, ou vous résiliez en un clic sans rien payer. Sans action de votre part, Business continue à 29,99 € par mois.",
+    text: "Vous gardez Business, vous passez sur Pro, ou vous résiliez en un clic sans rien payer. Sans action de votre part, Business continue selon la formule choisie : 29,99 € par mois, 79,99 € par trimestre ou 288 € par an.",
   },
 ];
 
@@ -124,9 +125,9 @@ const pricingFaq: FaqItem[] = [
       "Oui. L'abonnement est sans engagement : vous passez de Pro à Business (et inversement) en 2 clics depuis votre espace, la différence est calculée au prorata. La résiliation se fait en un clic, sans préavis ni justification.",
   },
   {
-    question: "Existe-t-il une formule annuelle ?",
+    question: "Existe-t-il une formule trimestrielle ou annuelle ?",
     answer:
-      "Oui, avec 20 % de réduction : 144 € par an pour Pro (12 € par mois) et 288 € par an pour Business (24 € par mois), facturés en une fois.",
+      "Oui, les deux. Au trimestre, environ 11 % de réduction : 39,99 € pour Pro et 79,99 € pour Business, tous les 3 mois. À l'année, 20 % de réduction : 144 € pour Pro (12 € par mois) et 288 € pour Business (24 € par mois), facturés en une fois. Choisissez la formule sur cette page avant de créer votre compte : l'essai de 30 jours reste gratuit, la formule démarre ensuite.",
   },
   {
     question: "Les prix affichés sont-ils HT ou TTC ?",
@@ -236,57 +237,7 @@ export default function PricingPage() {
           Les plans Comeback
         </h2>
         <Container className="max-w-5xl">
-          <div className="grid items-stretch gap-6 md:grid-cols-2">
-            {plans.map((plan, i) => (
-              <Reveal key={plan.name} delayMs={i * 100} className="h-full">
-                <div
-                  className={`relative flex h-full flex-col rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-1 ${
-                    plan.recommended
-                      ? "z-10 bg-gradient-to-b from-leaf-50/70 to-white shadow-card-lg ring-2 ring-leaf-600"
-                      : "bg-white shadow-card ring-1 ring-ink/5 hover:shadow-card-lg"
-                  }`}
-                >
-                  {plan.recommended && (
-                    <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-leaf-700 px-4 py-1 text-sm font-semibold text-white shadow-md">
-                      Inclus dans l&apos;essai
-                    </span>
-                  )}
-                  <h3 className="font-display text-xl font-bold">{plan.name}</h3>
-                  <p className="mt-1 text-sm font-medium text-ink">{plan.audience}</p>
-                  <p className="mt-5">
-                    <span className="font-display text-4xl font-extrabold tracking-tight">
-                      {formatPlanPrice(plan.price)}&nbsp;€
-                    </span>
-                    <span className="text-ink-soft">{plan.period}</span>
-                  </p>
-                  <p className="mt-1 text-sm font-semibold text-ember-600">
-                    ou {plan.annualTotal}&nbsp;€ par an, soit {plan.annualMonthly}&nbsp;€/mois
-                  </p>
-                  <p className="mt-4 text-[0.95rem] text-ink-soft">{plan.description}</p>
-
-                  <ul className="mt-6 flex-1 space-y-2.5">
-                    {plan.features.map((f) => (
-                      <li key={f} className="flex items-start gap-2.5 text-[0.95rem] text-ink-soft">
-                        <svg viewBox="0 0 16 16" className="mt-1 h-4 w-4 shrink-0 text-leaf-600" aria-hidden="true">
-                          <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-                        </svg>
-                        {f}
-                      </li>
-                    ))}
-                  </ul>
-
-                  <div className="mt-8">
-                    <TrialCTA
-                      position={`tarifs-${plan.name.toLowerCase()}`}
-                      variant={plan.recommended ? "primary" : "ghost"}
-                      className="w-full"
-                    />
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-          <p className="mt-8 text-center text-sm text-ink-soft">{CTA_REASSURANCE}</p>
+          <PricingPlans reassurance={CTA_REASSURANCE} />
         </Container>
       </section>
 

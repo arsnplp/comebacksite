@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { trackEvent } from "@/lib/analytics";
 import { buttonClasses } from "@/components/ui/Button";
+import { withRememberedBilling } from "@/lib/links";
 
 type CTALinkProps = {
   children: ReactNode;
@@ -31,7 +32,16 @@ export function CTALink({
     <Link
       href={href}
       className={buttonClasses(variant, size, className)}
-      onClick={() => trackEvent("cta_click", { position })}
+      onClick={(e) => {
+        trackEvent("cta_click", { position });
+        // Période choisie plus haut dans le sélecteur de prix : tous les CTA
+        // d'inscription la transmettent, pas seulement celui de la carte.
+        const target = withRememberedBilling(href);
+        if (target !== href && !e.metaKey && !e.ctrlKey && !e.shiftKey && e.button === 0) {
+          e.preventDefault();
+          window.location.assign(target);
+        }
+      }}
     >
       {children}
       {withArrow && (
