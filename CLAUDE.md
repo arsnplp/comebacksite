@@ -20,6 +20,15 @@ L'app est un autre repo (arsnplp/combeckapp, app.getcomeback.fr).
     retirer `?plan=free` (sans lui, l'app renvoie vers ses tarifs).
   - réassurance : « 30 jours gratuits · 0 € aujourd'hui · Résiliable en 1 clic »
   - pas de second bouton concurrent (démo, contact…) au même niveau.
+  - **seule exception** (décision d'Arsène, 28 octobre 2026) : la carte Pro de
+    la page Tarifs a son propre bouton « Prendre Pro à … », qui mène à Pro
+    payé dès l'inscription (`signup?plan=pro`, `proSignupUrl` dans
+    `lib/links.ts`), sans essai. L'essai gratuit passe toujours par Business.
+- **Périodes** : mensuel, trimestriel (Pro 39,99 €, Business 79,99 €) et annuel
+  (144 €, 288 €). Le sélecteur (`components/sections/PricingPlans.tsx`)
+  transmet la période à l'inscription (`billing=quarterly|annual`).
+- **Pendant l'essai**, choisir Pro (ou une autre période) ne fait rien payer :
+  le commerçant garde ses jours gratuits et le plan choisi démarre au 31e jour.
 - **Pas d'offre gratuite affichée.** Tout commence par l'essai de 30 jours sur
   le plan Business : carte bancaire demandée, 0 € prélevé. Avant la fin, le
   commerçant garde Business, passe sur Pro ou résilie en un clic. Sans action,
@@ -42,6 +51,8 @@ L'app est un autre repo (arsnplp/combeckapp, app.getcomeback.fr).
 
 En ligne depuis le 28 octobre 2026 : Pro 14,99 € TTC/mois (300 clients),
 Business 29,99 € TTC/mois (illimité). Les anciens abonnés Pro gardent 9,99 €.
+Trimestriel (Pro 39,99 €, Business 79,99 €) : sur la branche `trimestriel`,
+mis en ligne avec l'app par `scripts/pricing-2026-10/launch-quarterly.sh prod`.
 Toujours
 lire les prix dans `content/pricing.ts` plutôt que de les écrire en dur.
 

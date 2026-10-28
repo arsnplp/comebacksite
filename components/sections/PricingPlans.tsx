@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { TrialCTA } from "@/components/ui/TrialCTA";
 import { trackEvent } from "@/lib/analytics";
-import { rememberBillingCycle } from "@/lib/links";
+import { proSignupUrl, rememberBillingCycle } from "@/lib/links";
+import { CTALink } from "@/components/ui/CTALink";
 import {
   BILLING_CYCLES,
   CYCLE_LABEL,
@@ -87,6 +88,16 @@ function PlanPrice({ plan, cycle }: { plan: Plan; cycle: BillingCycle }) {
   );
 }
 
+/** Ce que signifie le bouton Pro : payé tout de suite, l'essai est ailleurs. */
+function ProNote() {
+  return (
+    <p className="mt-3 text-center text-xs leading-relaxed text-ink-soft">
+      Sans essai : payé dès l&apos;inscription. Pour tester gratuitement, prenez l&apos;essai Business et
+      passez sur Pro pendant l&apos;essai : vous gardez vos jours gratuits.
+    </p>
+  );
+}
+
 const Check = () => (
   <svg viewBox="0 0 16 16" className="mt-1 h-4 w-4 shrink-0 text-leaf-600" aria-hidden="true">
     <path d="M3 8.5 6.5 12 13 4.5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
@@ -158,12 +169,16 @@ export function PricingPlans({
 
             {full && (
               <div className="mt-8">
-                <TrialCTA
-                  position={`tarifs-${plan.name.toLowerCase()}`}
-                  variant={plan.recommended ? "primary" : "ghost"}
-                  className="w-full"
-                  billing={cycle}
-                />
+                {plan.recommended ? (
+                  <TrialCTA position="tarifs-business" variant="primary" className="w-full" billing={cycle} />
+                ) : (
+                  <>
+                    <CTALink href={proSignupUrl(cycle)} position="tarifs-pro" variant="ghost" className="w-full">
+                      Prendre Pro à {euros(plan.prices[cycle])}
+                    </CTALink>
+                    <ProNote />
+                  </>
+                )}
               </div>
             )}
           </div>
@@ -176,6 +191,13 @@ export function PricingPlans({
         <div className="mt-10 flex flex-col items-center gap-3">
           <TrialCTA position="pricing-preview" size="xl" billing={cycle} />
           <p className="text-sm text-ink-soft">{reassurance}</p>
+          <a
+            href={proSignupUrl(cycle)}
+            onClick={() => trackEvent("cta_click", { position: "pricing-preview-pro" })}
+            className="text-sm text-ink-soft underline underline-offset-4 hover:text-ink"
+          >
+            Ou prendre Pro directement, sans essai
+          </a>
         </div>
       )}
     </div>

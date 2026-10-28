@@ -90,7 +90,7 @@ const trialSteps = [
   {
     when: "Avant le 30e jour",
     title: "Vous décidez",
-    text: "Vous gardez Business, vous passez sur Pro, ou vous résiliez en un clic sans rien payer. Sans action de votre part, Business continue selon la formule choisie : 29,99 € par mois, 79,99 € par trimestre ou 288 € par an.",
+    text: "Vous gardez Business, vous choisissez Pro (il démarre à la fin de l'essai, vous gardez vos jours gratuits), ou vous résiliez en un clic sans rien payer. Sans action de votre part, Business continue selon la formule choisie : 29,99 € par mois, 79,99 € par trimestre ou 288 € par an.",
   },
 ];
 
@@ -107,7 +107,7 @@ const pricingFaq: FaqItem[] = [
   {
     question: "Puis-je choisir le plan Pro plutôt que Business ?",
     answer:
-      "Oui. L'essai se fait sur Business pour que vous puissiez tout tester sans limite. Depuis votre espace, vous passez sur Pro quand vous voulez, pendant ou après l'essai. Pro convient tant que vous restez sous 300 clients inscrits.",
+      "Oui, de deux façons. Soit vous prenez Pro directement depuis sa carte : pas d'essai, il est payé dès l'inscription. Soit vous faites l'essai gratuit, qui se fait sur Business pour tout tester sans limite, et vous choisissez Pro depuis votre espace pendant l'essai : vous gardez vos jours gratuits, rien n'est prélevé, et Pro démarre au 31e jour à la place de Business. Pro convient tant que vous restez sous 300 clients inscrits.",
   },
   {
     question: "Comment se passe l'installation ?",

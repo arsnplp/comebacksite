@@ -20,6 +20,16 @@ export function signupUrl(billing?: "monthly" | "quarterly" | "annual"): string 
 /** Connexion des commerçants déjà inscrits (lien de navigation, pas un CTA). */
 export const LOGIN_URL = "https://app.getcomeback.fr/login";
 
+/**
+ * Inscription directe au plan Pro, payé dès l'inscription (sans essai).
+ * Seule exception au CTA unique, sur la carte Pro uniquement : l'essai
+ * gratuit passe toujours par Business.
+ */
+export function proSignupUrl(billing?: "monthly" | "quarterly" | "annual"): string {
+  const base = "https://app.getcomeback.fr/signup?plan=pro";
+  return billing && billing !== "monthly" ? `${base}&billing=${billing}` : base;
+}
+
 /** Libellé unique du CTA, identique sur tout le site. */
 export const CTA_LABEL = "Créer ma carte gratuitement";
 
