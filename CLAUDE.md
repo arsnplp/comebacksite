@@ -40,9 +40,9 @@ L'app est un autre repo (arsnplp/combeckapp, app.getcomeback.fr).
 
 ## Offres (source : `content/pricing.ts`)
 
-Sur `main` : Pro 9,99 € TTC/mois (100 clients), Business 39,99 € TTC/mois
-(illimité). Nouvelle grille prête sur la branche `nouvelle-grille-tarifaire`,
-pas encore en ligne : Pro 14,99 € (300 clients), Business 29,99 €. Toujours
+En ligne depuis le 28 octobre 2026 : Pro 14,99 € TTC/mois (300 clients),
+Business 29,99 € TTC/mois (illimité). Les anciens abonnés Pro gardent 9,99 €.
+Toujours
 lire les prix dans `content/pricing.ts` plutôt que de les écrire en dur.
 
 Inclus dans les deux plans : Apple et Google Wallet, affiche de comptoir A4
