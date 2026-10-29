@@ -4,7 +4,7 @@ Ce guide s'applique à tout article publié dans `content/blog/`. Il est écrit 
 
 ## Contexte produit
 
-Comeback est un SaaS français de carte de fidélité digitale (Apple Wallet et Google Wallet) pour commerçants indépendants : le client scanne un QR code au comptoir, ajoute la carte à son téléphone, cumule des tampons et reçoit des notifications. Plans : Starter gratuit (30 clients), Pro 9,99 € (recommandé), Business 39,99 € HT/mois, 30 jours d'essai gratuit sans carte bancaire. Le blog s'adresse aux commerçants (restaurateurs, coiffeurs, boulangers, instituts de beauté, cafés, boutiques, food trucks, franchises) qui cherchent à faire revenir leurs clients et augmenter leur chiffre d'affaires.
+Comeback est un SaaS français de carte de fidélité digitale (Apple Wallet et Google Wallet) pour commerçants indépendants : le client scanne un QR code au comptoir, ajoute la carte à son téléphone, cumule des tampons et reçoit des notifications. Plans : Pro 14,99 € TTC/mois (300 clients) et Business 29,99 € TTC/mois (illimité), aussi au trimestre (39,99 € / 79,99 €) et à l'année (144 € / 288 €). Pas de plan gratuit : tout commence par 30 jours d'essai sur Business, carte bancaire demandée, 0 € prélevé. Toujours reprendre les prix de content/pricing.ts. Le blog s'adresse aux commerçants (restaurateurs, coiffeurs, boulangers, instituts de beauté, cafés, boutiques, food trucks, franchises) qui cherchent à faire revenir leurs clients et augmenter leur chiffre d'affaires.
 
 ## Format du fichier
 
