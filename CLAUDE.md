@@ -44,8 +44,13 @@ L'app est un autre repo (arsnplp/combeckapp, app.getcomeback.fr).
 - **Pas de tiret cadratin « — » dans les textes du site.**
 - Affiliation, page démo et page témoignages ont été retirées (redirections
   dans `next.config.mjs`). Ne pas les réintroduire.
-- Chaque modification est poussée sur GitHub. Le déploiement est fait par
-  Arsène, pas depuis ici.
+- Chaque modification est poussée sur GitHub. Depuis le 17 novembre 2026, le
+  déploiement est automatique : un cron sur le VPS
+  (`/usr/local/bin/deploy-comebacksite.sh`, toutes les 2 minutes) construit et
+  met en ligne tout nouveau commit de `main` en 2 à 5 minutes, sans relecture.
+  Pour préparer une modification sans la publier, travailler sur une branche.
+  Installation : `scripts/vps/install-auto-deploy.sh`. Journal sur le serveur :
+  `/var/log/comebacksite-deploy.log`.
 
 ## Offres (source : `content/pricing.ts`)
 
