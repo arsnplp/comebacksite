@@ -54,8 +54,14 @@ if [ -z "${APP_DIR:-}" ]; then
   APP_DIR="${CANDS[0]}"
 fi
 [ -d "$APP_DIR/.git" ] || stop "$APP_DIR n'est pas un clone git."
-OWNER="$(stat -c %U "$APP_DIR")"
-echo "   dossier : $APP_DIR (propriétaire : $OWNER)"
+OWNER="${RUN_AS:-$(stat -c %U "$APP_DIR")}"
+if ! id "$OWNER" >/dev/null 2>&1; then
+  echo "   propriétaire du dossier sans compte sur ce serveur ($OWNER) : les commandes tourneront en root"
+  OWNER="root"
+fi
+# Le dossier peut appartenir à un autre identifiant que celui qui lance git.
+PRELUDE="${PRELUDE}export GIT_CONFIG_COUNT=1 GIT_CONFIG_KEY_0=safe.directory GIT_CONFIG_VALUE_0=$(printf '%q' "$APP_DIR"); "
+echo "   dossier : $APP_DIR (commandes lancées en : $OWNER)"
 
 echo "== 2. État git"
 as_user "$OWNER" "git -C '$APP_DIR' fetch -q origin $BRANCH" || stop "git fetch impossible depuis le serveur."
